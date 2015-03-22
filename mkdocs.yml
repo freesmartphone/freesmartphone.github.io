@@ -1,4 +1,9 @@
 site_name: freesmartphone.org
+site_url: http://www.freesmartphone.org
+repo_url: https://github.com/freesmartphone/freesmartphone.github.io
+site_description: Documentation of the freesmartphone.org initiative
+site_author: FSO Team
+
 theme: readthedocs
 pages:
 - [index.md, Home]
