@@ -1,5 +1,6 @@
 site_name: freesmartphone.org
 site_url: http://www.freesmartphone.org
+site_favicon: favicon.ico
 repo_url: https://github.com/freesmartphone/freesmartphone.github.io
 site_description: Documentation of the freesmartphone.org initiative
 site_author: FSO Team
