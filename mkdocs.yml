@@ -1,0 +1,7 @@
+site_name: freesmartphone.org
+theme: readthedocs
+pages:
+- [index.md, Home]
+- [about.md, About]
+- [history.md, History]
+- [contribute.md, Contribute]
