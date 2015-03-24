@@ -10,7 +10,8 @@ build: .stamp-build
 	touch $@
 
 deploy: build
-	git add site -m"update docs"
+	git add site
+	git commit -m"update docs"
 	git subtree push --prefix site origin master
 
 clean:
