@@ -10,9 +10,13 @@ build: .stamp-build
 	touch $@
 
 deploy: build
+	git stash
+	git checkout master
 	git add site
 	git commit -m"update docs"
 	git subtree push --prefix site origin master
+	git checkout devel
+	git stash apply
 
 clean:
 	rm -rf .stamp*
