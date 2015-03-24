@@ -4,10 +4,12 @@ site_favicon: favicon.ico
 repo_url: https://github.com/freesmartphone/freesmartphone.github.io
 site_description: Documentation of the freesmartphone.org initiative
 site_author: FSO Team
-
+markdown_extensions: [smartypants]
 theme: readthedocs
 pages:
 - [index.md, Home]
 - [about.md, About]
 - [history.md, History]
 - [contribute.md, Contribute]
+- [specifications.md, Specifications]
+- [implementations.md, Implementations]
