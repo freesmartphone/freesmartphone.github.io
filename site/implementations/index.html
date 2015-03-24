@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Implementations - freesmartphone.org</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> freesmartphone.org</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../about">About</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../history">History</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../contribute">Contribute</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../specifications">Specifications</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 current">
+                <a class="current" href=".">Implementations</a>
+            </li>
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href=".."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    <li>Implementations</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="https://github.com/freesmartphone/freesmartphone.github.io" class="icon icon-github"> Edit on GitHub</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h1 id="implementations">Implementations</h1>
+<p>– <em>Cornucopia</em> – <em>Cor`nu*co&#8221;pi*a (k[^o]r`n[-u]*k[=o]&#8221;p[i^]*[.a]), n.;</em></p>
+<blockquote>
+<p>pl. Cornucopias (-[.a]z). [L. cornu copiae horn of plenty. See Horn, and Copious.]
+1. The horn of plenty, from which fruits and flowers are
+represented as issuing. It is an emblem of abundance.
+[1913 Webster]</p>
+</blockquote>
+<h2 id="overview">Overview</h2>
+<p>This describes the Vala/C reference implementation of the freesmartphone.org APIs, codename &#8216;Cornucopia&#8217;.</p>
+<p>We describe only the big picture here – see the documentation for the individual projects for details.</p>
+<h2 id="tools">Tools</h2>
+<p>To support our middleware framework, we have created a number of tools, many of those which are not freesmartphone-specific. Feel free to adopt them for your project.</p>
+<h3 id="vala-dbus-binding-tool">vala-dbus-binding-tool</h3>
+<p><code>vala-dbus-binding-tool</code> is a way to create calling stubs (gobject interfaces) from DBus interface description.</p>
+<p><a href="https://www.github.com/freesmartphone/vala-dbus-binding-tool">vala-dbus-binding-tool</a> is a seperate project at github.</p>
+<h3 id="mdbus2">mdbus2</h3>
+<p><code>mdbus2</code> is an interactive DBus introspection and interaction utility.</p>
+<p><a href="https://www.github.com/freesmartphone/mdbus2">mdbus2</a> is a seperate project at github.</p>
+<h3 id="more-tools">More tools</h3>
+<p>The following tools reside in the <a href="https://github.com/freesmartphone/cornucopia/tree/master/tools/">tools</a> subdirectory of Cornucopia:</p>
+<ul>
+<li><code>apm2</code> emulates the apm binary, but sends the equivalent dbus commands.</li>
+<li><code>fso-abyss</code> is a GSM 07.10 multiplexing helper, exposes a multiplexed line via pseudo-tty.</li>
+<li><code>fso-alsa</code> is an ALSA mixer scenario helper utility.</li>
+<li><code>fso-raw</code> is the fsousaged resource aquisition wrapper for integrating legacy tools.</li>
+<li><code>mioctl</code> is a simple command line utility to issue ioctls.</li>
+<li><code>mkdump</code> dumps kernel messages (kobject, netlink).</li>
+<li><code>mterm2</code> is a muxer-aware terminal emulator.</li>
+<li><code>serial_forward</code> forwards a serial port over a network connection.</li>
+</ul>
+<h2 id="libraries">Libraries</h2>
+<p>Although these libraries have been created for the use with the FSO daemons, they have few dependencies and might as well be used in many other projects.</p>
+<p>If there is sufficient interest, we can easily factor them out as standalone projects – for now they reside in the <a href="https://github.com/freesmartphone/cornucopia/tree/master/libfsoframework">libfsoframework</a> subdirectory of Cornucopia:</p>
+<h4 id="libfso-glib">libfso-glib</h4>
+<p>A gobject-based FSO DBus-API library.</p>
+<p>This library supports writing applications that communicate via dbus using the FSO APIs. Vala-bindings are available.</p>
+<h4 id="libfsobasics">libfsobasics</h4>
+<p>A general purpose utility C-library based on glib-2.0.</p>
+<p>libfsobasics provides classes and functions for</p>
+<ul>
+<li>smart keyfile handling (.ini style),</li>
+<li>debug logging,</li>
+<li>string and file handling convenience,</li>
+<li>process control,</li>
+<li>kobject notifications,</li>
+<li>netlink notifications,</li>
+<li>inotify notifications,</li>
+<li>sync/async handling.</li>
+</ul>
+<p>Vala bindings are available.</p>
+<h4 id="libfsotransport">libfsotransport</h4>
+<p>A gobject-based transport library.</p>
+<p>This library supports writing applications that read and write data from files, serial ports, and ptys, including glib-mainloop integration.</p>
+<p>Vala-bindings are available.</p>
+<h4 id="libfsoframework">libfsoframework</h4>
+<p>A gobject-based FSO subsystem implementation library.</p>
+<p>This library supports writing FSO subsystems. It contains utility classes for subsystems, plugins, kobject dispatchers, netlink dispatchers, and more.</p>
+<p>Vala-bindings are available.</p>
+<h4 id="libfsoresource">libfsoresource</h4>
+<p>A gobject-based FSO Resource C-library.</p>
+<p>libfsoresource provides convenience classes to integrate with the FSO Resource System.</p>
+<p>Vala bindings are available.</p>
+<h2 id="daemons">Daemons</h2>
+<h4 id="fsousaged">fsousaged</h4>
+<p>A resource manager.</p>
+<p>fsousaged implements the FSO Usage DBus API. This API is concerned with coordinating application I/O requirements (think reference counting for resources).</p>
+<p>Applications are not supposed to turn on or off devices, since they do not have any knowledge about concurrent applications that may also be using the device.</p>
+<p>It also ensures proper high-level suspend and resume preparation for available resources. Although it might be tempting, preparing a GSM modem for suspend can&#8217;t sanely be handled in kernelspace, since you need to send several AT commands to it in order to prevent bogus wakeups. </p>
+<p>Which commands exactly is very device and situation specific, hence should be handled by userspace. fsousaged compiles to C and is very lightweight. It needs less than 100 KB of disk space and typically operates with a RES segment of about 2 MB.</p>
+<h4 id="fsodatad">fsodatad</h4>
+<p>A (constant) data lookup manager.</p>
+<p>fsodatad implements the FSO Data DBus API. This API allows querying constant data about the world, such as geographic timezones, mobile broadband network providers, etc.</p>
+<p>fsodatad compiles to C and is very lightweight.</p>
+<h4 id="fsodeviced">fsodeviced</h4>
+<p>A device abstraction manager.</p>
+<p>fsodeviced implements the FSO Device DBus API. This API allows peripheral control, such as managing audio, backlight brightness, LEDs, Vibrator, Accelerometer, and power control for devices without dedicated controlling daemon. It can deal with charging notification and RTC, forwarding button events and notifying about the system&#8217;s idleness status.</p>
+<p>It also ensures proper high-level suspend and resume preparation for available resources. Although it might be tempting, preparing a GSM modem for suspend can&#8217;t sanely be handled in kernelspace, since you need to send several AT commands to it in order to prevent bogus wakeups. Which commands exactly is very device and situation specific, hence should be handled by userspace.</p>
+<p>fsodeviced compiles to C and is very lightweight. It has been written to superseed all the device-specific control daemons Linux-based mobile systems have used in the past, such as the Zaurus&#8217; <code>zaurusd</code>, the Neo&#8217;s <code>neod</code>, Kernel Concepts&#8217; <code>deviced</code>, etc. It also superseeds the non-customizable <code>hald</code>. It features a plugin-architecture, so you only pay for the features you really need.</p>
+<h4 id="fsotdld">fsotdld</h4>
+<p>A time, data, and location manager.</p>
+<p>fsotdld implements the FSO Device Time, Data, and Location APIs.</p>
+<p>fsotdld compiles to C and is very lightweight. It features a plugin-architecture, so you only pay for the features you really need.</p>
+<h4 id="fsonetworkd">fsonetworkd</h4>
+<p>A simple network service manager.</p>
+<h4 id="fsogsmd">fsogsmd</h4>
+<p>A GSM Communications manager.</p>
+<p>fsogsmd implements the FSO GSM DBus API. This API delivers a simple way to handle voice and data communication with GSM modems.</p>
+<p>fsogsmd compiles to C and is very lightweight.</p>
+<h4 id="fsoaudiod">fsoaudiod</h4>
+<p>An audio scenario manager.</p>
+<p>fsoaudiod implements the FSO Audio DBus API.</p>
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../specifications" class="btn btn-neutral" title="Specifications"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+            <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+        
+      <span><a href="../specifications" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>
