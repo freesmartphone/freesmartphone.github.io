@@ -10,7 +10,7 @@ I have a dump of the old archives, which I'm going to upload soon.
 
 ## Source code
 
-The source code for this site and all of the FSO subprojects is at [github/freesmartphone](https://github.com/freesmartphone.org). We have an organization account – feel free to send us your username, if you want to join.
+The source code for this site and all of the FSO subprojects is at [github/freesmartphone](https://github.com/freesmartphone). We have an organization account – feel free to send us your username, if you want to join.
 
 ## IRC
 
