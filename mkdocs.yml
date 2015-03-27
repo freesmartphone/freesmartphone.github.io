@@ -6,10 +6,13 @@ site_description: Documentation of the freesmartphone.org initiative
 site_author: FSO Team
 markdown_extensions: [smartypants]
 theme: readthedocs
+
 pages:
 - [index.md, Home]
 - [about.md, About]
 - [history.md, History]
 - [contribute.md, Contribute]
+- [usage-intro.md, Resource Handling]
+- [pim-intro.md, PIM Handling]
 - [specifications.md, Specifications]
 - [implementations.md, Implementations]
