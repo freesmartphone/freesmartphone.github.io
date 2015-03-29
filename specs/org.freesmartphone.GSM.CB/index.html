@@ -191,10 +191,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-gsm-cell-broadcast-interface">freesmartphone.org: freesmartphone.org GSM Cell Broadcast Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonegsmcb">org.freesmartphone.GSM.CB</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-gsm-cell-broadcast-interface">freesmartphone.org GSM Cell Broadcast Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -211,15 +208,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters">Parameters</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_1">Parameters</a></li>
                             
                         
                         </ul>
@@ -477,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-gsm-cell-broadcast-interface">freesmartphone.org: freesmartphone.org GSM Cell Broadcast Interface</h1>
-<h1 id="orgfreesmartphonegsmcb">org.freesmartphone.GSM.CB</h1>
+              <h1 id="freesmartphoneorg-gsm-cell-broadcast-interface">freesmartphone.org GSM Cell Broadcast Interface</h1>
 <h2 id="description">Description</h2>
 <p>The Cell Broadcast interface allows you to manage cell broadcast subscriptions.   Cell Broadcast is a technology that allows a text or binary message to be defined  and distributed to all mobile terminals connected to a set of cells. Whereas SMS  messages are sent point-to-point, Cell Broadcast messages are sent point-to-area.  This means that one Cell Broadcast message can reach a huge number of terminals  at once.</p>
 <h2 id="namespace">Namespace</h2>
@@ -499,26 +488,25 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="getcellbroadcastsubscriptions-s"><a name="GetCellBroadcastSubscriptions">GetCellBroadcastSubscriptions</a> ( ) &rarr; s</h3>
 <p><strong>Description:</strong> Get current cell broadcast subscription channels. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: channels</i>
 The channels you are subscribed to. Simple strings to expect are  &#8220;none&#8221; and &#8220;all&#8221;. Also valid are compound descriptions of channel lists like  &#8220;1,2,3-5,7,234,10-5&#8221;. </p>
 <h3 id="setcellbroadcastsubscriptions-s"><a name="SetCellBroadcastSubscriptions">SetCellBroadcastSubscriptions</a> ( s )</h3>
 <p><strong>Description:</strong> Set cell broadcast subscription channels. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: channels</i>
 The channels you want to subscribe. Valid simple strings are  &#8220;none&#8221; and &#8220;all&#8221;. Also valid are compound descriptions of channels lists like  &#8220;1,2,3-5,7,234,10-5&#8221;. </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="incomingcellbroadcast-ssasv"><a name="IncomingCellBroadcast">IncomingCellBroadcast</a> ( ssa{sv} )</h3>
 <p><strong>Description:</strong> Sent, when a cell broadcast message has been received. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: text</i>
 The text of the message. </p>
 <p><i>s: language</i>
 The language encoding. </p>
 <p><i>a{sv}: properties</i>
 Additional properties. </p>
-<p>the footer here</p>
 
             </div>
           </div>

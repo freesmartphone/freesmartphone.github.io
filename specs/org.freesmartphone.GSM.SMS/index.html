@@ -251,10 +251,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-gsm-sms-interface">freesmartphone.org: freesmartphone.org GSM SMS Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonegsmsms">org.freesmartphone.GSM.SMS</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-gsm-sms-interface">freesmartphone.org GSM SMS Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -271,27 +268,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_2">Returns</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_2">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_3">Parameters</a></li>
                             
                         
                         </ul>
@@ -489,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-gsm-sms-interface">freesmartphone.org: freesmartphone.org GSM SMS Interface</h1>
-<h1 id="orgfreesmartphonegsmsms">org.freesmartphone.GSM.SMS</h1>
+              <h1 id="freesmartphoneorg-gsm-sms-interface">freesmartphone.org GSM SMS Interface</h1>
 <h2 id="description">Description</h2>
 <p>org.freesmartphone.GSM.SMS is a high level interface for  textual Short Message Service (SMS). If you have special  requirements or need direct access to individual messages,  you may use the corresponding SMS functions provided by  org.freesmartphone.GSM.SIM.</p>
 <h2 id="namespace">Namespace</h2>
@@ -513,29 +490,29 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="retrievetextmessages-aissssasv"><a name="RetrieveTextMessages">RetrieveTextMessages</a> ( ) &rarr; a(issssa{sv})</h3>
 <p><strong>Description:</strong> Retrieve all text messages. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a(issssa{sv}): messages</i>
 Messages matching the given category. This is an array of four-tuples. Every entry has the following structure:  <ul>  <li>(int:index) = storage index,</li>  <li>(string:status) = status of message, one of (&#8220;read&#8221;, &#8220;unread&#8221;, &#8220;sent&#8221;, &#8220;unsent&#8221;),</li>  <li>(string:number) = sender number.</li>  <li>(string:timestamp) = timestamp.</li>  <li>(string:content) = contents of the message.</li>  </ul> </p>
 <h3 id="getsizefortextmessage-s-u"><a name="GetSizeForTextMessage">GetSizeForTextMessage</a> ( s ) &rarr; u</h3>
 <p><strong>Description:</strong> Calculates the number of GSM Short Messages necessary to deliver a given text. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: contents</i>
 The contents of the message. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>u: messages</i>
 The number of SMS to be sent, if this message were to be delivered. </p>
 <h3 id="sendtextmessage-ssb-is"><a name="SendTextMessage">SendTextMessage</a> ( ssb ) &rarr; is</h3>
 <p><strong>Description:</strong> Sends a text message via the GSM Short Message Service (SMS) </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>Text messages can be of unlimited length. They might get fragmented by the  underlying message transport layers though. This will happen transparently. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: recipient_number</i>
 The number of the recipient. </p>
 <p><i>s: contents</i>
 The contents of the message. </p>
 <p><i>b: report</i>
 If true, status reports (message receipts) will be sent by the  SMS Center, delivered via the <a href="../../specs/org.freesmartphone.GSM.SMS/#IncomingMessageReceipt">IncomingMessageReceipt</a> signal. </p>
-<h4 id="returns_2">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>i: reference</i>
 This is the message-reference number of this message.  This can be used to identify status reports. </p>
 <p><i>s: timestamp</i>
@@ -544,7 +521,7 @@ The timestamp this message was received by the SMSC. </p>
 <h3></h3>
 <h3 id="incomingtextmessage-sss"><a name="IncomingTextMessage">IncomingTextMessage</a> ( sss )</h3>
 <p><strong>Description:</strong> Sent, when a text message has been received. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: number</i>
 The number of the sender. </p>
 <p><i>s: timestamp</i>
@@ -554,7 +531,7 @@ The contents of the message. </p>
 <h3></h3>
 <h3 id="incomingmessagereport-isss"><a name="IncomingMessageReport">IncomingMessageReport</a> ( isss )</h3>
 <p><strong>Description:</strong> Sent when a status report for a message has been received. </p>
-<h4 id="parameters_3">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>i: reference</i>
 The message-reference number as returned by <a href="../../specs/org.freesmartphone.GSM.SMS/#SendTextMessage">SendTextMessage</a> </p>
 <p><i>s: status</i>
@@ -563,7 +540,6 @@ The status. Expected values are:  <ul>  <li>COMPLETED_RECEIVED</li>  <li>COMPLET
 The number of the sender. </p>
 <p><i>s: contents</i>
 Optional contents of the receipt. Will usually be empty. </p>
-<p>the footer here</p>
 
             </div>
           </div>

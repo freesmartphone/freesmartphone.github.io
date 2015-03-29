@@ -121,10 +121,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-audio-interface">freesmartphone.org: freesmartphone.org Audio Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonedeviceaudio">org.freesmartphone.Device.Audio</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-audio-interface">freesmartphone.org Audio Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -141,42 +138,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_3">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_2">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_4">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_3">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_5">Parameters</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_6">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_7">Parameters</a></li>
                             
                         
                             <li class="toctree-l2"><a href="#errors_1">Errors</a></li>
@@ -507,8 +470,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-audio-interface">freesmartphone.org: freesmartphone.org Audio Interface</h1>
-<h1 id="orgfreesmartphonedeviceaudio">org.freesmartphone.Device.Audio</h1>
+              <h1 id="freesmartphoneorg-audio-interface">freesmartphone.org Audio Interface</h1>
 <h2 id="description">Description</h2>
 <p>This interface provides access to notification sounds, sound scenarios, and mixer controls.</p>
 <h2 id="namespace">Namespace</h2>
@@ -547,7 +509,7 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="playsound-sii"><a name="PlaySound">PlaySound</a> ( sii )</h3>
 <p><strong>Description:</strong> Play a sound resource. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: name</i>
 The identification of the sound resource. Will be treated as filename, if no schema is given.  Format-specific options may be supplied by appending multiple &#8220;;foo=bar&#8221; statements to the  filename. Player engines that do not support these options should ignore them. </p>
 <p><i>i: loop</i>
@@ -556,60 +518,60 @@ Loop. Set this to 1, if you want the sound resource to be restarted, once it end
 Length in seconds. Set this to anything other than 0 if you want to override the length of the sound resource.  Note that some audio resources have no concept of length or do know when the sound resource ends.  In these cases, you have to provide a reasonable length value or the sound will play endlessly. </p>
 <h3 id="stopsound-s"><a name="StopSound">StopSound</a> ( s )</h3>
 <p><strong>Description:</strong> Stop playing a sound resource. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: name</i>
 The identification of the sound resource. Will be treated as filename, if no schema is given. </p>
 <h3 id="stopallsounds"><a name="StopAllSounds">StopAllSounds</a> ( )</h3>
 <p><strong>Description:</strong> Stop all currently played sound resources. </p>
 <h3 id="getavailablescenarios-as"><a name="GetAvailableScenarios">GetAvailableScenarios</a> ( ) &rarr; as</h3>
 <p><strong>Description:</strong> Returns a list of supported audio scenarios. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>as: scenarios</i>
 The supported audio scenarios. </p>
 <h3 id="getscenario-s"><a name="GetScenario">GetScenario</a> ( ) &rarr; s</h3>
 <p><strong>Description:</strong> Get the current audio scenario. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: scenario</i>
 The name of the scenario. </p>
 <h3 id="setscenario-s"><a name="SetScenario">SetScenario</a> ( s )</h3>
 <p><strong>Description:</strong> Set a new audio scenario. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: scenario</i>
 The name of the scenario. </p>
 <h3 id="pushscenario-s"><a name="PushScenario">PushScenario</a> ( s )</h3>
 <p><strong>Description:</strong> Push a new audio scenario onto the stack and active it. </p>
-<h4 id="parameters_3">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: scenario</i>
 The new active scenario. </p>
 <h3 id="pullscenario-s"><a name="PullScenario">PullScenario</a> ( ) &rarr; s</h3>
 <p><strong>Description:</strong> Pull an audio scenario from the stack and activate the next one. </p>
-<h4 id="returns_2">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: scenario</i>
 The new active scenario. </p>
 <h3 id="savescenario-s"><a name="SaveScenario">SaveScenario</a> ( s )</h3>
 <p><strong>Description:</strong> Save the current scenario as a file. </p>
-<h4 id="parameters_4">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: scenario</i>
 The name of the scenario. </p>
 <h3 id="getvolume-y"><a name="GetVolume">GetVolume</a> ( ) &rarr; y</h3>
 <p><strong>Description:</strong> Get the current main audio volume. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>The main volume can depend on the current scenario. A change of scenario may change the main volume as well. </p>
-<h4 id="returns_3">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>y: volume</i>
 The volume in percent (0-100). </p>
 <h3 id="setvolume-y"><a name="SetVolume">SetVolume</a> ( y )</h3>
 <p><strong>Description:</strong> Set the new main audio volume. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>The main volume can depend on the current scenario. A change of scenario may change the main volume as well. </p>
-<h4 id="parameters_5">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>y: volume</i>
 The volume in percent (0-100). </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="soundstatus-ssasv"><a name="SoundStatus">SoundStatus</a> ( ssa{sv} )</h3>
 <p><strong>Description:</strong> Sent whenever a sound has been started or stopped. </p>
-<h4 id="parameters_6">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: id</i>
 The identification of sound resource that changed its status. </p>
 <p><i>s: status</i>
@@ -619,7 +581,7 @@ An array of property values. Note that properties are optional. Expected tuples 
 <h3></h3>
 <h3 id="scenario-ss"><a name="Scenario">Scenario</a> ( ss )</h3>
 <p><strong>Description:</strong> Sent whenever there is a change of the global sound scenario. </p>
-<h4 id="parameters_7">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: scenario</i>
 The scenario that is now active. </p>
 <p><i>s: reason</i>
@@ -639,7 +601,6 @@ The reason for this change. Expected reasons are:  <ul>  <li>&#8230;to be define
 <p><strong>Description:</strong> Raised, if there is no more scenario to pull from the stack. </p>
 <h3 id="devicefailed"><a name="DeviceFailed">DeviceFailed</a></h3>
 <p><strong>Description:</strong> Raised, if the audio device reported a problem. </p>
-<p>the footer here</p>
 
             </div>
           </div>

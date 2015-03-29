@@ -146,10 +146,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-led-interface">freesmartphone.org: freesmartphone.org LED Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonedeviceled">org.freesmartphone.Device.LED</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-led-interface">freesmartphone.org LED Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -165,17 +162,6 @@
                             
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_3">Parameters</a></li>
                             
                         
                         </ul>
@@ -478,8 +464,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-led-interface">freesmartphone.org: freesmartphone.org LED Interface</h1>
-<h1 id="orgfreesmartphonedeviceled">org.freesmartphone.Device.LED</h1>
+              <h1 id="freesmartphoneorg-led-interface">freesmartphone.org LED Interface</h1>
 <h2 id="description">Description</h2>
 <p>This interface provides access to a LED device.</p>
 <h2 id="namespace">Namespace</h2>
@@ -500,14 +485,14 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="setbrightness-i"><a name="SetBrightness">SetBrightness</a> ( i )</h3>
 <p><strong>Description:</strong> Set the brightness level. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>i: brightness</i>
 The brightness level in percent (0-100). </p>
 <h3 id="setblinking-ii"><a name="SetBlinking">SetBlinking</a> ( ii )</h3>
 <p><strong>Description:</strong> Start blinking. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>This requires the Linux 2.6 LED class trigger &#8216;timer&#8217; to be available. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>i: on_duration</i>
 Duration of being lit in milliseconds. </p>
 <p><i>i: off_duration</i>
@@ -516,7 +501,7 @@ Duration of being unlit in milliseconds. </p>
 <p><strong>Description:</strong> Blink the LED for a number of seconds. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>This requires the Linux 2.6 LED class trigger &#8216;timer&#8217; to be available. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>i: seconds</i>
 The amount of time (in seconds) to blink this LED. </p>
 <p><i>i: on_duration</i>
@@ -527,12 +512,11 @@ Duration of being unlit in milliseconds. </p>
 <p><strong>Description:</strong> Start visualizing the network status. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>This requires the Linux 2.6 LED class trigger &#8216;netdev&#8217; to be available. </p>
-<h4 id="parameters_3">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: interface</i>
 The interface to visualize. </p>
 <p><i>s: mode</i>
 A string combined of elements describing the visualization mode. Valid elements are:  <ul>  <li>&#8220;link&#8221;: Visualizes the interface link status (up = lit),</li>  <li>&#8220;rx&#8221;: Visualizes the interface receiving data,</li>  <li>&#8220;tx&#8221;: Visualizes the interface transmitting data.</li>  </ul> </p>
-<p>the footer here</p>
 
             </div>
           </div>

@@ -336,10 +336,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-pimmessages-interface">freesmartphone.org: freesmartphone.org PIM.Messages Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonepimmessages">org.freesmartphone.PIM.Messages</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-pimmessages-interface">freesmartphone.org PIM.Messages Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -356,53 +353,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_2">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_3">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_3">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_4">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_4">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_5">Returns</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_5">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_6">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_7">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_8">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_9">Parameters</a></li>
                             
                         
                         </ul>
@@ -515,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-pimmessages-interface">freesmartphone.org: freesmartphone.org PIM.Messages Interface</h1>
-<h1 id="orgfreesmartphonepimmessages">org.freesmartphone.PIM.Messages</h1>
+              <h1 id="freesmartphoneorg-pimmessages-interface">freesmartphone.org PIM.Messages Interface</h1>
 <h2 id="description">Description</h2>
 <p>This interface provides access to the list of messages.</p>
 <h2 id="namespace">Namespace</h2>
@@ -545,74 +496,74 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="add-asv-s"><a name="Add">Add</a> ( a{sv} ) &rarr; s</h3>
 <p><strong>Description:</strong> Add a new message to the default message backend. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>a{sv}: message_data</i>
 The data of the message. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: message_path</i>
 The path of the newly added message. </p>
 <h3 id="addincoming-asv-s"><a name="AddIncoming">AddIncoming</a> ( a{sv} ) &rarr; s</h3>
 <p><strong>Description:</strong> Add a new message to the default message backend and notify client about incoming message. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>a{sv}: message_data</i>
 The data of the message. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: message_path</i>
 The path of the newly added message. </p>
 <h3 id="getsingleentrysinglefield-asvs-s"><a name="GetSingleEntrySingleField">GetSingleEntrySingleField</a> ( a{sv}s ) &rarr; s</h3>
 <p><strong>Description:</strong> Query the content of a single field of one message. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>a{sv}: query</i>
 The query. </p>
 <p><i>s: field</i>
 The name of the field to return the value for. </p>
-<h4 id="returns_2">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: value</i>
 The value of the queried field. </p>
 <h3 id="query-asv-s"><a name="Query">Query</a> ( a{sv} ) &rarr; s</h3>
 <p><strong>Description:</strong> Query a list of messages. </p>
-<h4 id="parameters_3">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>a{sv}: query</i>
 The query. </p>
-<h4 id="returns_3">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: query_path</i>
 The path for the started query. </p>
 <h3 id="querythreads-asv-s"><a name="QueryThreads">QueryThreads</a> ( a{sv} ) &rarr; s</h3>
 <p><strong>Description:</strong> Query a list of message threads. </p>
-<h4 id="parameters_4">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>a{sv}: query</i>
 The query. </p>
-<h4 id="returns_4">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: query_path</i>
 The path for the started query. </p>
 <h3 id="getunreadmessages-i"><a name="GetUnreadMessages">GetUnreadMessages</a> ( ) &rarr; i</h3>
 <p><strong>Description:</strong> Get the amount of unread incoming messages. </p>
-<h4 id="returns_5">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>i: amount</i>
 Amount of unread messages </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="newmessage-s"><a name="NewMessage">NewMessage</a> ( s )</h3>
 <p><strong>Description:</strong> Sent when a new message is loaded. </p>
-<h4 id="parameters_5">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: message_path</i>
 The path of the newly loaded message. </p>
 <h3></h3>
 <h3 id="incomingmessage-s"><a name="IncomingMessage">IncomingMessage</a> ( s )</h3>
 <p><strong>Description:</strong> Sent when a incoming message arrives. </p>
-<h4 id="parameters_6">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: message_path</i>
 The path of the newly arrived incoming message. </p>
 <h3></h3>
 <h3 id="unreadmessages-i"><a name="UnreadMessages">UnreadMessages</a> ( i )</h3>
 <p><strong>Description:</strong> Sent when amount of unread incoming messages changes. </p>
-<h4 id="parameters_7">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>i: amount</i>
 Amount of unread incoming messages. </p>
 <h3></h3>
 <h3 id="updatedmessage-sasv"><a name="UpdatedMessage">UpdatedMessage</a> ( sa{sv} )</h3>
 <p><strong>Description:</strong> Sent whenever a message has been updated. </p>
-<h4 id="parameters_8">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: message_path</i>
 The DBus path of the message that was updated. </p>
 <p><i>a{sv}: message_data</i>
@@ -620,10 +571,9 @@ The data that was changed for the message. </p>
 <h3></h3>
 <h3 id="deletedmessage-s"><a name="DeletedMessage">DeletedMessage</a> ( s )</h3>
 <p><strong>Description:</strong> Sent whenever a message has been deleted. </p>
-<h4 id="parameters_9">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: message_path</i>
 The DBus path of the message that has been deleted. </p>
-<p>the footer here</p>
 
             </div>
           </div>

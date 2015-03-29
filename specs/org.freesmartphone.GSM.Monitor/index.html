@@ -231,10 +231,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-gsm-network-monitoring-interface">freesmartphone.org: freesmartphone.org GSM Network Monitoring Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonegsmmonitor">org.freesmartphone.GSM.Monitor</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-gsm-network-monitoring-interface">freesmartphone.org GSM Network Monitoring Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -250,11 +247,6 @@
                             
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
-                            
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
                             
                         
                         </ul>
@@ -472,8 +464,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-gsm-network-monitoring-interface">freesmartphone.org: freesmartphone.org GSM Network Monitoring Interface</h1>
-<h1 id="orgfreesmartphonegsmmonitor">org.freesmartphone.GSM.Monitor</h1>
+              <h1 id="freesmartphoneorg-gsm-network-monitoring-interface">freesmartphone.org GSM Network Monitoring Interface</h1>
 <h2 id="description">Description</h2>
 <p>The Monitor interface is used to gather auxiallary information  about the GSM network, serving cells, network cells, and more,  beyond what is defined in 3GPP 07.07. Implementing this interface  is optional.</p>
 <h2 id="namespace">Namespace</h2>
@@ -492,15 +483,14 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="getservingcellinformation-asv"><a name="GetServingCellInformation">GetServingCellInformation</a> ( ) &rarr; a{sv}</h3>
 <p><strong>Description:</strong> Retrieves serving cell information. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a{sv}: serving_cell</i>
 Information about the serving cell. Valid are the following tuples:  <ul>  <li>( &#8220;arfcn&#8221;, int ):         Current Channel Number</li>  <li>( &#8220;c1&#8221;, int ):            Path Loss Criterion C1 (in percentage, comparable with signal strength)</li>  <li>( &#8220;c2&#8221;, int ):            Cell-Reselection Criterion C2 (in percentage, comparable with signal strength)</li>  <li>( &#8220;rxlev&#8221;, int ):         Received Field Strength (in percentage, comparable with signal strength)</li>  <li>( &#8220;bsic&#8221;, int ):          Base Station ID Code</li>  <li>( &#8220;cid&#8221;, string ):        Cell Identifier</li>  <li>( &#8220;dsc&#8221;, int ):           Downlink Signaling Counter    actual value</li>  <li>( &#8220;txlev, int ):          Transmit Power Level</li>  <li>( &#8220;tn, int ):             Timeslot Number</li>  <li>( &#8220;rlt, int ):            Radio Link Timeout Counter</li>  <li>( &#8220;tav, int ):            Timing Advance</li>  <li>( &#8220;rxlev_f, int ):        Received Field Strength full (in percentage, comparable with signal strength)</li>  <li>( &#8220;rxlev_s, int ):        Received Field Strength sub (in percentage, comparable with signal strength)</li>  <li>( &#8220;rxqual_f, int ):       Received Quality full</li>  <li>( &#8220;rxqual_s, int ):       Received Quality sub</li>  <li>( &#8220;lac&#8221;, string ):        Location Area Code</li>  <li>( &#8220;cba&#8221;, int ):           Cell Bar Access</li>  <li>( &#8220;cbq&#8221;, int ):           Cell Bar Qualifier</li>  <li>( &#8220;ctype&#8221;, int ):         Cell Type Indicator           NA/GSM/GPRS</li>  <li>( &#8220;vocoder&#8221; ):            Vocoder                       Sig/speech/efr/amr/14.4/9.6/4.8/2.4</li>  </ul>  See http://www.tele-servizi.com/janus/engfield1.html for more details. </p>
 <h3 id="getneighbourcellinformation-aasv"><a name="GetNeighbourCellInformation">GetNeighbourCellInformation</a> ( ) &rarr; aa{sv}</h3>
 <p><strong>Description:</strong> Retrieves neighbour cell information. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>aa{sv}: neighbour_cells</i>
 Information about the neighbour cells. This is an array of maps, one for every neighbour cell. Valid are the following tuples:  <ul>  <li>( &#8220;arfcn&#8221;, int ):         Current Channel Number</li>  <li>( &#8220;c1&#8221;, int ):            Path Loss Criterion C1 (in percentage, comparable with signal strength)</li>  <li>( &#8220;c2&#8221;, int ):            Cell-Reselection Criterion C2</li>  <li>( &#8220;rxlev&#8221;, int ):         Received Field Strength (in percentage, comparable with signal strength)  <li>( &#8220;bsic&#8221;, int ):          Base Station ID Code</li>  <li>( &#8220;cid&#8221;, string ):        Cell Identifier</li>  <li>( &#8220;lac&#8221;, string ):        Location Area Code</li>  <li>( &#8220;dsc&#8221;, int ):           Downlink Signaling Counter    actual value</li>  <li>( &#8220;foffset, int ):        Frame Offset</li>  <li>( &#8220;timea, int ):          Time Alignment</li>  <li>( &#8220;cba&#8221;, int ):           Cell Bar Access</li>  <li>( &#8220;cbq&#8221;, int ):           Cell Bar Qualifier</li>  <li>( &#8220;ctype&#8221;, int ):         Cell Type Indicator           NA/GSM/GPRS</li>  <li>( &#8220;rac&#8221;, string ):        Routing Area Code</li>  <li>( &#8220;roffset, int ):        Cell Reselection Offset</li>  <li>( &#8220;toffset, int ):        Temporary Offset</li>  <li>( &#8220;rxlevam, int ):        Rxlev access min (in percentage, comparable with signal strength)</li>  </ul>  See http://www.tele-servizi.com/janus/engfield1.html for more details. </p>
-<p>the footer here</p>
 
             </div>
           </div>

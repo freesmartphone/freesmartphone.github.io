@@ -236,10 +236,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-gsm-network-interface">freesmartphone.org: freesmartphone.org GSM Network Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonegsmnetwork">org.freesmartphone.GSM.Network</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-gsm-network-interface">freesmartphone.org GSM Network Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -256,45 +253,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_2">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_3">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_4">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_3">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_4">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_5">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_6">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_7">Parameters</a></li>
                             
                         
                         </ul>
@@ -507,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-gsm-network-interface">freesmartphone.org: freesmartphone.org GSM Network Interface</h1>
-<h1 id="orgfreesmartphonegsmnetwork">org.freesmartphone.GSM.Network</h1>
+              <h1 id="freesmartphoneorg-gsm-network-interface">freesmartphone.org GSM Network Interface</h1>
 <h2 id="description">Description</h2>
 <p>The Network interface is used to give information about the GSM  service providers and this device&#8217;s status with regards to  to network registration and connectivity.   Taxonomy note: We think in terms of (service) providers  rather than (network) operators, since multiple (service)  providers can use the networks from operators, however  what actually matters most is the provider name, not the  actual network operator the provider is using.</p>
 <h2 id="namespace">Namespace</h2>
@@ -547,17 +506,17 @@
 <p><strong>Description:</strong> Unregister from service provider. </p>
 <h3 id="getstatus-asv"><a name="GetStatus">GetStatus</a> ( ) &rarr; a{sv}</h3>
 <p><strong>Description:</strong> Get Network Status. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a{sv}: status</i>
 Network status information. Mandatory tuples are:  <ul>  <li>( &#8220;registration&#8221;, string ):  <ul> The telephony registration status. Expected values are:  <li>&#8220;unregistered&#8221; = not registered, not trying,</li>  <li>&#8220;home&#8221; = registered to home network,</li>  <li>&#8220;busy&#8221; = not registered, but currently trying,</li>  <li>&#8220;denied&#8221; = no permitted network available,</li>  <li>&#8220;unknown&#8221; = no idea,</li>  <li>&#8220;roaming&#8221; = registered to foreign network.</li>  </ul></li>  <li>( &#8220;mode&#8221;, string ):  <ul>  The registration mode. Expected values are:  <li>&#8220;automatic&#8221; = automatic selection,</li>  <li>&#8220;manual&#8221; = manual selection,</li>  <li>&#8220;manual;automatic&#8221; = manual first, then automatic,</li>  <li>&#8220;unregister&#8221; = manual unregister,</li>  <li>&#8220;unknown&#8221; = unknown (this should never occur in production).</li>  </ul></li>  <li>( &#8220;act&#8221;, string ):  <ul>  The network access type. Will default to &#8220;GSM&#8221; if a modem doesn&#8217;t support reporting. Expected values are:  <li>&#8220;GSM&#8221; = GPRS access</li>  <li>&#8220;Compact GSM&#8221; = </li>  <li>&#8220;UMTS&#8221; = UMTS access</li>  <li>&#8220;EDGE&#8221; = Enhanced Data Rates for GSM Evolution </li>  <li>&#8220;HSDPA&#8221; = High Speed Downlink Packet Access</li>  <li>&#8220;HSUPA&#8221; = High Speed Uplink Packet Access</li>  <li>&#8220;HSDPA/HSUPA&#8221; = High Speed Packet Access (both downlink and uplink)</li>  </ul></li>  </ul>  Optional tuples are:  <ul>  <li>( &#8220;display&#8221;, string ): The display name of the network provider (if registered or roaming).</li>  <li>( &#8220;provider&#8221;, string ): The full name of the network provider (if registered or roaming).</li>  <li>( &#8220;code&#8221;, string ): MCC and MNC of the network provider (if registered or roaming).</li>  <ul>  <li>MCC: first three characters starting from the left.</li>  <li>MNC: remaining characters.</li>  </ul>  <li>( &#8220;strength&#8221;, int ): The signal strength in percentage (0-100).</li>  <li>( &#8220;lac&#8221;, string ): The location area code string (if available).</li>  <li>( &#8220;cid&#8221;, string ): The cell id string (if available).</li>  <li>( &#8220;pdp.registration&#8221;, string ): The PDP access registration; values same as telephony registration.  <li>( &#8220;pdp.lac&#8221;, string ): The PDP location area code string (if available).</li>  <li>( &#8220;pdp.cid&#8221;, string ): The PDP cell id string (if available).</li>  </ul> </p>
 <h3 id="getsignalstrength-i"><a name="GetSignalStrength">GetSignalStrength</a> ( ) &rarr; i</h3>
 <p><strong>Description:</strong> Query the current signal strength, if registered with a service provider. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>i: signal_strength</i>
 The signal strength in percent (0-100). </p>
 <h3 id="gettimereport-iiii"><a name="GetTimeReport">GetTimeReport</a> ( ) &rarr; iiii</h3>
 <p><strong>Description:</strong> Query the last received time report. </p>
-<h4 id="returns_2">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>i: time</i>
 The current time in seconds since UNIX epoch.  0, if no time has been received. </p>
 <p><i>i: timestamp</i>
@@ -568,48 +527,48 @@ The time zone offset in minutes based on UTC.  This value is only valid, if with
 Timestamp indicating when the time report has been received from the network. </p>
 <h3 id="listproviders-asssss"><a name="ListProviders">ListProviders</a> ( ) &rarr; a(sssss)</h3>
 <p><strong>Description:</strong> List available service providers. </p>
-<h4 id="returns_3">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a(sssss): providers</i>
 An array of four-tuples with the following structure:  <ul>  <li>Unique operator code,</li>  <li>Status (&#8220;unknown&#8221;, &#8220;available&#8221;, &#8220;current&#8221;, &#8220;forbidden&#8221;),</li>  <li>Long Name,</li>  <li>Short Name (optional, may be empty).</li>  <li>Network access type (defaults to &#8220;GSM&#8221;).</li>  </ul> </p>
 <h3 id="registerwithprovider-s"><a name="RegisterWithProvider">RegisterWithProvider</a> ( s )</h3>
 <p><strong>Description:</strong> Register to a dedicated service provider. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: operator_code</i>
 The operator code. </p>
 <h3 id="setcallingidentification-s"><a name="SetCallingIdentification">SetCallingIdentification</a> ( s )</h3>
 <p><strong>Description:</strong> Set whether your subscriber number is visible during a call. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: status</i>
 One of the following values:  <ul>  <li>&#8220;on&#8221;, if your subscriber number should always be visible to other parties.</li>  <li>&#8220;off&#8221;, if your subscriber number should never be visible to other parties.</li>  <li>&#8220;network&#8221;, if you want to use the network default.</li>  </ul> </p>
 <h3 id="getcallingidentification-s"><a name="GetCallingIdentification">GetCallingIdentification</a> ( ) &rarr; s</h3>
 <p><strong>Description:</strong> Get whether your subscriber number is visible during a call. </p>
-<h4 id="returns_4">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: status</i>
 One of the following values:  <ul>  <li>&#8220;on&#8221;, if your subscriber number is always visible to other parties.</li>  <li>&#8220;off&#8221;, if your subscriber number is never visible to other parties.</li>  <li>&#8220;network&#8221;, if visibility depends on the network settings.</li>  </ul> </p>
 <h3 id="sendussdrequest-s"><a name="SendUssdRequest">SendUssdRequest</a> ( s )</h3>
 <p><strong>Description:</strong> Send an Unstructured Supplementary Service Data (USSD) request to the network.  Responses will be delivered via the signal <a href="../../specs/org.freesmartphone.GSM.Network/#IncomingUssd">IncomingUssd</a> </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>This can map to the GSM 07.07 command +CUSD=1,&#8221;(request)&#8221;,(code), see 3GPP TS 07.07 Chapter 7.14. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: request</i>
 The request to be sent to the network. </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="status-asv"><a name="Status">Status</a> ( a{sv} )</h3>
 <p><strong>Description:</strong> Sent, when the network registration status changes. </p>
-<h4 id="parameters_3">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>a{sv}: status</i>
 The registration status. See <a href="../../specs/org.freesmartphone.GSM.Network/#GetStatus">GetStatus</a> for expected values. </p>
 <h3></h3>
 <h3 id="signalstrength-i"><a name="SignalStrength">SignalStrength</a> ( i )</h3>
 <p><strong>Description:</strong> (OPTIONAL) Sent, when registered with a service provider and the network signal strength changes. </p>
-<h4 id="parameters_4">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>i: signal_strength</i>
 The signal strength in percent (0-100). </p>
 <h3></h3>
 <h3 id="timereport-ii"><a name="TimeReport">TimeReport</a> ( ii )</h3>
 <p><strong>Description:</strong> Sent upon receiving a network time and/or zone report. </p>
-<h4 id="parameters_5">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>i: time</i>
 The current time in seconds since UNIX epoch.  0, if no time has been received. </p>
 <p><i>i: zone</i>
@@ -617,7 +576,7 @@ The time zone offset in minutes based on UTC.  This value is only valid, if with
 <h3></h3>
 <h3 id="incomingussd-ss"><a name="IncomingUssd">IncomingUssd</a> ( ss )</h3>
 <p><strong>Description:</strong> Sent, when an USSD result or a network initiated request arrives. This signal is usually  sent in response to the method <a href="../../specs/org.freesmartphone.GSM.Network/#SendUssdRequest">SendUssdRequest</a> </p>
-<h4 id="parameters_6">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: mode</i>
 The message mode. Valid values are:  <ul>  <li>&#8220;completed&#8221;, if the last user-initiated request has been successfully completed,</li>  <li>&#8220;useraction&#8221;, if this is a network-initiated request and further user action is necessary,</li>  <li>&#8220;terminated&#8221;, if the network terminated the request,</li>  <li>&#8220;localclient&#8221;, if another local client on the network has responded,</li>  <li>&#8220;unsupported&#8221;, if the last user-inititated request is unsupported,</li>  <li>&#8220;timeout&#8221;, if the network has not answered in time.</li>  </ul> </p>
 <p><i>s: message</i>
@@ -625,12 +584,11 @@ The message. Only set if mode is &#8220;completed&#8221; or &#8220;useraction&#8
 <h3></h3>
 <h3 id="cipherstatus-ss"><a name="CipherStatus">CipherStatus</a> ( ss )</h3>
 <p><strong>Description:</strong> Sent, when the network reports a change in telephony or PDP cipher indication. </p>
-<h4 id="parameters_7">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: telephony</i>
 The telephony cipher: &#8220;enabled&#8221;, &#8220;disabled&#8221;, or &#8220;unknown&#8221; </p>
 <p><i>s: pdp</i>
 The PDP cipher cipher: &#8220;enabled&#8221;, &#8220;disabled&#8221;, or &#8220;unknown&#8221; </p>
-<p>the footer here</p>
 
             </div>
           </div>

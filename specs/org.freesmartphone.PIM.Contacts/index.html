@@ -301,10 +301,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-pimcontacts-interface">freesmartphone.org: freesmartphone.org PIM.Contacts Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonepimcontacts">org.freesmartphone.PIM.Contacts</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-pimcontacts-interface">freesmartphone.org PIM.Contacts Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -321,32 +318,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_2">Returns</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_3">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_4">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_5">Parameters</a></li>
                             
                         
                         </ul>
@@ -494,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-pimcontacts-interface">freesmartphone.org: freesmartphone.org PIM.Contacts Interface</h1>
-<h1 id="orgfreesmartphonepimcontacts">org.freesmartphone.PIM.Contacts</h1>
+              <h1 id="freesmartphoneorg-pimcontacts-interface">freesmartphone.org PIM.Contacts Interface</h1>
 <h2 id="description">Description</h2>
 <p>This interface provides access to the collection of PIM contacts.</p>
 <h2 id="namespace">Namespace</h2>
@@ -519,41 +491,41 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="add-asv-s"><a name="Add">Add</a> ( a{sv} ) &rarr; s</h3>
 <p><strong>Description:</strong> Add a new contact to the default backend for contacts. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>a{sv}: contact_data</i>
 The new contacts data. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: contact_path</i>
 The contact path of the added contact. </p>
 <h3 id="getsingleentrysinglefield-asvs-s"><a name="GetSingleEntrySingleField">GetSingleEntrySingleField</a> ( a{sv}s ) &rarr; s</h3>
 <p><strong>Description:</strong> Query the content of one field of one contact. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>a{sv}: query</i>
 The query. </p>
 <p><i>s: field</i>
 The name of the field to query. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: value</i>
 The content of the queried field. </p>
 <h3 id="query-asv-s"><a name="Query">Query</a> ( a{sv} ) &rarr; s</h3>
 <p><strong>Description:</strong> Start a query for contacts. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>a{sv}: query</i>
 The query. </p>
-<h4 id="returns_2">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: query_path</i>
 The path for the started query. </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="newcontact-s"><a name="NewContact">NewContact</a> ( s )</h3>
 <p><strong>Description:</strong> Sent when a new contact is loaded. </p>
-<h4 id="parameters_3">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: contact_path</i>
 The path of the newly loaded contact. </p>
 <h3></h3>
 <h3 id="updatedcontact-sasv"><a name="UpdatedContact">UpdatedContact</a> ( sa{sv} )</h3>
 <p><strong>Description:</strong> Sent when an existing contact got updated. </p>
-<h4 id="parameters_4">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: contact_path</i>
 The path of the updated contact. </p>
 <p><i>a{sv}: contact_data</i>
@@ -561,10 +533,9 @@ The part of the contacts data that got changed. </p>
 <h3></h3>
 <h3 id="deletedcontact-s"><a name="DeletedContact">DeletedContact</a> ( s )</h3>
 <p><strong>Description:</strong> Sent when a contact got deleted. </p>
-<h4 id="parameters_5">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: contact_path</i>
 The path of that deleted contact. </p>
-<p>the footer here</p>
 
             </div>
           </div>

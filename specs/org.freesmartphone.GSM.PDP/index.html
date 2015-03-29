@@ -241,10 +241,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-gsm-packet-data-protocol-interface">freesmartphone.org: freesmartphone.org GSM Packet Data Protocol Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonegsmpdp">org.freesmartphone.GSM.PDP</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-gsm-packet-data-protocol-interface">freesmartphone.org GSM Packet Data Protocol Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -261,21 +258,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_2">Parameters</a></li>
                             
                         
                             <li class="toctree-l2"><a href="#properties_1">Properties</a></li>
@@ -486,8 +470,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-gsm-packet-data-protocol-interface">freesmartphone.org: freesmartphone.org GSM Packet Data Protocol Interface</h1>
-<h1 id="orgfreesmartphonegsmpdp">org.freesmartphone.GSM.PDP</h1>
+              <h1 id="freesmartphoneorg-gsm-packet-data-protocol-interface">freesmartphone.org GSM Packet Data Protocol Interface</h1>
 <h2 id="description">Description</h2>
 <p>The Packet Data Protocol interface is used to set up  binary data connections that allow you to transfer  data over the TCP/IP protocol family routed  via IP-based provider networks.</p>
 <h2 id="namespace">Namespace</h2>
@@ -514,7 +497,7 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="setcredentials-sss"><a name="SetCredentials">SetCredentials</a> ( sss )</h3>
 <p><strong>Description:</strong> Set the credentials for PDP context activation. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: apn</i>
 The access point name to connect to. </p>
 <p><i>s: username</i>
@@ -523,7 +506,7 @@ The user name to identify as. </p>
 The password to identify as. </p>
 <h3 id="getcredentials-sss"><a name="GetCredentials">GetCredentials</a> ( ) &rarr; sss</h3>
 <p><strong>Description:</strong> Get the credentials for PDP context activation. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: apn</i>
 The access point name to connect to. </p>
 <p><i>s: username</i>
@@ -540,14 +523,14 @@ The password to identify as. </p>
 <p>This command might change your network default route. </p>
 <h3 id="getcontextstatus-sasv"><a name="GetContextStatus">GetContextStatus</a> ( ) &rarr; sa{sv}</h3>
 <p><strong>Description:</strong> Retrieve the current PDP context status. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: status</i>
 The context status. See <a href="../../specs/org.freesmartphone.GSM.PDP/#ContextStatus">ContextStatus</a> for a list of valid values. </p>
 <p><i>a{sv}: properties</i>
 The context status properties.  See <a href="../../specs/org.freesmartphone.GSM.PDP/#ContextStatus">ContextStatus</a> for details. </p>
 <h3 id="internalstatusupdate-sasv"><a name="InternalStatusUpdate">InternalStatusUpdate</a> ( sa{sv} )</h3>
 <p><strong>Description:</strong> This method is for internal use only. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: status</i>
 Internal use only. </p>
 <p><i>a{sv}: properties</i>
@@ -556,7 +539,7 @@ Internal use only. </p>
 <h3></h3>
 <h3 id="contextstatus-sasv"><a name="ContextStatus">ContextStatus</a> ( sa{sv} )</h3>
 <p><strong>Description:</strong> Sent whenever there is any status or property change on a pdp context in the system. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: status</i>
 The new status of the context. Expected values are:  <ul>  <li>&#8220;incoming&#8221; = The context is incoming (but not yet accepted),</li>  <li>&#8220;outgoing&#8221; = The context is outgoing (but not yet established),</li>  <li>&#8220;active&#8221; = The context is active and has offered a route,</li>  <li>&#8220;held&#8221; = The context has been interrupted,</li>  <li>&#8220;released&#8221; = The context is released.</li>  <li>  &#8220;suspended&#8221; = The context is suspended due out of network coverage or  another internal reason (for example network does not support  simultaneous packet and voice data)  </li>  </ul>  Further information can be part of the properties. </p>
 <p><i>a{sv}: properties</i>
@@ -565,7 +548,6 @@ An array of property values. Note that properties are optional.  Expected tuples
 <h3></h3>
 <h3 id="roamingallowed-b-readwrite"><a name="RoamingAllowed">RoamingAllowed</a> - b : Read/Write</h3>
 <p><strong>Description:</strong> <p>Specify wether an active PDP context is allowed while modem is roaming.</p>  <p>  If set to false and network registration state indicates that the modem  is roaming PDP context will automatically deactivated and no further  activation will be possible until modem is not roaming anymore.  </p> </p>
-<p>the footer here</p>
 
             </div>
           </div>

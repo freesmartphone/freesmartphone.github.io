@@ -266,10 +266,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-network-interface">freesmartphone.org: freesmartphone.org Network Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonenetwork">org.freesmartphone.Network</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-network-interface">freesmartphone.org Network Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -285,14 +282,6 @@
                             
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
                             
                         
                         </ul>
@@ -475,8 +464,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-network-interface">freesmartphone.org: freesmartphone.org Network Interface</h1>
-<h1 id="orgfreesmartphonenetwork">org.freesmartphone.Network</h1>
+              <h1 id="freesmartphoneorg-network-interface">freesmartphone.org Network Interface</h1>
 <h2 id="description">Description</h2>
 <p>The Network interface provides access to high level networking functions.  Please see org.moblin.connman and org.bluez for low level networking functions.</p>
 <h2 id="namespace">Namespace</h2>
@@ -498,21 +486,21 @@
 <p><strong>Description:</strong> Start sharing the internet connection of this device with any clients  connected to the specified network interface via DHCP. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>Might launch a dhcp server process and adjust IP tables. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: interface</i>
 The network interface to start sharing the connectivity with. </p>
 <h3 id="stopconnectionsharingwithinterface-s"><a name="StopConnectionSharingWithInterface">StopConnectionSharingWithInterface</a> ( s )</h3>
 <p><strong>Description:</strong> Stop sharing the internet connection of this device with any clients  connected to the specified network interface via DHCP. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>Might stop a dhcp server process and adjust IP tables. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: interface</i>
 The network interface to stop sharing the connectivity with. </p>
 <h3 id="offerdefaultroute-sssssss"><a name="OfferDefaultRoute">OfferDefaultRoute</a> ( sssssss )</h3>
 <p><strong>Description:</strong> Offer a default route to the internet. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>NOTE that this method is for TESTING purposes only. Eventually connman will be used for that. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: technology</i>
 The technology offering the default route. </p>
 <p><i>s: interface</i>
@@ -527,7 +515,6 @@ The network gateway address for the default route. </p>
 The first DNS address. </p>
 <p><i>s: dns2</i>
 The second DNS address. </p>
-<p>the footer here</p>
 
             </div>
           </div>

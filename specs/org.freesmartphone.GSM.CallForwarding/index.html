@@ -201,10 +201,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-gsm-call-forwarding-interface">freesmartphone.org: freesmartphone.org GSM Call Forwarding Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonegsmcallforwarding">org.freesmartphone.GSM.CallForwarding</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-gsm-call-forwarding-interface">freesmartphone.org GSM Call Forwarding Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -221,24 +218,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_3">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns">Returns</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_4">Parameters</a></li>
                             
                         
                         </ul>
@@ -486,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-gsm-call-forwarding-interface">freesmartphone.org: freesmartphone.org GSM Call Forwarding Interface</h1>
-<h1 id="orgfreesmartphonegsmcallforwarding">org.freesmartphone.GSM.CallForwarding</h1>
+              <h1 id="freesmartphoneorg-gsm-call-forwarding-interface">freesmartphone.org GSM Call Forwarding Interface</h1>
 <h2 id="description">Description</h2>
 <p>The call forwarding interface allows to access the call forwarding  supplementary service according to 3GPP TS 22.082. It supports  enabling and disabling different voice related call forwarding rules  and to query their current status.</p>
 <h2 id="namespace">Namespace</h2>
@@ -510,12 +490,12 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="disableall-s"><a name="DisableAll">DisableAll</a> ( s )</h3>
 <p><strong>Description:</strong> Disable all (or only conditional) call forwarding rules. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: type</i>
 Type of call forwarding rules to disable. Expected values are  <ul>  <li>&#8220;all&#8221;: disable all rules,</li>  <li>&#8220;conditional&#8221;: disable only coniditonal rules  (e.g. busy, not reachable, no reply).</li>  </ul> </p>
 <h3 id="enable-ssi"><a name="Enable">Enable</a> ( ssi )</h3>
 <p><strong>Description:</strong> Enable a call forwarding rule. The corresponding properties for the  specified rules will be populated with the values specified. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: rule</i>
 Call forwarding rule to assign a number and timeout for. Expected values are:  <ul>  <li>&#8220;voice unconditional&#8221;,</li>  <li>&#8220;voice busy&#8221;,</li>  <li>&#8220;voice no reply&#8221;,</li>  <li>&#8220;voice not reachable&#8221;.</li>  </ul> </p>
 <p><i>s: number</i>
@@ -524,27 +504,26 @@ Number the call should be forwarded too. Should be either in national  or intern
 Timeout after the call forwarding rule should become active. Only accepted  if rule is &#8220;voice no reply&#8221;. </p>
 <h3 id="disable-s"><a name="Disable">Disable</a> ( s )</h3>
 <p><strong>Description:</strong> Disable a call forwarding rule. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: rule</i>
 Name of the call forwarding rule. See  <a href="../../specs/org.freesmartphone.GSM.CallForwarding/#Enable">Enable</a> for a list  of valid values.  The corresponding property for the rule will be unset. </p>
 <h3 id="getstatus-s-asv"><a name="GetStatus">GetStatus</a> ( s ) &rarr; a{sv}</h3>
 <p><strong>Description:</strong> Retrieve the current status for a call forwarding rule. </p>
-<h4 id="parameters_3">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: rule</i>
 Name of the call forwarding rule. See  <a href="../../specs/org.freesmartphone.GSM.CallForwarding/#Enable">Enable</a> for a list  of valid values. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a{sv}: status</i>
 Status of the call forwarding rule. See <a href="../../specs/org.freesmartphone.GSM.CallForwarding/#StatusChanged">StatusChanged</a>  for a description of the format. </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="statuschanged-sasv"><a name="StatusChanged">StatusChanged</a> ( sa{sv} )</h3>
 <p><strong>Description:</strong> Sent whenver a status of a call forwarding rule has changed. </p>
-<h4 id="parameters_4">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: rule</i>
 Name of the call forwarding rule it&#8217;s status has changed. </p>
 <p><i>a{sv}: status</i>
 Changed status of the call forwarding rule. Expected values are:  <ul>  <li>&#8220;active&#8221;: boolean: Wether the rule is active or not</li>  <li>  &#8220;number&#8221;: string: Number for the call forwarding rule; is empty  if the rule is not active.  </li>  </ul>  If the status of the rule &#8220;voice no reply has changed&#8221; there is an  additional entry:  <ul>  <li>  &#8220;timeout&#8221;: uint16: Value of the voice &#8220;no reply&#8221; timeout in  seconds. Should be in a range of [1:30].  </li>  </ul> </p>
-<p>the footer here</p>
 
             </div>
           </div>
