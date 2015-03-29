@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PIM Handling - freesmartphone.org</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> freesmartphone.org</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../about">About</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../history">History</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../contribute">Contribute</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../usage-intro">Resource Handling</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 current">
+                <a class="current" href=".">PIM Handling</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../implementations">Implementations</a>
+            </li>
+        
+
+    
+        
+        <span>Specifications</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specifications">Introduction</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Audio.Manager">org.freesmartphone.Audio.Manager</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Context.Client">org.freesmartphone.Context.Client</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Context.Manager">org.freesmartphone.Context.Manager</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Data.World">org.freesmartphone.Data.World</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.AmbientLight">org.freesmartphone.Device.AmbientLight</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.Audio">org.freesmartphone.Device.Audio</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.Display">org.freesmartphone.Device.Display</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.IdleNotifier">org.freesmartphone.Device.IdleNotifier</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.Info">org.freesmartphone.Device.Info</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.Input">org.freesmartphone.Device.Input</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.LED">org.freesmartphone.Device.LED</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.Orientation">org.freesmartphone.Device.Orientation</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.PowerControl">org.freesmartphone.Device.PowerControl</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.PowerSupply">org.freesmartphone.Device.PowerSupply</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.Proximity">org.freesmartphone.Device.Proximity</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.RealtimeClock">org.freesmartphone.Device.RealtimeClock</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.Vibrator">org.freesmartphone.Device.Vibrator</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Error">org.freesmartphone.Error</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Events">org.freesmartphone.Events</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.CB">org.freesmartphone.GSM.CB</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.Call">org.freesmartphone.GSM.Call</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.CallForwarding">org.freesmartphone.GSM.CallForwarding</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.Debug">org.freesmartphone.GSM.Debug</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.Device">org.freesmartphone.GSM.Device</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.Error">org.freesmartphone.GSM.Error</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.HZ">org.freesmartphone.GSM.HZ</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.MUX">org.freesmartphone.GSM.MUX</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.Monitor">org.freesmartphone.GSM.Monitor</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.Network">org.freesmartphone.GSM.Network</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.PDP">org.freesmartphone.GSM.PDP</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.SIM">org.freesmartphone.GSM.SIM</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.SMS">org.freesmartphone.GSM.SMS</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.VoiceMail">org.freesmartphone.GSM.VoiceMail</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Info">org.freesmartphone.Info</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Network">org.freesmartphone.Network</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Notification">org.freesmartphone.Notification</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Call">org.freesmartphone.PIM.Call</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.CallQuery">org.freesmartphone.PIM.CallQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Calls">org.freesmartphone.PIM.Calls</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Contact">org.freesmartphone.PIM.Contact</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.ContactQuery">org.freesmartphone.PIM.ContactQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Contacts">org.freesmartphone.PIM.Contacts</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Date">org.freesmartphone.PIM.Date</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.DateQuery">org.freesmartphone.PIM.DateQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Dates">org.freesmartphone.PIM.Dates</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Fields">org.freesmartphone.PIM.Fields</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Message">org.freesmartphone.PIM.Message</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.MessageQuery">org.freesmartphone.PIM.MessageQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Messages">org.freesmartphone.PIM.Messages</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Note">org.freesmartphone.PIM.Note</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.NoteQuery">org.freesmartphone.PIM.NoteQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Notes">org.freesmartphone.PIM.Notes</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Task">org.freesmartphone.PIM.Task</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.TaskQuery">org.freesmartphone.PIM.TaskQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Tasks">org.freesmartphone.PIM.Tasks</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Types">org.freesmartphone.PIM.Types</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Phone.Call">org.freesmartphone.Phone.Call</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Phone">org.freesmartphone.Phone</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Preferences.Service">org.freesmartphone.Preferences.Service</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Preferences">org.freesmartphone.Preferences</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Resource">org.freesmartphone.Resource</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Time.Alarm">org.freesmartphone.Time.Alarm</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Usage">org.freesmartphone.Usage</a>
+                    
+                </li>
+            
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href=".."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    <li>PIM Handling</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="https://github.com/freesmartphone/freesmartphone.github.io" class="icon icon-github"> Edit on GitHub</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h1 id="pim-usage">PIM Usage</h1>
+<p>All the Domains are mostly the same. They have the same basic structure, though some domains have a couple of minor extensions, for instance, &#8220;Missed Calls&#8221; handling in the Calls domain. Therefore, this document will use the Contacts domain for examples, though everything applies to all the others as well.</p>
+<p>TBD. Explain about querying, query objects, entry objects and etc. Also explain about fields and types.</p>
+<h1 id="entries">Entries</h1>
+<p>Entries are the basic data objects of the domain, every time <a href="http://docs.freesmartphone.org/org.freesmartphone.PIM.Contacts.html#Add">Add</a> is called, a new entry is created in the domain. Each entry has a unique (in the domain) persistent id. The entries are accesible using the methods in the <a href="http://docs.freesmartphone.org/org.freesmartphone.PIM.Contact.html">Contact</a> path using their unique ID. For instance, in order to Delete the contact with ID 24 you will run <a href="http://docs.freesmartphone.org/org.freesmartphone.PIM.Contact.html#Delete">Delete</a> with <em>/org/freesmartphone/PIM/Contact/24</em> as the dbus path.</p>
+<p>Every entry consists of different fields of various types. Fields can have eitehr one or more values. In the case of one value, the value is stored in the field, otherwise the values are stored in a list which is stored in the field. Each entry must include one read-only field called <em>EntryId</em> which signifies the unique entry ID described before.</p>
+<h1 id="fields-and-types">Fields and Types</h1>
+<p>As explained in the <a href="#Entries">Entries</a> section, each entry consists of fields. Each field has type. Fields are defined per domain, so adding a field is done on the domain (for exmalpe <a href="http://docs.freesmartphone.org/org.freesmartphone.PIM.Contacts.html">Contacts</a>). Fields should generally be declared before usage so opimd will know how to treat them. For instance, if I want to define a field for phonenumbers I will call the <a href="http://docs.freesmartphone.org/org.freesmartphone.PIM.Fields.html#AddField">AddField</a> method with the wanted field name as the first paramter, and &#8220;phonenumber&#8221; as the second. The list of types is available using the <a href="http://docs.freesmartphone.org/org.freesmartphone.PIM.Types.html#List">List</a> method. If a field is not added before usage, it&#8217;s treated like a field with type &#8220;generic&#8221;.</p>
+<h2 id="adding-and-removing-fields">Adding and Removing Fields</h2>
+<p><strong><em>There are a couple of restrictions when modifying fields</em></strong></p>
+<p>When adding:</p>
+<ul>
+<li>Field names are unique, you can&#8217;t create two fields with the same name.</li>
+<li>The <em>EntryId</em> field name is system-reserved and can not be modifyed.</li>
+<li>Field names can not start with either <em>_</em>, <em>@</em>, <em>\&lt;</em>, <em>></em> or <em>$</em> as they are reserved for <a href="#Querying">Querying</a>.</li>
+</ul>
+<p>When removing:</p>
+<ul>
+<li>The <em>EntryId</em> field name is system-reserved and can not be deleted.</li>
+<li>For each domain, there are a couple of required fields that can not be removed.</li>
+</ul>
+<h1 id="querying">Querying</h1>
+<p>Querying is opimd&#8217;s way of finding entries matching a set of rules. This section describes the querys to be used with <a href="http://docs.freesmartphone.org/org.freesmartphone.PIM.Contacts.html#GetSingleEntrySingleField">GetSingleEntrySingleField</a> and <a href="http://docs.freesmartphone.org/org.freesmartphone.PIM.Contacts.html#Query">Query</a>).</p>
+<h2 id="query-logic">Query Logic</h2>
+<p>All the parameters passed to a query are logically connected with &#8216;AND&#8217; that is, all of the parameters must match an entry in order for it to match. For instance, querying for {&#8216;Name&#8217;:&#8217;Tom&#8217;, &#8216;Surname&#8217;:&#8217;Hacohen&#8217;} will only return the entry of &#8220;Tom Hacohen&#8221;, it will not return the entry of &#8220;Tom Sawyer&#8221;.</p>
+<h2 id="query-parameters">Query Parameters</h2>
+<p>Queries are hash tables where each key is one of the following types:</p>
+<ul>
+<li>A <em>Field</em> name to compare to.</li>
+<li>A <em>Type</em> name to compare to (prefixed by &#8216;<em>$</em>&#8216;).</li>
+<li>A <em>Domain</em> name to connect to (prefixed by &#8216;<em>@</em>&#8216;).</li>
+<li>A special querying indentifier (prefixed by &#8216;<em>_</em>&#8216;).</li>
+</ul>
+<p>For each key type the meaning is as follows:</p>
+<h3 id="field">Field</h3>
+<p>When the key is a field name, the value of the key in the hash table is the value to be compared to the value of the Field of the entry. When the entry has a list of values associated with a specific field, one match is enough. For example, matching &#8216;Name&#8217;:&#8217;Tom&#8217; will match every contact where &#8216;Tom&#8217; matches the name field. Matching is different with different field types as explained in the <em>Comparison Types</em> section.</p>
+<h3 id="type">Type</h3>
+<p>When the key is a type name, the behavior is exactly the same as in the Field section, but instead of trying to match against one field, all the fields of a specific type are matched (Again, at least one match is enough).</p>
+<h3 id="domain">Domain</h3>
+<p><strong><em>TBD: This is not yet fully implemented and the API is not yet final.</em></strong></p>
+<h3 id="special-identifiers">Special Identifiers</h3>
+<p>There are a couple of special identifiers that change the querying behavior. For instance, <em>_at_least_one</em> means at least one part of the query needs to match (that is, logically connected with OR).
+ TBD: explain about the other special indetifiers.</p>
+<h2 id="comparison-types">Comparison Types</h2>
+<p>Each type has a different comparison function, those are the comparison functions used in the time of writing this document:</p>
+<ul>
+<li>The following types are compared according to their numerical value: <em>entryid</em>, <em>number</em>, <em>integer</em> and <em>date</em>.</li>
+<li>The following types are compared according to their boolean value: <em>boolean</em>.</li>
+<li>The following types are compared using regex (perl style): <em>name</em>, <em>longtext</em>, <em>photo</em>, <em>objectpath</em>, <em>uri</em>, <em>timezone</em> (should change to int), <em>address</em>, <em>text</em>, <em>email</em> and <em>generic</em> (should change to a binary comparison).</li>
+<li>Phone numbers (<em>phonenumber</em>) are compared using <a href="http://git.shr-project.org/git/?p=libphone-utils.git;a=summary">libphone-utils</a>&#8216;s phone number comparison functions.</li>
+</ul>
+<p>Normally, the values are tested for equality, but when a field name is prefixed with either &#8216;\&lt;&#8217; or &#8216;>&#8217; the values are tested for lesser than, and greater than respectively. For example, &#8216;\&lt;Age&#8217;: 19 matches all the entries with an age smaller than 19. This does not work with fields that match with regex (as defined above).</p>
+<h1 id="updating">Updating</h1>
+<p><strong><em>TBD</em></strong></p>
+<h1 id="deleting">Deleting</h1>
+<p><strong><em>TBD</em></strong></p>
+<h1 id="query-objects">Query Objects</h1>
+<p><strong><em>TBD</em></strong></p>
+<h1 id="signals">Signals</h1>
+<p><strong><em>TBD</em></strong></p>
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../implementations" class="btn btn-neutral float-right" title="Implementations"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../usage-intro" class="btn btn-neutral" title="Resource Handling"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+            <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+        
+      <span><a href="../usage-intro" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../implementations" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>

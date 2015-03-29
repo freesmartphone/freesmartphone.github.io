@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Resource Handling - freesmartphone.org</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> freesmartphone.org</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../about">About</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../history">History</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../contribute">Contribute</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 current">
+                <a class="current" href=".">Resource Handling</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../pim-intro">PIM Handling</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../implementations">Implementations</a>
+            </li>
+        
+
+    
+        
+        <span>Specifications</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specifications">Introduction</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Audio.Manager">org.freesmartphone.Audio.Manager</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Context.Client">org.freesmartphone.Context.Client</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Context.Manager">org.freesmartphone.Context.Manager</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Data.World">org.freesmartphone.Data.World</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.AmbientLight">org.freesmartphone.Device.AmbientLight</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.Audio">org.freesmartphone.Device.Audio</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.Display">org.freesmartphone.Device.Display</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.IdleNotifier">org.freesmartphone.Device.IdleNotifier</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.Info">org.freesmartphone.Device.Info</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.Input">org.freesmartphone.Device.Input</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.LED">org.freesmartphone.Device.LED</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.Orientation">org.freesmartphone.Device.Orientation</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.PowerControl">org.freesmartphone.Device.PowerControl</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.PowerSupply">org.freesmartphone.Device.PowerSupply</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.Proximity">org.freesmartphone.Device.Proximity</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.RealtimeClock">org.freesmartphone.Device.RealtimeClock</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Device.Vibrator">org.freesmartphone.Device.Vibrator</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Error">org.freesmartphone.Error</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Events">org.freesmartphone.Events</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.CB">org.freesmartphone.GSM.CB</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.Call">org.freesmartphone.GSM.Call</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.CallForwarding">org.freesmartphone.GSM.CallForwarding</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.Debug">org.freesmartphone.GSM.Debug</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.Device">org.freesmartphone.GSM.Device</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.Error">org.freesmartphone.GSM.Error</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.HZ">org.freesmartphone.GSM.HZ</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.MUX">org.freesmartphone.GSM.MUX</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.Monitor">org.freesmartphone.GSM.Monitor</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.Network">org.freesmartphone.GSM.Network</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.PDP">org.freesmartphone.GSM.PDP</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.SIM">org.freesmartphone.GSM.SIM</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.SMS">org.freesmartphone.GSM.SMS</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.GSM.VoiceMail">org.freesmartphone.GSM.VoiceMail</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Info">org.freesmartphone.Info</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Network">org.freesmartphone.Network</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Notification">org.freesmartphone.Notification</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Call">org.freesmartphone.PIM.Call</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.CallQuery">org.freesmartphone.PIM.CallQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Calls">org.freesmartphone.PIM.Calls</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Contact">org.freesmartphone.PIM.Contact</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.ContactQuery">org.freesmartphone.PIM.ContactQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Contacts">org.freesmartphone.PIM.Contacts</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Date">org.freesmartphone.PIM.Date</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.DateQuery">org.freesmartphone.PIM.DateQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Dates">org.freesmartphone.PIM.Dates</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Fields">org.freesmartphone.PIM.Fields</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Message">org.freesmartphone.PIM.Message</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.MessageQuery">org.freesmartphone.PIM.MessageQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Messages">org.freesmartphone.PIM.Messages</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Note">org.freesmartphone.PIM.Note</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.NoteQuery">org.freesmartphone.PIM.NoteQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Notes">org.freesmartphone.PIM.Notes</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Task">org.freesmartphone.PIM.Task</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.TaskQuery">org.freesmartphone.PIM.TaskQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Tasks">org.freesmartphone.PIM.Tasks</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.PIM.Types">org.freesmartphone.PIM.Types</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Phone.Call">org.freesmartphone.Phone.Call</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Phone">org.freesmartphone.Phone</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Preferences.Service">org.freesmartphone.Preferences.Service</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Preferences">org.freesmartphone.Preferences</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Resource">org.freesmartphone.Resource</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Time.Alarm">org.freesmartphone.Time.Alarm</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../specs/org.freesmartphone.Usage">org.freesmartphone.Usage</a>
+                    
+                </li>
+            
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href=".."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    <li>Resource Handling</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="https://github.com/freesmartphone/freesmartphone.github.io" class="icon icon-github"> Edit on GitHub</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h1 id="resource-handling">Resource Handling</h1>
+<p>One of the most important aspects of middleware for mobile devices is saving energy. To do this, the system needs to make sure that peripherals are only powered when they are actually in use by at least one application. In order to support multiple concurrent applications, it is not possible to leave peripheral control up to individual applications — otherwise one application could shut down e.g. a GPS receiver, while another application still wants to access it.</p>
+<p>One solution to this is a centralized registry, where applications announce when they need access to peripherals. The registry can then perform the necessary actions and grant or deny access. It can also keep track of a usage counter so that resources are only started up when the first client arrives, likewise only shutdown once the last client leaves the sytem. Keep in mind though that once such a registry is being used, it is most undesirable for clients to bypass this facility by controlling power directly — doing so can severly disturb the system.</p>
+<p>FSO introduces the concept of resources. A <em>resource</em> is a high-level entity with a <em>name</em> and a <em>state</em>. The name is used to identify a resource (e.g. <strong>WiFi</strong>), the state is describing its condition (e.g. <strong>enabled</strong>). It is important to understand that a resource not necessarily correlates to a peripheral device. Although enabling a resource such as <strong>Bluetooth</strong> most likely has the consequence of powering up a device, there may as well be more to it, such as launching a low level device handling services or allocating related resources.</p>
+<h2 id="client-side-resource-handling">Client-side resource handling</h2>
+<p>As a client, FSO resource handling works by accessing <a href="http://docs.freesmartphone.org/org.freesmartphone.Usage.html"><code>org.freesmartphone.Usage</code></a>. A typical usage pattern is defined through the following four steps:</p>
+<ol>
+<li>Checking resource availability</li>
+<li>Requesting the resource</li>
+<li>Accessing the resource</li>
+<li>Releasing the resource</li>
+</ol>
+<h3 id="checking-resource-availability">Checking resource availability</h3>
+<p>Resources can be dynamic, i.e. they may not always be available. Although not strictly necessary, it is recommended that clients check whether a resource is available before requesting it. To check for availability, call <a href="http://docs.freesmartphone.org/org.freesmartphone.Usage.html#ListResources"><code>ListResources</code></a>. The result is a list of available resource names that can to be used to identify resources when requesting or releasing.</p>
+<p>Since a resource is not necessarily present throughout the whole life-cycle of an application, it may enter or leave the system at any time. The resource system will notify clients, when a resource has been made available by broadcasting the signal <a href="http://docs.freesmartphone.org/org.freesmartphone.Usage.html#ResourceAvailable"><code>ResourceAvailable</code></a>. Subscribe to this signal to stay informed about resources becoming available or unavailable.</p>
+<h3 id="requesting-the-resource">Requesting the resource</h3>
+<p>A client that wants to access the resource can call <a href="http://docs.freesmartphone.org/org.freesmartphone.Usage.html#RequestResource"><code>RequestResource</code></a>. This call does not need parameters, since the system will keep track about the identification of the client. If the resource system can not grant access, the client will be sent an error. This can happen if the resource is not available, has been explicitly disabled, or is in a state that otherwise prohibits access. Depending on the actual error, a client may or may not retry the call after a while.</p>
+<h3 id="accessing-the-resource">Accessing the resource</h3>
+<p>Once <a href="http://docs.freesmartphone.org/org.freesmartphone.Usage.html#RequestResource"><code>RequestResource</code></a> returned without an error, a client may access the resource. The actual way of accessing a resource is specific to the resource hence out of scope of this document. In certain conditions, resources may become unavailable while clients are still accessing them. In this case, a client is requested to immediately stop accessing the resource. Some resources may enforce this through access control, some may not — to handle that case, it is recommended that clients listen for <a href="http://docs.freesmartphone.org/org.freesmartphone.Usage.html#ResourceAvailable"><code>ResourceAvailable</code></a> announcements throughout their life cycle.</p>
+<h3 id="releasing-the-resource">Releasing the resource</h3>
+<p>When a client is finished accessing a resource, it calls <a href="http://docs.freesmartphone.org/org.freesmartphone.Usage.html#ReleaseResource"><code>ReleaseResource</code></a> to inform the system. After issuing this call, clients must no longer access the resource through whatever means. Note that due to the way the dbus interprocess communication works, the system can detect a client leaving the bus, no matter whether this has been a regular detach or happened due to unforseen circumstances, such as a crash. In that case, the system will automatically release all resources the client has previously requested. It is important to remember that resource requests are <em>not</em> persistent over the clients life cycle. Once a client starts up again, it has to treat all resources as being released and need to request them again.</p>
+<p>Note that the automatic release behaviour especially affects dbus command line tools such as <strong>dbus-send</strong> or <strong>mdbus</strong>, which usually only stay on the bus for very short periods. If a client can not stay on the bus while it wants to access a resource, you need to resort to the policy interface (see next section).</p>
+<h2 id="resource-policies">Resource Policies</h2>
+<p>Once in a while, reference counted handling of resources gets in your way, for example when you are running legacy applications or want to configure or debug peripherals. In that case it may become necessary for a resource to be always enabled or always disabled. While not recommended, it is possible to switch from automatic resource control to manual control by calling <a href="http://docs.freesmartphone.org/org.freesmartphone.Usage.html#SetResourcePolicy"><code>SetResourcePolicy</code></a>. Valid values are <strong>auto</strong> (which is the default on system startup), <strong>enabled</strong>, and <strong>disabled</strong>.</p>
+<h2 id="server-side-resource-handling">Server-side resource handling</h2>
+<p><strong><em> TO BE WRITTEN </em></strong> &#8230; using org.freesmartphone.Resource, best practices, hardware abstraction, &#8230;</p>
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../pim-intro" class="btn btn-neutral float-right" title="PIM Handling"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../contribute" class="btn btn-neutral" title="Contribute"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+            <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+        
+      <span><a href="../contribute" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../pim-intro" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>
