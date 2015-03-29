@@ -111,10 +111,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-data-world-interface">freesmartphone.org: freesmartphone.org Data World Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonedataworld">org.freesmartphone.Data.World</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-data-world-interface">freesmartphone.org Data World Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -130,32 +127,6 @@
                             
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
-                            
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_2">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_3">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_3">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_4">Returns</a></li>
                             
                         
                         </ul>
@@ -493,8 +464,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-data-world-interface">freesmartphone.org: freesmartphone.org Data World Interface</h1>
-<h1 id="orgfreesmartphonedataworld">org.freesmartphone.Data.World</h1>
+              <h1 id="freesmartphoneorg-data-world-interface">freesmartphone.org Data World Interface</h1>
 <h2 id="description">Description</h2>
 <p>The World interface is used to query (more or less static) information about  the communication world, such as countries and their timezones, mobile broadband  provider apns, etc.</p>
 <h2 id="namespace">Namespace</h2>
@@ -516,42 +486,41 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="getallcountries-ass"><a name="GetAllCountries">GetAllCountries</a> ( ) &rarr; a(ss)</h3>
 <p><strong>Description:</strong> Retrieves all known country codes and their (english) name. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a(ss): countries</i>
 A list of country codes and their (english) names. </p>
 <h3 id="getcountrycodeformccmnc-s-s"><a name="GetCountryCodeForMccMnc">GetCountryCodeForMccMnc</a> ( s ) &rarr; s</h3>
 <p><strong>Description:</strong> Retrieve a country code for MCC or concatenated MCC and MNC.  Raises <a href="../../specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: mcc_mnc</i>
 MCC or concatenated MCC and MNC. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: country_code</i>
 The country code that owns the specified MCC (and MNC). </p>
 <h3 id="gettimezonesforcountrycode-s-ass"><a name="GetTimezonesForCountryCode">GetTimezonesForCountryCode</a> ( s ) &rarr; a{ss}</h3>
 <p><strong>Description:</strong> Retrieves the list of timezones given a country code.  Raises <a href="../../specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: country_code</i>
 The country code. </p>
-<h4 id="returns_2">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a{ss}: timezones</i>
 A dictionary of coordinates and timezone names. </p>
 <h3 id="getapnsformccmnc-s-assssss"><a name="GetApnsForMccMnc">GetApnsForMccMnc</a> ( s ) &rarr; a(ssssss)</h3>
 <p><strong>Description:</strong> Retrieves a list of data connectivity (GPRS, EDGE, 3G)  access point names for MCC or concatenated MCC and MNC.  Raises <a href="../../specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: mcc_mnc</i>
 MCC or concatenated MCC and MNC. </p>
-<h4 id="returns_3">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a(ssssss): apns</i>
 A list of six-tuples descriping a connectivity access point. Structure is: </p>
 <h3 id="getprovidernameformccmnc-s-s"><a name="GetProviderNameForMccMnc">GetProviderNameForMccMnc</a> ( s ) &rarr; s</h3>
 <p><strong>Description:</strong> Retrieves the name of a provider for a supplied concatenated MCC and MNC.  Raises <a href="../../specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. </p>
-<h4 id="parameters_3">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: mcc_mnc</i>
 MCC or concatenated MCC and MNC. </p>
-<h4 id="returns_4">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: provider</i>
 Name of the provider. </p>
-<p>the footer here</p>
 
             </div>
           </div>

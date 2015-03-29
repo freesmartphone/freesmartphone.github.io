@@ -161,10 +161,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-powersupply-interface">freesmartphone.org: freesmartphone.org PowerSupply Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonedevicepowersupply">org.freesmartphone.Device.PowerSupply</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-powersupply-interface">freesmartphone.org PowerSupply Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -181,18 +178,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
                             
                         
                         </ul>
@@ -480,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-powersupply-interface">freesmartphone.org: freesmartphone.org PowerSupply Interface</h1>
-<h1 id="orgfreesmartphonedevicepowersupply">org.freesmartphone.Device.PowerSupply</h1>
+              <h1 id="freesmartphoneorg-powersupply-interface">freesmartphone.org PowerSupply Interface</h1>
 <h2 id="description">Description</h2>
 <p>This interface provides access to a power supply device.</p>
 <h2 id="namespace">Namespace</h2>
@@ -505,30 +491,29 @@
 <p><strong>Description:</strong> Retrieve the capacity of this power supply. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>A wall power supply will always return 100. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>i: energy</i>
 The capacity in percent (0-100). </p>
 <h3 id="getpowerstatus-s"><a name="GetPowerStatus">GetPowerStatus</a> ( ) &rarr; s</h3>
 <p><strong>Description:</strong> Retrieve the power status for this power supply. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>A wall power supply will always return &#8220;full&#8221;. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: status</i>
 The power status. Expected values for a battery are:  <ul>  <li>&#8220;charging&#8221;</li>  <li>&#8220;discharging&#8221;</li>  <li>&#8220;full&#8221;</li>  <li>&#8220;empty&#8221;</li>  <li>&#8220;critical&#8221;</li>  <li>&#8220;removed&#8221;</li>  <li>&#8220;unknown&#8221;</li>  </ul>  Additional values for an ac adapter are:  <ul>  <li>&#8220;online&#8221;</li>  <li>&#8220;offline&#8221;</li>  </ul>  Additional values for an aggregated supply are:  <ul>  <li>&#8220;ac&#8221;</li>  </ul> </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="powerstatus-s"><a name="PowerStatus">PowerStatus</a> ( s )</h3>
 <p><strong>Description:</strong> Sent, when the power status changes significantly. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: status</i>
 The power status. See <a href="../../specs/org.freesmartphone.PowerSupply/#GetPowerStatus">GetPowerStatus</a> for a list of expected values. </p>
 <h3></h3>
 <h3 id="capacity-i"><a name="Capacity">Capacity</a> ( i )</h3>
 <p><strong>Description:</strong> Sent, when the capacity changes. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>i: energy</i>
 The capacity in percent (0-100). </p>
-<p>the footer here</p>
 
             </div>
           </div>

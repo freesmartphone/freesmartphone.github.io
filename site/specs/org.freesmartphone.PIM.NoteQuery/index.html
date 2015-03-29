@@ -346,10 +346,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-pimnotequery-interface">freesmartphone.org: freesmartphone.org PIM.NoteQuery Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonepimnotequery">org.freesmartphone.PIM.NoteQuery</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-pimnotequery-interface">freesmartphone.org PIM.NoteQuery Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -366,27 +363,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_2">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_3">Returns</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_2">Parameters</a></li>
                             
                         
                         </ul>
@@ -489,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-pimnotequery-interface">freesmartphone.org: freesmartphone.org PIM.NoteQuery Interface</h1>
-<h1 id="orgfreesmartphonepimnotequery">org.freesmartphone.PIM.NoteQuery</h1>
+              <h1 id="freesmartphoneorg-pimnotequery-interface">freesmartphone.org PIM.NoteQuery Interface</h1>
 <h2 id="description">Description</h2>
 <p>This interface gives access to a note query.</p>
 <h2 id="namespace">Namespace</h2>
@@ -516,32 +493,32 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="getresultcount-i"><a name="GetResultCount">GetResultCount</a> ( ) &rarr; i</h3>
 <p><strong>Description:</strong> Return the number of items in the query result </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>i: count</i>
 Amount of notes in the query result. </p>
 <h3 id="rewind"><a name="Rewind">Rewind</a> ( )</h3>
 <p><strong>Description:</strong> Rewind the result cursor to the first note (for this dbus client only). </p>
 <h3 id="skip-i"><a name="Skip">Skip</a> ( i )</h3>
 <p><strong>Description:</strong> Skip n notes in the result cursor (for this dbus client only). </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>i: count</i>
 Amount of notes to skip. </p>
 <h3 id="getnotepath-s"><a name="GetNotePath">GetNotePath</a> ( ) &rarr; s</h3>
 <p><strong>Description:</strong> Path for the note the result cursor points to. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: note_path</i>
 The path to the note. </p>
 <h3 id="getresult-asv"><a name="GetResult">GetResult</a> ( ) &rarr; a{sv}</h3>
 <p><strong>Description:</strong> Return the next note in the query result, and move the query to the next note. </p>
-<h4 id="returns_2">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a{sv}: item</i>
 fields of the result. </p>
 <h3 id="getmultipleresults-i-aasv"><a name="GetMultipleResults">GetMultipleResults</a> ( i ) &rarr; aa{sv}</h3>
 <p><strong>Description:</strong> Get multiple notes from the result set at once. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>i: count</i>
 The number of notes to get from the result set. A negative value means all. </p>
-<h4 id="returns_3">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>aa{sv}: resultset</i>
 The list of the returned notes data. </p>
 <h3 id="dispose"><a name="Dispose">Dispose</a> ( )</h3>
@@ -550,10 +527,9 @@ The list of the returned notes data. </p>
 <h3></h3>
 <h3 id="noteadded-s"><a name="NoteAdded">NoteAdded</a> ( s )</h3>
 <p><strong>Description:</strong> Sent when a new note which matches this query is loaded. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: note_path</i>
 The path of the newly loaded note. </p>
-<p>the footer here</p>
 
             </div>
           </div>

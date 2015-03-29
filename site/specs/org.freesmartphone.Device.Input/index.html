@@ -141,10 +141,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-input-interface">freesmartphone.org: freesmartphone.org Input Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonedeviceinput">org.freesmartphone.Device.Input</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-input-interface">freesmartphone.org Input Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -161,18 +158,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
                             
                         
                         </ul>
@@ -480,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-input-interface">freesmartphone.org: freesmartphone.org Input Interface</h1>
-<h1 id="orgfreesmartphonedeviceinput">org.freesmartphone.Device.Input</h1>
+              <h1 id="freesmartphoneorg-input-interface">freesmartphone.org Input Interface</h1>
 <h2 id="description">Description</h2>
 <p>The Input Interface provides information about the device&#8217;s buttons, switches, and similar peripheral entities.</p>
 <h2 id="namespace">Namespace</h2>
@@ -503,19 +489,19 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="getid-s"><a name="GetId">GetId</a> ( ) &rarr; s</h3>
 <p><strong>Description:</strong> Get the identification of the input device. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: id</i>
 The identification. </p>
 <h3 id="getcapabilities-s"><a name="GetCapabilities">GetCapabilities</a> ( ) &rarr; s</h3>
 <p><strong>Description:</strong> Get the capabilities of the input device. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: id</i>
 The capabilities. Valid elements are:  <ul>  <li>&#8220;keys&#8221;</li>,  <li>&#8220;relative&#8221;</li>,  <li>&#8220;absolute&#8221;</li>,  <li>&#8220;misc&#8221;</li>,  <li>&#8220;switches&#8221;</li>,  <li>&#8220;leds&#8221;</li>,  <li>&#8220;sound&#8221;</li>,  <li>&#8220;force-feedback&#8221;</li>.  </ul> </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="event-ssi"><a name="Event">Event</a> ( ssi )</h3>
 <p><strong>Description:</strong> Sent, when a button or switch input event occurs. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: name</i>
 The name of the event source. </p>
 <p><i>s: action</i>
@@ -525,14 +511,13 @@ The duration for the event. Only valid for the &#8220;held&#8221; and the &#8220
 <h3></h3>
 <h3 id="directionalevent-sii"><a name="DirectionalEvent">DirectionalEvent</a> ( sii )</h3>
 <p><strong>Description:</strong> Sent, when a directional input event occurs. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: name</i>
 The name of the event source. </p>
 <p><i>i: axis</i>
 The axis on which the event happened. </p>
 <p><i>i: offset</i>
 The offset. </p>
-<p>the footer here</p>
 
             </div>
           </div>

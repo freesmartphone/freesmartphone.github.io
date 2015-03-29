@@ -276,10 +276,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-pimcall-interface">freesmartphone.org: freesmartphone.org PIM.Call Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonepimcall">org.freesmartphone.PIM.Call</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-pimcall-interface">freesmartphone.org PIM.Call Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -296,24 +293,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_2">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_2">Parameters</a></li>
                             
                         
                         </ul>
@@ -486,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-pimcall-interface">freesmartphone.org: freesmartphone.org PIM.Call Interface</h1>
-<h1 id="orgfreesmartphonepimcall">org.freesmartphone.PIM.Call</h1>
+              <h1 id="freesmartphoneorg-pimcall-interface">freesmartphone.org PIM.Call Interface</h1>
 <h2 id="description">Description</h2>
 <p>This interface provides access to one PIM call.</p>
 <h2 id="namespace">Namespace</h2>
@@ -512,25 +492,25 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="getcontent-asv"><a name="GetContent">GetContent</a> ( ) &rarr; a{sv}</h3>
 <p><strong>Description:</strong> Get the fields of one call. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a{sv}: call_data</i>
 The call&#8217;s data. </p>
 <h3 id="getmultiplefields-s-asv"><a name="GetMultipleFields">GetMultipleFields</a> ( s ) &rarr; a{sv}</h3>
 <p><strong>Description:</strong> Get a specified field list of the call&#8217;s data. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: field_list</i>
 The list of fields to get, split by &#8220;,&#8221; (coma) char. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a{sv}: field_data</i>
 The data of the requested fields. </p>
 <h3 id="getusedbackends-as"><a name="GetUsedBackends">GetUsedBackends</a> ( ) &rarr; as</h3>
 <p><strong>Description:</strong> Get used backends in call. </p>
-<h4 id="returns_2">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>as: backends</i>
 The list of backends used in this call. </p>
 <h3 id="update-asv"><a name="Update">Update</a> ( a{sv} )</h3>
 <p><strong>Description:</strong> Update one or more fields of this call. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>a{sv}: call_data</i>
 The list of fields/values to update for this call. </p>
 <h3 id="delete"><a name="Delete">Delete</a> ( )</h3>
@@ -540,10 +520,9 @@ The list of fields/values to update for this call. </p>
 <h3></h3>
 <h3 id="callupdated-asv"><a name="CallUpdated">CallUpdated</a> ( a{sv} )</h3>
 <p><strong>Description:</strong> Sent when call is updated. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>a{sv}: data</i>
 Data used to update call. </p>
-<p>the footer here</p>
 
             </div>
           </div>

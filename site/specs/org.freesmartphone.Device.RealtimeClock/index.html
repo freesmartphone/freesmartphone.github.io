@@ -171,10 +171,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-realtimeclock-interface">freesmartphone.org: freesmartphone.org RealtimeClock Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonedevicerealtimeclock">org.freesmartphone.Device.RealtimeClock</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-realtimeclock-interface">freesmartphone.org RealtimeClock Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -191,24 +188,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_2">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_3">Parameters</a></li>
                             
                         
                         </ul>
@@ -486,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-realtimeclock-interface">freesmartphone.org: freesmartphone.org RealtimeClock Interface</h1>
-<h1 id="orgfreesmartphonedevicerealtimeclock">org.freesmartphone.Device.RealtimeClock</h1>
+              <h1 id="freesmartphoneorg-realtimeclock-interface">freesmartphone.org RealtimeClock Interface</h1>
 <h2 id="description">Description</h2>
 <p>This interface provides access to a Realtime Clock device.</p>
 <h2 id="namespace">Namespace</h2>
@@ -511,38 +491,37 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="getcurrenttime-i"><a name="GetCurrentTime">GetCurrentTime</a> ( ) &rarr; i</h3>
 <p><strong>Description:</strong> Retrieve the current time from the RTC. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>i: time</i>
 The current time in seconds since epoch. </p>
 <h3 id="setcurrenttime-i"><a name="SetCurrentTime">SetCurrentTime</a> ( i )</h3>
 <p><strong>Description:</strong> Set the current time in the RTC. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>i: time</i>
 The current time in seconds since epoch. </p>
 <h3 id="getwakeuptime-i"><a name="GetWakeupTime">GetWakeupTime</a> ( ) &rarr; i</h3>
 <p><strong>Description:</strong> Retrieve the currently programmed wakeup time from the RTC. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>i: time</i>
 The wakeup time in seconds since epoch, if programmed. 0, otherwise. </p>
 <h3 id="setwakeuptime-i"><a name="SetWakeupTime">SetWakeupTime</a> ( i )</h3>
 <p><strong>Description:</strong> Program a wakeup time in the RTC. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>i: time</i>
 The wakeuptime in seconds since epoch. Set to 0, if you want to disable wakeup. </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="wakeuptimechanged-i"><a name="WakeupTimeChanged">WakeupTimeChanged</a> ( i )</h3>
 <p><strong>Description:</strong> Sent, when the programmed RTC wakeup time has been changed. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>i: time</i>
 The wakeup time in seconds since epoch, if programmed. 0, otherwise. </p>
 <h3></h3>
 <h3 id="alarm-i"><a name="Alarm">Alarm</a> ( i )</h3>
 <p><strong>Description:</strong> Sent, when the programmed RTC wakeup time has been reached. </p>
-<h4 id="parameters_3">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>i: time</i>
 The wakeup time in seconds since epoch. </p>
-<p>the footer here</p>
 
             </div>
           </div>

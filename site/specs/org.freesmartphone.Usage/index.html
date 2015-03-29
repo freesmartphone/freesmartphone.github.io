@@ -406,10 +406,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-usage-interface">freesmartphone.org: freesmartphone.org Usage Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphoneusage">org.freesmartphone.Usage</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-usage-interface">freesmartphone.org Usage Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -426,54 +423,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_3">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_4">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_2">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_5">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_3">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_6">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_7">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_8">Parameters</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_9">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_10">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_11">Parameters</a></li>
                             
                         
                             <li class="toctree-l2"><a href="#errors_1">Errors</a></li>
@@ -519,8 +470,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-usage-interface">freesmartphone.org: freesmartphone.org Usage Interface</h1>
-<h1 id="orgfreesmartphoneusage">org.freesmartphone.Usage</h1>
+              <h1 id="freesmartphoneorg-usage-interface">freesmartphone.org Usage Interface</h1>
 <h2 id="description">Description</h2>
 <p>The Usage interface provides access to subsystem resource management.  The usage manager keeps track of all users per resource and will enable or disable the  associated hardware/software as requested. Before an application can make use of a subsystem,  it needs to request the resource first and is only allowed to use it if the request  has been granted.</p>
 <h2 id="namespace">Namespace</h2>
@@ -564,7 +514,7 @@
 <p><strong>Description:</strong> Register yourself as provider for a given resource. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>Providers can chose the name of the resource freely, note that there are  some well known names such as:  <ul>  <li>&#8220;GSM&#8221;,</li>  <li>&#8220;GPS&#8221;,</li>  <li>&#8220;Bluetooth&#8221;,</li>  <li>&#8220;WiFi&#8221;,</li>  <li>&#8220;Display&#8221;,</li>  <li>&#8220;CPU&#8221;.</li>  </ul>  In any case, only one provider per resource can be registered at a given time. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: name</i>
 The resource name. </p>
 <p><i>o: path</i>
@@ -573,55 +523,55 @@ The resource path. </p>
 <p><strong>Description:</strong> Unregister yourself as provider for a given resource. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>Leaving the bus will automatically unregister yourself for all resources you are providing. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: name</i>
 The resource name. </p>
 <h3 id="listresources-as"><a name="ListResources">ListResources</a> ( ) &rarr; as</h3>
 <p><strong>Description:</strong> List available resources. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>as: resources</i>
 An array of resource names. </p>
 <h3 id="getresourcepolicy-s-s"><a name="GetResourcePolicy">GetResourcePolicy</a> ( s ) &rarr; s</h3>
 <p><strong>Description:</strong> Get the current resource policy for a given resource. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: name</i>
 The resource name. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: policy</i>
 The resource policy. Expected values are:  <ul>  <li>&#8220;disabled&#8221; - using this resource is currently not allowed,</li>  <li>&#8220;auto&#8221; - the resource is enabled as long as it is used by at least one client,</li>  <li>&#8220;enabled&#8221; - the resource is enabled even without a client.</li>  </ul> </p>
 <h3 id="setresourcepolicy-ss"><a name="SetResourcePolicy">SetResourcePolicy</a> ( ss )</h3>
 <p><strong>Description:</strong> Set a new resource policy for a given resource. </p>
-<h4 id="parameters_3">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: name</i>
 The resource name. </p>
 <p><i>s: policy</i>
 The new resource policy. See <a href="../../specs/org.freesmartphone.Usage/#GetResourcePolicy">GetResourcePolicy</a> for a list of valid values. </p>
 <h3 id="getresourcestate-s-b"><a name="GetResourceState">GetResourceState</a> ( s ) &rarr; b</h3>
 <p><strong>Description:</strong> Get the current state for a given resource. </p>
-<h4 id="parameters_4">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: name</i>
 The resource name. </p>
-<h4 id="returns_2">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>b: state</i>
 The resource state. True if the resource is currently enabled. </p>
 <h3 id="getresourceusers-s-as"><a name="GetResourceUsers">GetResourceUsers</a> ( s ) &rarr; as</h3>
 <p><strong>Description:</strong> Get the users which currently use a given resource. </p>
-<h4 id="parameters_5">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: name</i>
 The resource name. </p>
-<h4 id="returns_3">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>as: users</i>
 An array of bus names using the resource. </p>
 <h3 id="requestresource-s"><a name="RequestResource">RequestResource</a> ( s )</h3>
 <p><strong>Description:</strong> Request occupation of a given resource. An error is returned if the resource was not occupied sucessfully. </p>
-<h4 id="parameters_6">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: name</i>
 The resource name. </p>
 <h3 id="releaseresource-s"><a name="ReleaseResource">ReleaseResource</a> ( s )</h3>
 <p><strong>Description:</strong> Release a given resource. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>Resources in use get autoreleased when a client leaves the bus. </p>
-<h4 id="parameters_7">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: name</i>
 The resource name. </p>
 <h3 id="suspend"><a name="Suspend">Suspend</a> ( )</h3>
@@ -630,7 +580,7 @@ The resource name. </p>
 <p><strong>Description:</strong> Triggers a resume on all managed resources and puts the device into normal mode. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>This method is only useful on systems where a suspend does not halt the main CPU. </p>
-<h4 id="parameters_8">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: source</i>
 The resume source. </p>
 <p><i>s: reason</i>
@@ -643,7 +593,7 @@ The resume reason. </p>
 <h3></h3>
 <h3 id="resourceavailable-sb"><a name="ResourceAvailable">ResourceAvailable</a> ( sb )</h3>
 <p><strong>Description:</strong> Sent whenever a resource is added or removed. </p>
-<h4 id="parameters_9">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: name</i>
 The name of the resource. </p>
 <p><i>b: availability</i>
@@ -651,7 +601,7 @@ The resource availability. True if the resource is currently available. </p>
 <h3></h3>
 <h3 id="resourcechanged-sbasv"><a name="ResourceChanged">ResourceChanged</a> ( sba{sv} )</h3>
 <p><strong>Description:</strong> Sent whenever a resource status changes. </p>
-<h4 id="parameters_10">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: name</i>
 The name of the resource. </p>
 <p><i>b: state</i>
@@ -661,7 +611,7 @@ The new status of the resource. Expected values are:  <ul>  <li>&#8220;policy&#8
 <h3></h3>
 <h3 id="systemaction-s"><a name="SystemAction">SystemAction</a> ( s )</h3>
 <p><strong>Description:</strong> Sent whenever a system state action is performed. </p>
-<h4 id="parameters_11">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: action</i>
 The name of the action. Expected values are:  <ul>  <li>&#8220;suspend&#8221;: The system is suspending.</li>  <li>&#8220;resume&#8221;: The system has resumed.</li>  <li>&#8220;reboot&#8221;: The system is rebooting.</li>  <li>&#8220;shutdown&#8221;: The system is shutting down.</li>  </ul> </p>
 <h1 id="errors_1">Errors</h1>
@@ -679,7 +629,6 @@ The name of the action. Expected values are:  <ul>  <li>&#8220;suspend&#8221;: T
 <p><strong>Description:</strong> Raised, if the requested resource has already been requested by the same user. </p>
 <h3 id="userunknown"><a name="UserUnknown">UserUnknown</a></h3>
 <p><strong>Description:</strong> Raised, if the to-be-released resource has never been requested by the user. </p>
-<p>the footer here</p>
 
             </div>
           </div>

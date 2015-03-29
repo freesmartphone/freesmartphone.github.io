@@ -361,10 +361,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-pimtaskquery-interface">freesmartphone.org: freesmartphone.org PIM.TaskQuery Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonepimtaskquery">org.freesmartphone.PIM.TaskQuery</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-pimtaskquery-interface">freesmartphone.org PIM.TaskQuery Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -380,23 +377,6 @@
                             
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
-                            
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_2">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_3">Returns</a></li>
                             
                         
                         </ul>
@@ -484,8 +464,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-pimtaskquery-interface">freesmartphone.org: freesmartphone.org PIM.TaskQuery Interface</h1>
-<h1 id="orgfreesmartphonepimtaskquery">org.freesmartphone.PIM.TaskQuery</h1>
+              <h1 id="freesmartphoneorg-pimtaskquery-interface">freesmartphone.org PIM.TaskQuery Interface</h1>
 <h2 id="description">Description</h2>
 <p>This interface gives access to a task query.</p>
 <h2 id="namespace">Namespace</h2>
@@ -509,37 +488,36 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="getresultcount-i"><a name="GetResultCount">GetResultCount</a> ( ) &rarr; i</h3>
 <p><strong>Description:</strong> Return the number of items in the query result </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>i: count</i>
 Amount of tasks in the query result. </p>
 <h3 id="rewind"><a name="Rewind">Rewind</a> ( )</h3>
 <p><strong>Description:</strong> Rewind the result cursor to the first task (for this dbus client only). </p>
 <h3 id="skip-i"><a name="Skip">Skip</a> ( i )</h3>
 <p><strong>Description:</strong> Skip n tasks in the result cursor (for this dbus client only). </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>i: count</i>
 Amount of tasks to skip. </p>
 <h3 id="gettaskpath-s"><a name="GetTaskPath">GetTaskPath</a> ( ) &rarr; s</h3>
 <p><strong>Description:</strong> Path for the task the result cursor points to. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: task_path</i>
 The path to the task. </p>
 <h3 id="getresult-asv"><a name="GetResult">GetResult</a> ( ) &rarr; a{sv}</h3>
 <p><strong>Description:</strong> Return the next task in the query result, and move the query to the next task. </p>
-<h4 id="returns_2">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a{sv}: item</i>
 fields of the result. </p>
 <h3 id="getmultipleresults-i-aasv"><a name="GetMultipleResults">GetMultipleResults</a> ( i ) &rarr; aa{sv}</h3>
 <p><strong>Description:</strong> Get multiple tasks from the result set at once. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>i: count</i>
 The number of tasks to get from the result set. A negative value means all. </p>
-<h4 id="returns_3">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>aa{sv}: resultset</i>
 The list of the returned tasks data. </p>
 <h3 id="dispose"><a name="Dispose">Dispose</a> ( )</h3>
 <p><strong>Description:</strong> Delete the query result object. </p>
-<p>the footer here</p>
 
             </div>
           </div>

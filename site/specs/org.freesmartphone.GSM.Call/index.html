@@ -196,10 +196,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-gsm-call-interface">freesmartphone.org: freesmartphone.org GSM Call Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonegsmcall">org.freesmartphone.GSM.Call</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-gsm-call-interface">freesmartphone.org GSM Call Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -216,36 +213,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_3">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_4">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_5">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_6">Parameters</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_7">Parameters</a></li>
                             
                         
                         </ul>
@@ -498,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-gsm-call-interface">freesmartphone.org: freesmartphone.org GSM Call Interface</h1>
-<h1 id="orgfreesmartphonegsmcall">org.freesmartphone.GSM.Call</h1>
+              <h1 id="freesmartphoneorg-gsm-call-interface">freesmartphone.org GSM Call Interface</h1>
 <h2 id="description">Description</h2>
 <p>The Call interface is used to initiate, accept, release, and otherwise deal  with voice calls. It also allows you to send DTMF tones.</p>
 <h2 id="namespace">Namespace</h2>
@@ -533,26 +501,26 @@
 <p><strong>Description:</strong> Initiate an emergency call. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>This maps to ATD(number);, see v.250. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: number</i>
 The emergency number to dial. National and world-wide restrictions apply. </p>
 <h3 id="activate-i"><a name="Activate">Activate</a> ( i )</h3>
 <p><strong>Description:</strong> Activate a call as single active call. All previously active calls are  put on hold. No difference is made whether this is an incoming  call or a call that has been put on hold. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>This can map to ATA, see v.250. It might also map to GSM 07.07 +CHLD=&#8230;, see 3GPP TS 07.07 Chapter 7.12. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>i: id</i></p>
 <h3 id="activateconference-i"><a name="ActivateConference">ActivateConference</a> ( i )</h3>
 <p><strong>Description:</strong> Activate a call in addition to all previously active calls.  No difference is made whether this is an incoming  call or a call that has been put on hold. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>This maps to GSM 07.07 +CHLD=&#8230;, see 3GPP TS 07.07 Chapter 7.12. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>i: id</i></p>
 <h3 id="release-i"><a name="Release">Release</a> ( i )</h3>
 <p><strong>Description:</strong> Release a call. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>This can map to ATH, see v.250. It might also map to GSM 07.07 +CHLD=&#8230;, see 3GPP TS 07.07 Chapter 7.12. Some implementations might map it to GSM 07.07 +CHUP=, see 3GPP TS 07.07 Chapter 6.5. </p>
-<h4 id="parameters_3">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>i: id</i></p>
 <h3 id="holdactive"><a name="HoldActive">HoldActive</a> ( )</h3>
 <p><strong>Description:</strong> Hold the active call. </p>
@@ -570,7 +538,7 @@ The emergency number to dial. National and world-wide restrictions apply. </p>
 <p><strong>Description:</strong> Deflect an incoming or active call to another number. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>This maps to GSM 07.07 +CTFR=&#8230;, see 3GPP TS 27.07 Chapter 7.14. </p>
-<h4 id="parameters_4">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: number</i>
 The number to transfer the call to. </p>
 <h3 id="releaseheld"><a name="ReleaseHeld">ReleaseHeld</a> ( )</h3>
@@ -585,38 +553,37 @@ The number to transfer the call to. </p>
 <p><strong>Description:</strong> Initiate an outgoing call. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>This maps to ATD(number);, see v.250. </p>
-<h4 id="parameters_5">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: number</i>
 The number to call. </p>
 <p><i>s: type</i>
 The type of call to made. Valid values are:  <ul>  <li>&#8220;voice&#8221; - a GSM voice call,</li>  <li>&#8220;data&#8221; - a GSM data call,</li>  <li>&#8220;fax&#8221; - a FAX call.</li>  </ul> </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>i: id</i>
 The reference id for this call. It will get assigned by the system. </p>
 <h3 id="listcalls-aisasv"><a name="ListCalls">ListCalls</a> ( ) &rarr; a(isa{sv})</h3>
 <p><strong>Description:</strong> Retrieve the status for all calls in the system. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a(isa{sv}): call_details</i>
 The call status. This is an array containing a call status record for every single call.  See <a href="../../specs/org.freesmartphone.GSM.Call/#CallStatus">CallStatus</a> signal for a description of the format. </p>
 <h3 id="senddtmf-s"><a name="SendDtmf">SendDtmf</a> ( s )</h3>
 <p><strong>Description:</strong> Send one or more Dual Tone Multiple Frequency (DTMF) signals during an active call. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>This maps to the TIA IS 101 command +VTS=(value), see 3GPP TS 07.07 Chapter C.2.11.  Note: DTMF signals are always sent to all active calls, this is a limitation of the underlying protocols. </p>
-<h4 id="parameters_6">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: tones</i>
 The tones to send. Allowed values are: (0-9,#,*,A-D) </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="callstatus-isasv"><a name="CallStatus">CallStatus</a> ( isa{sv} )</h3>
 <p><strong>Description:</strong> Sent whenever there is any status or property change on a call in the system,  no matter whether this is an incoming, active, held, or released call. </p>
-<h4 id="parameters_7">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>i: id</i>
 The index of the call that changed its status or properties. </p>
 <p><i>s: status</i>
 The new status of the call. Expected values are:  <ul>  <li>&#8220;incoming&#8221; = The call is incoming (but not yet accepted),</li>  <li>&#8220;outgoing&#8221; = The call is outgoing (but not yet established),</li>  <li>&#8220;active&#8221; = The call is the active call (you can talk),</li>  <li>&#8220;held&#8221; = The call is being held,</li>  <li>&#8220;release&#8221; = The call has been released.</li>  </ul>  Further information can be part of the properties. </p>
 <p><i>a{sv}: properties</i>
 An array of property values. Note that some properties are optional. Mandatory tuples are:  <ul>  <li>( &#8220;direction&#8221;, string ) = &#8220;incoming&#8221; or &#8220;outgoing&#8221;,</li>  <li>( &#8220;peer&#8221;, string ) = The number of the peer (on incoming calls only if we received a CLIP).</li>  </ul>  Optional tuples include:  <ul>  <li>( &#8220;reason&#8221;, string ) = The reason for the status change (on outgoing calls e.g. &#8216;BUSY&#8217; or &#8216;NO CARRIER&#8217;),</li>  <li>( &#8220;auxstatus&#8221;, string ) = An auxillary connection status (if your modem supports that),</li>  <li>( &#8220;line&#8221;, string ) = The GSM line (0 or 1) this call is taking place (on modems that support multiple lines).</li>  <ul> </p>
-<p>the footer here</p>
 
             </div>
           </div>

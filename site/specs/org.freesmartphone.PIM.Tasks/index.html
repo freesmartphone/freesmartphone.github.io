@@ -366,10 +366,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-pimtasks-interface">freesmartphone.org: freesmartphone.org PIM.Tasks Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonepimtasks">org.freesmartphone.PIM.Tasks</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-pimtasks-interface">freesmartphone.org PIM.Tasks Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -386,29 +383,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_2">Returns</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_3">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_4">Parameters</a></li>
                             
                         
                         </ul>
@@ -491,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-pimtasks-interface">freesmartphone.org: freesmartphone.org PIM.Tasks Interface</h1>
-<h1 id="orgfreesmartphonepimtasks">org.freesmartphone.PIM.Tasks</h1>
+              <h1 id="freesmartphoneorg-pimtasks-interface">freesmartphone.org PIM.Tasks Interface</h1>
 <h2 id="description">Description</h2>
 <p>This interface provides access to the collection of PIM tasks.</p>
 <h2 id="namespace">Namespace</h2>
@@ -515,44 +490,43 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="add-asv-s"><a name="Add">Add</a> ( a{sv} ) &rarr; s</h3>
 <p><strong>Description:</strong> Add a new task to the default backend for tasks. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>a{sv}: task_data</i>
 The new tasks data. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: task_path</i>
 The path of the added task. </p>
 <h3 id="getsingletasksinglefield-asvs-s"><a name="GetSingleTaskSingleField">GetSingleTaskSingleField</a> ( a{sv}s ) &rarr; s</h3>
 <p><strong>Description:</strong> Query the content of one field of one task. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>a{sv}: query</i>
 The query. </p>
 <p><i>s: field</i>
 The name of the field to query. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: value</i>
 The content of the queried field. </p>
 <h3 id="query-asv-s"><a name="Query">Query</a> ( a{sv} ) &rarr; s</h3>
 <p><strong>Description:</strong> Start a query for tasks. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>a{sv}: query</i>
 The query. </p>
-<h4 id="returns_2">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: query_path</i>
 The path for the started query. </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="newtask-s"><a name="NewTask">NewTask</a> ( s )</h3>
 <p><strong>Description:</strong> Sent when a new task is loaded. </p>
-<h4 id="parameters_3">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: task_path</i>
 The path of the newly loaded task. </p>
 <h3></h3>
 <h3 id="unfinishedtasks-i"><a name="UnfinishedTasks">UnfinishedTasks</a> ( i )</h3>
 <p><strong>Description:</strong> Sent when amount of unfinished tasks changes. </p>
-<h4 id="parameters_4">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>i: amount</i>
 Amount of unfinished tasks. </p>
-<p>the footer here</p>
 
             </div>
           </div>

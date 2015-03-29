@@ -386,10 +386,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-preferences-service-interface">freesmartphone.org: freesmartphone.org Preferences Service Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonepreferencesservice">org.freesmartphone.Preferences.Service</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-preferences-service-interface">freesmartphone.org Preferences Service Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -406,33 +403,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_2">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_3">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_3">Returns</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_4">Parameters</a></li>
                             
                         
                         </ul>
@@ -495,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-preferences-service-interface">freesmartphone.org: freesmartphone.org Preferences Service Interface</h1>
-<h1 id="orgfreesmartphonepreferencesservice">org.freesmartphone.Preferences.Service</h1>
+              <h1 id="freesmartphoneorg-preferences-service-interface">freesmartphone.org Preferences Service Interface</h1>
 <h2 id="description">Description</h2>
 <p>The service object deals with configuration values of a given service   The service can set and get the value of parameters.   The services are used to group related parameters together.  Basically, every application using the config server should use its own service name.   For each service we need a schema file describing the parameters the service provides.   The configurations values are stored in yaml file.  Each conf file contains all the parameters for a given service in a given context.  The conf files are organised with the following file hierachy :  conf/$(service)/$(profile).yaml   All the parameters that are independant of the profile are stored in the &#8216;default&#8217; profile file.   When we set or get parameters, the service server takes into account the current profile,  so the applications using the service don&#8217;t need to know about the current profile.</p>
 <h2 id="namespace">Namespace</h2>
@@ -520,50 +491,49 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="getkeys-as"><a name="GetKeys">GetKeys</a> ( ) &rarr; as</h3>
 <p><strong>Description:</strong> Retrieve all the keys of the service.   This method should be used only for introspection purposes. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>as: keys</i>
 The list of keys. </p>
 <h3 id="getvalue-s-v"><a name="GetValue">GetValue</a> ( s ) &rarr; v</h3>
 <p><strong>Description:</strong> Get a parameter value. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: key</i>
 The parameter key string. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>v: value</i>
 The value associated with the key. </p>
 <h3 id="setvalue-sv"><a name="SetValue">SetValue</a> ( sv )</h3>
 <p><strong>Description:</strong> Set a parameter value. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: key</i>
 The parameter key string. </p>
 <p><i>v: value</i>
 The new value associated with the key. </p>
 <h3 id="isprofilable-s-b"><a name="IsProfilable">IsProfilable</a> ( s ) &rarr; b</h3>
 <p><strong>Description:</strong> Return true if a parameter depends on the current profile. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: key</i>
 The parameter key string. </p>
-<h4 id="returns_2">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>b: profileable</i>
 True if a parameter depends on the current profile. </p>
 <h3 id="gettype-s-s"><a name="GetType">GetType</a> ( s ) &rarr; s</h3>
 <p><strong>Description:</strong> Return a string representing the type of the parameter. </p>
-<h4 id="parameters_3">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: key</i>
 The parameter key string. </p>
-<h4 id="returns_3">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: type</i>
 A string representing the type of the parameter. </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="notify-sv"><a name="Notify">Notify</a> ( sv )</h3>
 <p><strong>Description:</strong> Sent whenever there is a change in a parameter value in the service </p>
-<h4 id="parameters_4">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: key</i>
 The parameter key string. </p>
 <p><i>v: value</i>
 The new value of the parameter. </p>
-<p>the footer here</p>
 
             </div>
           </div>

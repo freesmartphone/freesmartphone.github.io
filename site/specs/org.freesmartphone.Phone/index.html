@@ -381,10 +381,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-phone-interface">freesmartphone.org: freesmartphone.org Phone Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonephone">org.freesmartphone.Phone</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-phone-interface">freesmartphone.org Phone Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -401,18 +398,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_1">Parameters</a></li>
                             
                         
                         </ul>
@@ -480,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-phone-interface">freesmartphone.org: freesmartphone.org Phone Interface</h1>
-<h1 id="orgfreesmartphonephone">org.freesmartphone.Phone</h1>
+              <h1 id="freesmartphoneorg-phone-interface">freesmartphone.org Phone Interface</h1>
 <h2 id="description">Description</h2>
 <p>The Phone object is used to create Call objects using different protocols.</p>
 <h2 id="namespace">Namespace</h2>
@@ -502,29 +488,28 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="initprotocols-as"><a name="InitProtocols">InitProtocols</a> ( ) &rarr; as</h3>
 <p><strong>Description:</strong> Initialize all the protocols. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>as: protocols</i>
 The list of all the protocols names. </p>
 <h3 id="createcall-ssb-o"><a name="CreateCall">CreateCall</a> ( ssb ) &rarr; o</h3>
 <p><strong>Description:</strong> Create a new Call to a given number, with an optional protocol. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: number</i>
 A string representing the number of the peer. </p>
 <p><i>s: protocol</i>
 The name of the protocol as returned by InitProtocols,  if None the best protocol will be used. Default to None </p>
 <p><i>b: force</i>
 If true, we destroy any already present call object to this number. Default to True </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>o: call</i>
 The path to the new Call object </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="incoming-o"><a name="Incoming">Incoming</a> ( o )</h3>
 <p><strong>Description:</strong> Emitted when a new call is incoming </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>o: call</i>
 Path to the Call object. </p>
-<p>the footer here</p>
 
             </div>
           </div>

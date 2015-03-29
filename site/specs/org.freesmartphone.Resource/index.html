@@ -396,10 +396,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-resource-interface">freesmartphone.org: freesmartphone.org Resource Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphoneresource">org.freesmartphone.Resource</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-resource-interface">freesmartphone.org Resource Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -415,11 +412,6 @@
                             
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
-                            
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
                             
                         
                             <li class="toctree-l2"><a href="#errors_1">Errors</a></li>
@@ -475,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-resource-interface">freesmartphone.org: freesmartphone.org Resource Interface</h1>
-<h1 id="orgfreesmartphoneresource">org.freesmartphone.Resource</h1>
+              <h1 id="freesmartphoneorg-resource-interface">freesmartphone.org Resource Interface</h1>
 <h2 id="description">Description</h2>
 <p>The Resource interface provides access to a resource as visible from the FSO usage subsystem.  Every resource provider has to implement this interface.  Applications other than FSO usage are not allowed to use this interface, they have to  use the org.freesmartphone.Usage API.</p>
 <h2 id="namespace">Namespace</h2>
@@ -510,12 +501,12 @@
 <p><strong>Description:</strong> Resume the resource. </p>
 <h3 id="getdependencies-asv"><a name="GetDependencies">GetDependencies</a> ( ) &rarr; a{sv}</h3>
 <p><strong>Description:</strong> The resource is able to lists its dependencies.   For example a resource can depend on another resource. If this resource  is enabled the dependency resource will be enabled first. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a{sv}: dependencies</i>
 Dependencies required for resource operation. Expected values are:  <ul>  <li>&#8220;services&#8221;: A comma-separated string of service names</li>  <li>&#8220;processes&#8221;: A comma-separated string of process names</li>  </ul>  Dependencies are being activated / deactivated as defined by the resource lifecycle. </p>
 <h3 id="getdefaultpolicy-s"><a name="GetDefaultPolicy">GetDefaultPolicy</a> ( ) &rarr; s</h3>
 <p><strong>Description:</strong> The resource is able to provide the default policy to use. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: policy</i>
 The default policy to use for this resource. See  <a href="../../specs/org.freesmartphone.Usage/#GetResourcePolicy">GetResourcePolicy</a> for a list of possible values. </p>
 <h1 id="errors_1">Errors</h1>
@@ -523,7 +514,6 @@ The default policy to use for this resource. See  <a href="../../specs/org.frees
 <p><strong>Description:</strong> Raised, if the resource is not enabled. </p>
 <h3 id="unabletoenable"><a name="UnableToEnable">UnableToEnable</a></h3>
 <p><strong>Description:</strong> Raised, if the resource can not be enabled. </p>
-<p>the footer here</p>
 
             </div>
           </div>

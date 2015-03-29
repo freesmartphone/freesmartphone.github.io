@@ -131,10 +131,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-idle-notification-interface">freesmartphone.org: freesmartphone.org Idle Notification Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonedeviceidlenotifier">org.freesmartphone.Device.IdleNotifier</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-idle-notification-interface">freesmartphone.org Idle Notification Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -151,21 +148,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_2">Parameters</a></li>
                             
                         
                         </ul>
@@ -483,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-idle-notification-interface">freesmartphone.org: freesmartphone.org Idle Notification Interface</h1>
-<h1 id="orgfreesmartphonedeviceidlenotifier">org.freesmartphone.Device.IdleNotifier</h1>
+              <h1 id="freesmartphoneorg-idle-notification-interface">freesmartphone.org Idle Notification Interface</h1>
 <h2 id="description">Description</h2>
 <p>The Idle Notification Interface provides information about a device&#8217;s idleness state.</p>
 <h2 id="namespace">Namespace</h2>
@@ -507,34 +490,33 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="getstate-s"><a name="GetState">GetState</a> ( ) &rarr; s</h3>
 <p><strong>Description:</strong> Get the current idleness status. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: status</i>
 The idleness status. Expected values are:  <ul>  <li>&#8220;busy&#8221;</li>  <li>&#8220;idle&#8221;</li>  <li>&#8220;idle_dim&#8221;</li>  <li>&#8220;idle_prelock&#8221;</li>  <li>&#8220;lock&#8221;</li>  <li>&#8220;suspend&#8221;</li>  <li>&#8220;awake&#8221;</li>  </ul> </p>
 <h3 id="gettimeouts-asi"><a name="GetTimeouts">GetTimeouts</a> ( ) &rarr; a{si}</h3>
 <p><strong>Description:</strong> Gets a list of all the idle states and their correspondent timeouts. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a{si}: status</i>
 The list of the idle states, and their correspondent timeouts. </p>
 <h3 id="settimeout-si"><a name="SetTimeout">SetTimeout</a> ( si )</h3>
 <p><strong>Description:</strong> Sets a timeout value for a given state. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: status</i>
 The idle status. See <a href="../../specs/org.freesmartphone.Device.IdleNotifier/#GetState">GetState</a> for a list of valid values. </p>
 <p><i>i: timeout</i>
 The timeout value. Set to -1 to disable the state. </p>
 <h3 id="setstate-s"><a name="SetState">SetState</a> ( s )</h3>
 <p><strong>Description:</strong> Forces a new idleness status. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: status</i>
 The idle status. See <a href="../../specs/org.freesmartphone.Device.IdleNotifier/#GetState">GetState</a> for valid values. </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="state-s"><a name="State">State</a> ( s )</h3>
 <p><strong>Description:</strong> Sent, when the idleness status has changed. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: status</i>
 The idle status. See <a href="../../specs/org.freesmartphone.Device.IdleNotifier/#GetState">GetState</a> for a list of expected values. </p>
-<p>the footer here</p>
 
             </div>
           </div>

@@ -226,10 +226,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-gsm-mux-interface">freesmartphone.org: freesmartphone.org GSM MUX Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonegsmmux">org.freesmartphone.GSM.MUX</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-gsm-mux-interface">freesmartphone.org GSM MUX Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -246,24 +243,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_3">Parameters</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_4">Parameters</a></li>
                             
                         
                         </ul>
@@ -486,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-gsm-mux-interface">freesmartphone.org: freesmartphone.org GSM MUX Interface</h1>
-<h1 id="orgfreesmartphonegsmmux">org.freesmartphone.GSM.MUX</h1>
+              <h1 id="freesmartphoneorg-gsm-mux-interface">freesmartphone.org GSM MUX Interface</h1>
 <h2 id="description">Description</h2>
 <p>The MUX interface is used to manage and control virtual serial channels  (implemented through pseudo TTYs) which are multiplexed to one serial  line as described in 3GPP TS 07.10.</p>
 <h2 id="namespace">Namespace</h2>
@@ -513,7 +493,7 @@
 <p><strong>Description:</strong> Initiate a new multiplexing session. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>The device needs to support the +CMUX command. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>b: advanced</i>
 True, to use 07.10 Advanced Mode multiplexing, False to use 07.10 Basic Mode multiplexing. </p>
 <p><i>i: framesize</i>
@@ -528,24 +508,24 @@ The port speed to use. </p>
 <p>The device will be left in AT command mode. </p>
 <h3 id="allocchannel-si-si"><a name="AllocChannel">AllocChannel</a> ( si ) &rarr; si</h3>
 <p><strong>Description:</strong> Allocate a new virtual channel. Raises <a href="../../specs/org.freesmartphone.GSM.MUX/#NoChannel">NoChannel</a>  if the requested channel can not be allocated. Raises <a href="../../specs/org.freesmartphone.GSM.MUX/#ChannelTaken">ChannelTaken</a>  if the requested channel is already allocated. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: origin</i>
 A handle for channel user identification. </p>
 <p><i>i: channel</i>
 The requested channel. Submit 0 to request the next free channel. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: path</i>
 The pseudo tty connected to the virtual channel. </p>
 <p><i>i: allocated_channel</i>
 The channel number that has been allocated. </p>
 <h3 id="releasechannel-s"><a name="ReleaseChannel">ReleaseChannel</a> ( s )</h3>
 <p><strong>Description:</strong> Release all channels requested by a specified user. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: origin</i>
 A handle for channel user identification. </p>
 <h3 id="setstatus-is"><a name="SetStatus">SetStatus</a> ( is )</h3>
 <p><strong>Description:</strong> Modify the v24 status of a virtual channel. </p>
-<h4 id="parameters_3">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>i: channel</i>
 The virtual channel you want to change the outgoing status for. </p>
 <p><i>s: status</i>
@@ -554,10 +534,9 @@ The new v.24 status. See <a href="../../specs/org.freesmartphone.GSM.MUX/#Status
 <h3></h3>
 <h3 id="status-s"><a name="Status">Status</a> ( s )</h3>
 <p><strong>Description:</strong> Sent whenever there is v.24 incoming status change on a virtual channel. </p>
-<h4 id="parameters_4">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: status</i>
 The new v.24 status, which is a string combined of elements that make up the status. Valid elements are:  <ul>  <li>&#8230;</li>  <li>&#8230;</li>  </ul> </p>
-<p>the footer here</p>
 
             </div>
           </div>

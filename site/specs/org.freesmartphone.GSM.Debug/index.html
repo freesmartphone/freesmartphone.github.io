@@ -206,10 +206,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-gsm-debug-interface">freesmartphone.org: freesmartphone.org GSM Debug Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonegsmdebug">org.freesmartphone.GSM.Debug</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-gsm-debug-interface">freesmartphone.org GSM Debug Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -226,17 +223,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters_2">Parameters</a></li>
                             
                         
                         </ul>
@@ -479,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-gsm-debug-interface">freesmartphone.org: freesmartphone.org GSM Debug Interface</h1>
-<h1 id="orgfreesmartphonegsmdebug">org.freesmartphone.GSM.Debug</h1>
+              <h1 id="freesmartphoneorg-gsm-debug-interface">freesmartphone.org GSM Debug Interface</h1>
 <h2 id="description">Description</h2>
 <p>The Debug interface is used to debug (sic!). You can ping the device,  execute test commands, inject unsolicited responses, or be updated  about the detailed modem status.</p>
 <h2 id="namespace">Namespace</h2>
@@ -504,19 +491,19 @@
 <p><strong>Description:</strong> Sends a debug command. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>WARNING: Only use this, if you know what you are doing.  You may crash the device or the service, if you send bogus commands. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: command</i>
 The command to send. Note that the validity of commands depends  on the actual modem channel. Not all modem channels are AT channels!  It is recommended to implement a &#8216;help&#8217; command that returns a  list of valid commands. </p>
 <p><i>s: channel</i>
 The channel to send this command on. Set to &#8220;&#8221; to use the default one. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: result</i>
 The result of the command </p>
 <h3 id="debuginjectresponse-ss"><a name="DebugInjectResponse">DebugInjectResponse</a> ( ss )</h3>
 <p><strong>Description:</strong> Injects an unsolicited response into the command queue. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>WARNING: Only use this, if you know what you are doing.  You may crash the device or the service, if you inject bogus responses. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: response</i>
 The response to inject. </p>
 <p><i>s: channel</i>
@@ -527,9 +514,8 @@ The channel to inject this command on. Set to &#8220;&#8221; to use the default 
 <h3></h3>
 <h3 id="debugstatus-ass"><a name="DebugStatus">DebugStatus</a> ( a{ss} )</h3>
 <p><strong>Description:</strong> Sent, when the modem status changes. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>a{ss}: channels</i></p>
-<p>the footer here</p>
 
             </div>
           </div>

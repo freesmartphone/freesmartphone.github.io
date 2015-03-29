@@ -221,10 +221,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-gsm-home-zone-interface">freesmartphone.org: freesmartphone.org GSM Home Zone Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonegsmhz">org.freesmartphone.GSM.HZ</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-gsm-home-zone-interface">freesmartphone.org GSM Home Zone Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -241,15 +238,8 @@
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
                             
-                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
-                            
                         
                             <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
                             
                         
                         </ul>
@@ -477,8 +467,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-gsm-home-zone-interface">freesmartphone.org: freesmartphone.org GSM Home Zone Interface</h1>
-<h1 id="orgfreesmartphonegsmhz">org.freesmartphone.GSM.HZ</h1>
+              <h1 id="freesmartphoneorg-gsm-home-zone-interface">freesmartphone.org GSM Home Zone Interface</h1>
 <h2 id="description">Description</h2>
 <p>The Home Zone interface allows you to be informed about the home zone status.   Home Zone is a marketing instrument that is used by several operators.  By defining so called &#8216;home zones&#8217; on your SIM card, they adjust how much  they charge for your phone calls.</p>
 <h2 id="namespace">Namespace</h2>
@@ -499,22 +488,21 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="getknownhomezones-as"><a name="GetKnownHomeZones">GetKnownHomeZones</a> ( ) &rarr; as</h3>
 <p><strong>Description:</strong> Get the names of known home zones as stored on your SIM card. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>as: zones</i>
 The home zone names. </p>
 <h3 id="gethomezonestatus-s"><a name="GetHomeZoneStatus">GetHomeZoneStatus</a> ( ) &rarr; s</h3>
 <p><strong>Description:</strong> Get current zone name. </p>
-<h4 id="returns_1">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>s: zone</i>
 The home zone you are currently on. An empty string denotes  that you are out of all home zones. &#8220;unknown&#8221; indicates that the system  has not processed the necessary data to compute this information. </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="homezonestatus-s"><a name="HomeZoneStatus">HomeZoneStatus</a> ( s )</h3>
 <p><strong>Description:</strong> Sent, when the home zone status has changed. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong></p>
 <p><i>s: name</i>
 The home zone you are currently on. See <a href="../../specs/org.freesmartphone.GSM.HZ/#GetHomeZoneStatus">GetHomeZoneStatus</a> </p>
-<p>the footer here</p>
 
             </div>
           </div>

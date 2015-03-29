@@ -401,10 +401,7 @@
                     
                         <ul>
                         
-                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-time-alarm-interface">freesmartphone.org: freesmartphone.org Time Alarm Interface</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#orgfreesmartphonetimealarm">org.freesmartphone.Time.Alarm</a></li>
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-time-alarm-interface">freesmartphone.org Time Alarm Interface</a></li>
                             
                                 <li><a class="toctree-l3" href="#description">Description</a></li>
                             
@@ -420,17 +417,6 @@
                             
                         
                             <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
-                            
-                                <li><a class="toctree-l3" href="#parameters">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#returns">Returns</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
-                            
-                        
-                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
                             
                         
                         </ul>
@@ -478,8 +464,7 @@
 </div>
           <div role="main">
             <div class="section">
-              <h1 id="freesmartphoneorg-freesmartphoneorg-time-alarm-interface">freesmartphone.org: freesmartphone.org Time Alarm Interface</h1>
-<h1 id="orgfreesmartphonetimealarm">org.freesmartphone.Time.Alarm</h1>
+              <h1 id="freesmartphoneorg-time-alarm-interface">freesmartphone.org Time Alarm Interface</h1>
 <h2 id="description">Description</h2>
 <p>The Alarm interface is used to register wakeup alarms. Alarm notifications  will be submitted as dbus method calls, hence alarm receivers need to  implement the interface org.freesmartphone.Notification on the root object.  Alarm receivers need to be running dbus system services or dbus system-activatible.  If the system features a suspend mode, the framework will ensure that the  system is awake at the time the alarm triggers.   Multiple alarms per bus name can be registered. If you want to register  named alarm (e.g. agenda items, birthdays, etc.), consider using the PIM  services instead.</p>
 <h2 id="namespace">Namespace</h2>
@@ -500,17 +485,17 @@
 <h1 id="methods_1">Methods</h1>
 <h3 id="clearalarms-s"><a name="ClearAlarms">ClearAlarms</a> ( s )</h3>
 <p><strong>Description:</strong> Clear all scheduled alarms for a given dbus service name. </p>
-<h4 id="parameters">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: busname</i>
 The dbus service bus name to clear all alarms for. </p>
 <h3 id="listalarms-asi"><a name="ListAlarms">ListAlarms</a> ( ) &rarr; a(si)</h3>
 <p><strong>Description:</strong> List all currently scheduled alarms. </p>
-<h4 id="returns">Returns</h4>
+<p><strong><em>Returns:</em></strong></p>
 <p><i>a(si): alarms</i>
 All currently scheduled alarms. </p>
 <h3 id="removealarm-si"><a name="RemoveAlarm">RemoveAlarm</a> ( si )</h3>
 <p><strong>Description:</strong> Removes a scheduled alarm. </p>
-<h4 id="parameters_1">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: busname</i>
 The dbus service bus name to clear the alarm for. </p>
 <p><i>i: timestamp</i>
@@ -519,12 +504,11 @@ When to call in seconds since 1970 (epoch). </p>
 <p><strong>Description:</strong> Schedules an alarm for a given dbus service name.  The alarm will be triggered by calling the service&#8217;s  <a href="../../specs/org.freesmartphone.Notification/#Alarm">Alarm</a> method on the root (/) object. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>Make sure to specify a dbus system service configuration file for  the services that use this interface. This way, you can  receive alarm notifications even when your service is not  running at the time the alarm fires. </p>
-<h4 id="parameters_2">Parameters</h4>
+<p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: busname</i>
 The dbus service name to call. </p>
 <p><i>i: timestamp</i>
 When to call in seconds since 1970 (epoch). </p>
-<p>the footer here</p>
 
             </div>
           </div>
