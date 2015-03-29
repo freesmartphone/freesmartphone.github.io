@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>org.freesmartphone.GSM.Network - freesmartphone.org</title>
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script>
+
+  <style>
+    body {font-size: 90%;}
+    pre, code {font-size: 100%;}
+    h3, h4, h5, h6 {color: #2980b9; font-weight: 300}
+  </style> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> freesmartphone.org</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+      <ul class="current">
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../../about">About</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../../history">History</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../../contribute">Contribute</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../../usage-intro">Resource Handling</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../../pim-intro">PIM Handling</a>
+            </li>
+        
+
+    
+        
+            <li class="toctree-l1 ">
+                <a class="" href="../../implementations">Implementations</a>
+            </li>
+        
+
+    
+        
+        <span>Specifications</span>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../../specifications">Introduction</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Audio.Manager">org.freesmartphone.Audio.Manager</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Context.Client">org.freesmartphone.Context.Client</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Context.Manager">org.freesmartphone.Context.Manager</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Data.World">org.freesmartphone.Data.World</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Device.AmbientLight">org.freesmartphone.Device.AmbientLight</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Device.Audio">org.freesmartphone.Device.Audio</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Device.Display">org.freesmartphone.Device.Display</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Device.IdleNotifier">org.freesmartphone.Device.IdleNotifier</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Device.Info">org.freesmartphone.Device.Info</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Device.Input">org.freesmartphone.Device.Input</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Device.LED">org.freesmartphone.Device.LED</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Device.Orientation">org.freesmartphone.Device.Orientation</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Device.PowerControl">org.freesmartphone.Device.PowerControl</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Device.PowerSupply">org.freesmartphone.Device.PowerSupply</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Device.Proximity">org.freesmartphone.Device.Proximity</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Device.RealtimeClock">org.freesmartphone.Device.RealtimeClock</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Device.Vibrator">org.freesmartphone.Device.Vibrator</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Error">org.freesmartphone.Error</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Events">org.freesmartphone.Events</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.GSM.CB">org.freesmartphone.GSM.CB</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.GSM.Call">org.freesmartphone.GSM.Call</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.GSM.CallForwarding">org.freesmartphone.GSM.CallForwarding</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.GSM.Debug">org.freesmartphone.GSM.Debug</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.GSM.Device">org.freesmartphone.GSM.Device</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.GSM.Error">org.freesmartphone.GSM.Error</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.GSM.HZ">org.freesmartphone.GSM.HZ</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.GSM.MUX">org.freesmartphone.GSM.MUX</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.GSM.Monitor">org.freesmartphone.GSM.Monitor</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 current">
+                    <a class="current" href=".">org.freesmartphone.GSM.Network</a>
+                    
+                        <ul>
+                        
+                            <li class="toctree-l2"><a href="#freesmartphoneorg-freesmartphoneorg-gsm-network-interface">freesmartphone.org: freesmartphone.org GSM Network Interface</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#orgfreesmartphonegsmnetwork">org.freesmartphone.GSM.Network</a></li>
+                            
+                                <li><a class="toctree-l3" href="#description">Description</a></li>
+                            
+                                <li><a class="toctree-l3" href="#namespace">Namespace</a></li>
+                            
+                                <li><a class="toctree-l3" href="#methods">Methods</a></li>
+                            
+                                <li><a class="toctree-l3" href="#signals">Signals</a></li>
+                            
+                                <li><a class="toctree-l3" href="#properties">Properties</a></li>
+                            
+                                <li><a class="toctree-l3" href="#errors">Errors</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#methods_1">Methods</a></li>
+                            
+                                <li><a class="toctree-l3" href="#returns">Returns</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#returns_1">Returns</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#returns_2">Returns</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#returns_3">Returns</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#parameters">Parameters</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#parameters_1">Parameters</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#returns_4">Returns</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#parameters_2">Parameters</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#signals_1">Signals</a></li>
+                            
+                                <li><a class="toctree-l3" href="#parameters_3">Parameters</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#parameters_4">Parameters</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#parameters_5">Parameters</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#parameters_6">Parameters</a></li>
+                            
+                        
+                            <li class="toctree-l2"><a href="#parameters_7">Parameters</a></li>
+                            
+                        
+                        </ul>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.GSM.PDP">org.freesmartphone.GSM.PDP</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.GSM.SIM">org.freesmartphone.GSM.SIM</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.GSM.SMS">org.freesmartphone.GSM.SMS</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.GSM.VoiceMail">org.freesmartphone.GSM.VoiceMail</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Info">org.freesmartphone.Info</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Network">org.freesmartphone.Network</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Notification">org.freesmartphone.Notification</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.Call">org.freesmartphone.PIM.Call</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.CallQuery">org.freesmartphone.PIM.CallQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.Calls">org.freesmartphone.PIM.Calls</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.Contact">org.freesmartphone.PIM.Contact</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.ContactQuery">org.freesmartphone.PIM.ContactQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.Contacts">org.freesmartphone.PIM.Contacts</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.Date">org.freesmartphone.PIM.Date</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.DateQuery">org.freesmartphone.PIM.DateQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.Dates">org.freesmartphone.PIM.Dates</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.Fields">org.freesmartphone.PIM.Fields</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.Message">org.freesmartphone.PIM.Message</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.MessageQuery">org.freesmartphone.PIM.MessageQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.Messages">org.freesmartphone.PIM.Messages</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.Note">org.freesmartphone.PIM.Note</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.NoteQuery">org.freesmartphone.PIM.NoteQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.Notes">org.freesmartphone.PIM.Notes</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.Task">org.freesmartphone.PIM.Task</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.TaskQuery">org.freesmartphone.PIM.TaskQuery</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.Tasks">org.freesmartphone.PIM.Tasks</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.PIM.Types">org.freesmartphone.PIM.Types</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Phone.Call">org.freesmartphone.Phone.Call</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Phone">org.freesmartphone.Phone</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Preferences.Service">org.freesmartphone.Preferences.Service</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Preferences">org.freesmartphone.Preferences</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Resource">org.freesmartphone.Resource</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Time.Alarm">org.freesmartphone.Time.Alarm</a>
+                    
+                </li>
+            
+                <li class="toctree-l1 ">
+                    <a class="" href="../org.freesmartphone.Usage">org.freesmartphone.Usage</a>
+                    
+                </li>
+            
+        
+
+    
+</ul>
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="../.."></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    <li>org.freesmartphone.GSM.Network</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="https://github.com/freesmartphone/freesmartphone.github.io" class="icon icon-github"> Edit on GitHub</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              <h1 id="freesmartphoneorg-freesmartphoneorg-gsm-network-interface">freesmartphone.org: freesmartphone.org GSM Network Interface</h1>
+<h1 id="orgfreesmartphonegsmnetwork">org.freesmartphone.GSM.Network</h1>
+<h2 id="description">Description</h2>
+<p>The Network interface is used to give information about the GSM  service providers and this device&#8217;s status with regards to  to network registration and connectivity.   Taxonomy note: We think in terms of (service) providers  rather than (network) operators, since multiple (service)  providers can use the networks from operators, however  what actually matters most is the provider name, not the  actual network operator the provider is using.</p>
+<h2 id="namespace">Namespace</h2>
+<p><code>org.freesmartphone.GSM.Network</code></p>
+<h2 id="methods">Methods</h2>
+<ul>
+<li><a href="../../Register">Register</a></li>
+<li><a href="../../Unregister">Unregister</a></li>
+<li><a href="../../GetStatus">GetStatus</a></li>
+<li><a href="../../GetSignalStrength">GetSignalStrength</a></li>
+<li><a href="../../GetTimeReport">GetTimeReport</a></li>
+<li><a href="../../ListProviders">ListProviders</a></li>
+<li><a href="../../RegisterWithProvider">RegisterWithProvider</a></li>
+<li><a href="../../SetCallingIdentification">SetCallingIdentification</a></li>
+<li><a href="../../GetCallingIdentification">GetCallingIdentification</a></li>
+<li><a href="../../SendUssdRequest">SendUssdRequest</a></li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li><a href="../../Status">Status</a></li>
+<li><a href="../../SignalStrength">SignalStrength</a></li>
+<li><a href="../../TimeReport">TimeReport</a></li>
+<li><a href="../../IncomingUssd">IncomingUssd</a></li>
+<li><a href="../../CipherStatus">CipherStatus</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<p><em>None</em></p>
+<h2 id="errors">Errors</h2>
+<p><em>None</em></p>
+<h1 id="methods_1">Methods</h1>
+<h3 id="register"><a name="Register">Register</a> ( )</h3>
+<p><strong>Description:</strong> Register with any available service provider. </p>
+<p><strong><em>Implementation Note</em></strong></p>
+<p>This maps to the GSM 07.07 command +COPS=0, see 3GPP TS 07.07 Chapter 7.3. </p>
+<h3 id="unregister"><a name="Unregister">Unregister</a> ( )</h3>
+<p><strong>Description:</strong> Unregister from service provider. </p>
+<h3 id="getstatus-asv"><a name="GetStatus">GetStatus</a> ( ) &rarr; a{sv}</h3>
+<p><strong>Description:</strong> Get Network Status. </p>
+<h4 id="returns">Returns</h4>
+<p><i>a{sv}: status</i>
+Network status information. Mandatory tuples are:  <ul>  <li>( &#8220;registration&#8221;, string ):  <ul> The telephony registration status. Expected values are:  <li>&#8220;unregistered&#8221; = not registered, not trying,</li>  <li>&#8220;home&#8221; = registered to home network,</li>  <li>&#8220;busy&#8221; = not registered, but currently trying,</li>  <li>&#8220;denied&#8221; = no permitted network available,</li>  <li>&#8220;unknown&#8221; = no idea,</li>  <li>&#8220;roaming&#8221; = registered to foreign network.</li>  </ul></li>  <li>( &#8220;mode&#8221;, string ):  <ul>  The registration mode. Expected values are:  <li>&#8220;automatic&#8221; = automatic selection,</li>  <li>&#8220;manual&#8221; = manual selection,</li>  <li>&#8220;manual;automatic&#8221; = manual first, then automatic,</li>  <li>&#8220;unregister&#8221; = manual unregister,</li>  <li>&#8220;unknown&#8221; = unknown (this should never occur in production).</li>  </ul></li>  <li>( &#8220;act&#8221;, string ):  <ul>  The network access type. Will default to &#8220;GSM&#8221; if a modem doesn&#8217;t support reporting. Expected values are:  <li>&#8220;GSM&#8221; = GPRS access</li>  <li>&#8220;Compact GSM&#8221; = </li>  <li>&#8220;UMTS&#8221; = UMTS access</li>  <li>&#8220;EDGE&#8221; = Enhanced Data Rates for GSM Evolution </li>  <li>&#8220;HSDPA&#8221; = High Speed Downlink Packet Access</li>  <li>&#8220;HSUPA&#8221; = High Speed Uplink Packet Access</li>  <li>&#8220;HSDPA/HSUPA&#8221; = High Speed Packet Access (both downlink and uplink)</li>  </ul></li>  </ul>  Optional tuples are:  <ul>  <li>( &#8220;display&#8221;, string ): The display name of the network provider (if registered or roaming).</li>  <li>( &#8220;provider&#8221;, string ): The full name of the network provider (if registered or roaming).</li>  <li>( &#8220;code&#8221;, string ): MCC and MNC of the network provider (if registered or roaming).</li>  <ul>  <li>MCC: first three characters starting from the left.</li>  <li>MNC: remaining characters.</li>  </ul>  <li>( &#8220;strength&#8221;, int ): The signal strength in percentage (0-100).</li>  <li>( &#8220;lac&#8221;, string ): The location area code string (if available).</li>  <li>( &#8220;cid&#8221;, string ): The cell id string (if available).</li>  <li>( &#8220;pdp.registration&#8221;, string ): The PDP access registration; values same as telephony registration.  <li>( &#8220;pdp.lac&#8221;, string ): The PDP location area code string (if available).</li>  <li>( &#8220;pdp.cid&#8221;, string ): The PDP cell id string (if available).</li>  </ul> </p>
+<h3 id="getsignalstrength-i"><a name="GetSignalStrength">GetSignalStrength</a> ( ) &rarr; i</h3>
+<p><strong>Description:</strong> Query the current signal strength, if registered with a service provider. </p>
+<h4 id="returns_1">Returns</h4>
+<p><i>i: signal_strength</i>
+The signal strength in percent (0-100). </p>
+<h3 id="gettimereport-iiii"><a name="GetTimeReport">GetTimeReport</a> ( ) &rarr; iiii</h3>
+<p><strong>Description:</strong> Query the last received time report. </p>
+<h4 id="returns_2">Returns</h4>
+<p><i>i: time</i>
+The current time in seconds since UNIX epoch.  0, if no time has been received. </p>
+<p><i>i: timestamp</i>
+Timestamp indicating when the time report has been received from the network. </p>
+<p><i>i: zone</i>
+The time zone offset in minutes based on UTC.  This value is only valid, if within the interval ( -1440, 1440 ). </p>
+<p><i>i: zonestamp</i>
+Timestamp indicating when the time report has been received from the network. </p>
+<h3 id="listproviders-asssss"><a name="ListProviders">ListProviders</a> ( ) &rarr; a(sssss)</h3>
+<p><strong>Description:</strong> List available service providers. </p>
+<h4 id="returns_3">Returns</h4>
+<p><i>a(sssss): providers</i>
+An array of four-tuples with the following structure:  <ul>  <li>Unique operator code,</li>  <li>Status (&#8220;unknown&#8221;, &#8220;available&#8221;, &#8220;current&#8221;, &#8220;forbidden&#8221;),</li>  <li>Long Name,</li>  <li>Short Name (optional, may be empty).</li>  <li>Network access type (defaults to &#8220;GSM&#8221;).</li>  </ul> </p>
+<h3 id="registerwithprovider-s"><a name="RegisterWithProvider">RegisterWithProvider</a> ( s )</h3>
+<p><strong>Description:</strong> Register to a dedicated service provider. </p>
+<h4 id="parameters">Parameters</h4>
+<p><i>s: operator_code</i>
+The operator code. </p>
+<h3 id="setcallingidentification-s"><a name="SetCallingIdentification">SetCallingIdentification</a> ( s )</h3>
+<p><strong>Description:</strong> Set whether your subscriber number is visible during a call. </p>
+<h4 id="parameters_1">Parameters</h4>
+<p><i>s: status</i>
+One of the following values:  <ul>  <li>&#8220;on&#8221;, if your subscriber number should always be visible to other parties.</li>  <li>&#8220;off&#8221;, if your subscriber number should never be visible to other parties.</li>  <li>&#8220;network&#8221;, if you want to use the network default.</li>  </ul> </p>
+<h3 id="getcallingidentification-s"><a name="GetCallingIdentification">GetCallingIdentification</a> ( ) &rarr; s</h3>
+<p><strong>Description:</strong> Get whether your subscriber number is visible during a call. </p>
+<h4 id="returns_4">Returns</h4>
+<p><i>s: status</i>
+One of the following values:  <ul>  <li>&#8220;on&#8221;, if your subscriber number is always visible to other parties.</li>  <li>&#8220;off&#8221;, if your subscriber number is never visible to other parties.</li>  <li>&#8220;network&#8221;, if visibility depends on the network settings.</li>  </ul> </p>
+<h3 id="sendussdrequest-s"><a name="SendUssdRequest">SendUssdRequest</a> ( s )</h3>
+<p><strong>Description:</strong> Send an Unstructured Supplementary Service Data (USSD) request to the network.  Responses will be delivered via the signal <a href="../../specs/org.freesmartphone.GSM.Network/#IncomingUssd">IncomingUssd</a> </p>
+<p><strong><em>Implementation Note</em></strong></p>
+<p>This can map to the GSM 07.07 command +CUSD=1,&#8221;(request)&#8221;,(code), see 3GPP TS 07.07 Chapter 7.14. </p>
+<h4 id="parameters_2">Parameters</h4>
+<p><i>s: request</i>
+The request to be sent to the network. </p>
+<h1 id="signals_1">Signals</h1>
+<h3></h3>
+<h3 id="status-asv"><a name="Status">Status</a> ( a{sv} )</h3>
+<p><strong>Description:</strong> Sent, when the network registration status changes. </p>
+<h4 id="parameters_3">Parameters</h4>
+<p><i>a{sv}: status</i>
+The registration status. See <a href="../../specs/org.freesmartphone.GSM.Network/#GetStatus">GetStatus</a> for expected values. </p>
+<h3></h3>
+<h3 id="signalstrength-i"><a name="SignalStrength">SignalStrength</a> ( i )</h3>
+<p><strong>Description:</strong> (OPTIONAL) Sent, when registered with a service provider and the network signal strength changes. </p>
+<h4 id="parameters_4">Parameters</h4>
+<p><i>i: signal_strength</i>
+The signal strength in percent (0-100). </p>
+<h3></h3>
+<h3 id="timereport-ii"><a name="TimeReport">TimeReport</a> ( ii )</h3>
+<p><strong>Description:</strong> Sent upon receiving a network time and/or zone report. </p>
+<h4 id="parameters_5">Parameters</h4>
+<p><i>i: time</i>
+The current time in seconds since UNIX epoch.  0, if no time has been received. </p>
+<p><i>i: zone</i>
+The time zone offset in minutes based on UTC.  This value is only valid, if within the interval ( -1440, 1440 ). </p>
+<h3></h3>
+<h3 id="incomingussd-ss"><a name="IncomingUssd">IncomingUssd</a> ( ss )</h3>
+<p><strong>Description:</strong> Sent, when an USSD result or a network initiated request arrives. This signal is usually  sent in response to the method <a href="../../specs/org.freesmartphone.GSM.Network/#SendUssdRequest">SendUssdRequest</a> </p>
+<h4 id="parameters_6">Parameters</h4>
+<p><i>s: mode</i>
+The message mode. Valid values are:  <ul>  <li>&#8220;completed&#8221;, if the last user-initiated request has been successfully completed,</li>  <li>&#8220;useraction&#8221;, if this is a network-initiated request and further user action is necessary,</li>  <li>&#8220;terminated&#8221;, if the network terminated the request,</li>  <li>&#8220;localclient&#8221;, if another local client on the network has responded,</li>  <li>&#8220;unsupported&#8221;, if the last user-inititated request is unsupported,</li>  <li>&#8220;timeout&#8221;, if the network has not answered in time.</li>  </ul> </p>
+<p><i>s: message</i>
+The message. Only set if mode is &#8220;completed&#8221; or &#8220;useraction&#8221;. &#8220;&#8221;, otherwise. </p>
+<h3></h3>
+<h3 id="cipherstatus-ss"><a name="CipherStatus">CipherStatus</a> ( ss )</h3>
+<p><strong>Description:</strong> Sent, when the network reports a change in telephony or PDP cipher indication. </p>
+<h4 id="parameters_7">Parameters</h4>
+<p><i>s: telephony</i>
+The telephony cipher: &#8220;enabled&#8221;, &#8220;disabled&#8221;, or &#8220;unknown&#8221; </p>
+<p><i>s: pdp</i>
+The PDP cipher cipher: &#8220;enabled&#8221;, &#8220;disabled&#8221;, or &#8220;unknown&#8221; </p>
+<p>the footer here</p>
+
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../org.freesmartphone.GSM.PDP" class="btn btn-neutral float-right" title="org.freesmartphone.GSM.PDP"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../org.freesmartphone.GSM.Monitor" class="btn btn-neutral" title="org.freesmartphone.GSM.Monitor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        
+            <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+        
+      <span><a href="../org.freesmartphone.GSM.Monitor" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      <span style="margin-left: 15px"><a href="../org.freesmartphone.GSM.PDP" style="color: #fcfcfc">Next &raquo;</a></span>
+    </span>
+</div>
+</body>
+</html>
