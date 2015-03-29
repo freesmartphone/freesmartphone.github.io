@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.NoteQuery Interface
+# freesmartphone.org PIM.NoteQuery Interface
             
-
-#org.freesmartphone.PIM.NoteQuery
-
 ##Description
 
 
@@ -45,7 +42,8 @@ This interface gives access to a note query.
 
 **Description:** Return the number of items in the query result 
 
-####Returns
+***Returns:***
+
 <i>i: count</i>
 Amount of notes in the query result. 
 
@@ -61,7 +59,8 @@ Amount of notes in the query result.
 
 **Description:** Skip n notes in the result cursor (for this dbus client only). 
 
-####Parameters
+***Parameters:****
+
 <i>i: count</i>
 Amount of notes to skip. 
 
@@ -72,7 +71,8 @@ Amount of notes to skip.
 
 **Description:** Path for the note the result cursor points to. 
 
-####Returns
+***Returns:***
+
 <i>s: note_path</i>
 The path to the note. 
 
@@ -83,7 +83,8 @@ The path to the note.
 
 **Description:** Return the next note in the query result, and move the query to the next note. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: item</i>
 fields of the result. 
 
@@ -94,12 +95,14 @@ fields of the result.
 
 **Description:** Get multiple notes from the result set at once. 
 
-####Parameters
+***Parameters:****
+
 <i>i: count</i>
 The number of notes to get from the result set. A negative value means all. 
 
 
-####Returns
+***Returns:***
+
 <i>aa{sv}: resultset</i>
 The list of the returned notes data. 
 
@@ -117,10 +120,11 @@ The list of the returned notes data.
 
 **Description:** Sent when a new note which matches this query is loaded. 
 
-####Parameters
+***Parameters:***
+
 <i>s: note_path</i>
 The path of the newly loaded note. 
 
 
 
-the footer here
+

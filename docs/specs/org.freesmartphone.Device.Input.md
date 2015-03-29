@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Input Interface
+# freesmartphone.org Input Interface
             
-
-#org.freesmartphone.Device.Input
-
 ##Description
 
 
@@ -41,7 +38,8 @@ The Input Interface provides information about the device's buttons, switches, a
 
 **Description:** Get the identification of the input device. 
 
-####Returns
+***Returns:***
+
 <i>s: id</i>
 The identification. 
 
@@ -52,7 +50,8 @@ The identification.
 
 **Description:** Get the capabilities of the input device. 
 
-####Returns
+***Returns:***
+
 <i>s: id</i>
 The capabilities. Valid elements are:  <ul>  <li>"keys"</li>,  <li>"relative"</li>,  <li>"absolute"</li>,  <li>"misc"</li>,  <li>"switches"</li>,  <li>"leds"</li>,  <li>"sound"</li>,  <li>"force-feedback"</li>.  </ul> 
 
@@ -65,7 +64,8 @@ The capabilities. Valid elements are:  <ul>  <li>"keys"</li>,  <li>"relative"</l
 
 **Description:** Sent, when a button or switch input event occurs. 
 
-####Parameters
+***Parameters:***
+
 <i>s: name</i>
 The name of the event source. 
 
@@ -83,7 +83,8 @@ The duration for the event. Only valid for the "held" and the "released" action.
 
 **Description:** Sent, when a directional input event occurs. 
 
-####Parameters
+***Parameters:***
+
 <i>s: name</i>
 The name of the event source. 
 
@@ -95,4 +96,4 @@ The offset.
 
 
 
-the footer here
+

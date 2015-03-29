@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.Calls Interface
+# freesmartphone.org PIM.Calls Interface
             
-
-#org.freesmartphone.PIM.Calls
-
 ##Description
 
 
@@ -44,12 +41,14 @@ This interface provides access to the collection of PIM calls.
 
 **Description:** Add a new call to the default backend for calls. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: call_data</i>
 The new calls data. 
 
 
-####Returns
+***Returns:***
+
 <i>s: call_path</i>
 The contact path of the added call. 
 
@@ -60,7 +59,8 @@ The contact path of the added call.
 
 **Description:** Query the content of one field of one call. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: query</i>
 The query. 
 
@@ -68,7 +68,8 @@ The query.
 The name of the field to query. 
 
 
-####Returns
+***Returns:***
+
 <i>s: value</i>
 The content of the queried field. 
 
@@ -79,12 +80,14 @@ The content of the queried field.
 
 **Description:** Start a query for calls. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: query</i>
 The query. 
 
 
-####Returns
+***Returns:***
+
 <i>s: query_path</i>
 The path for the started query. 
 
@@ -95,7 +98,8 @@ The path for the started query.
 
 **Description:** Get the amount of new missed calls. 
 
-####Returns
+***Returns:***
+
 <i>i: amount</i>
 Amount of new missed calls 
 
@@ -108,7 +112,8 @@ Amount of new missed calls
 
 **Description:** Sent when a new call is loaded. 
 
-####Parameters
+***Parameters:***
+
 <i>s: call_path</i>
 The path of the newly loaded call. 
 
@@ -120,7 +125,8 @@ The path of the newly loaded call.
 
 **Description:** Sent when a new missed call is registered. 
 
-####Parameters
+***Parameters:***
+
 <i>s: call_path</i>
 The path of the newly registered missed call. 
 
@@ -132,10 +138,11 @@ The path of the newly registered missed call.
 
 **Description:** Sent when amount of new missed calls changes. 
 
-####Parameters
+***Parameters:***
+
 <i>i: amount</i>
 Amount of new missed calls. 
 
 
 
-the footer here
+

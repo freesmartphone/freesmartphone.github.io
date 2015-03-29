@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Network Interface
+# freesmartphone.org Network Interface
             
-
-#org.freesmartphone.Network
-
 ##Description
 
 
@@ -45,7 +42,8 @@ Might launch a dhcp server process and adjust IP tables.
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: interface</i>
 The network interface to start sharing the connectivity with. 
 
@@ -62,7 +60,8 @@ Might stop a dhcp server process and adjust IP tables.
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: interface</i>
 The network interface to stop sharing the connectivity with. 
 
@@ -79,7 +78,8 @@ NOTE that this method is for TESTING purposes only. Eventually connman will be u
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: technology</i>
 The technology offering the default route. 
 
@@ -102,4 +102,4 @@ The first DNS address.
 The second DNS address. 
 
 
-the footer here
+

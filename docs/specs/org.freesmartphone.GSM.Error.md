@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org GSM Errors
+# freesmartphone.org GSM Errors
             
-
-#org.freesmartphone.GSM.Error0
-
 ##Description
 
 
@@ -156,4 +153,4 @@ The org.freesmartphone.GSM.Error domain describes common errors clients should e
 
 **Description:** Raised, if the specified PDP context is not present. 
 
-the footer here
+

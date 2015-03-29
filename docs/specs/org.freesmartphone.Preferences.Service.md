@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Preferences Service Interface
+# freesmartphone.org Preferences Service Interface
             
-
-#org.freesmartphone.Preferences.Service
-
 ##Description
 
 
@@ -43,7 +40,8 @@ The service object deals with configuration values of a given service   The serv
 
 **Description:** Retrieve all the keys of the service.   This method should be used only for introspection purposes. 
 
-####Returns
+***Returns:***
+
 <i>as: keys</i>
 The list of keys. 
 
@@ -54,12 +52,14 @@ The list of keys.
 
 **Description:** Get a parameter value. 
 
-####Parameters
+***Parameters:****
+
 <i>s: key</i>
 The parameter key string. 
 
 
-####Returns
+***Returns:***
+
 <i>v: value</i>
 The value associated with the key. 
 
@@ -70,7 +70,8 @@ The value associated with the key.
 
 **Description:** Set a parameter value. 
 
-####Parameters
+***Parameters:****
+
 <i>s: key</i>
 The parameter key string. 
 
@@ -84,12 +85,14 @@ The new value associated with the key.
 
 **Description:** Return true if a parameter depends on the current profile. 
 
-####Parameters
+***Parameters:****
+
 <i>s: key</i>
 The parameter key string. 
 
 
-####Returns
+***Returns:***
+
 <i>b: profileable</i>
 True if a parameter depends on the current profile. 
 
@@ -100,12 +103,14 @@ True if a parameter depends on the current profile.
 
 **Description:** Return a string representing the type of the parameter. 
 
-####Parameters
+***Parameters:****
+
 <i>s: key</i>
 The parameter key string. 
 
 
-####Returns
+***Returns:***
+
 <i>s: type</i>
 A string representing the type of the parameter. 
 
@@ -118,7 +123,8 @@ A string representing the type of the parameter.
 
 **Description:** Sent whenever there is a change in a parameter value in the service 
 
-####Parameters
+***Parameters:***
+
 <i>s: key</i>
 The parameter key string. 
 
@@ -127,4 +133,4 @@ The new value of the parameter.
 
 
 
-the footer here
+

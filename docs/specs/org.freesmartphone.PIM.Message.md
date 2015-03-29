@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.Message Interface
+# freesmartphone.org PIM.Message Interface
             
-
-#org.freesmartphone.PIM.Message
-
 ##Description
 
 
@@ -44,7 +41,8 @@ This interface provides access to one message.
 
 **Description:** Get the content of one message. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: content</i>
 The content of the message. 
 
@@ -55,12 +53,14 @@ The content of the message.
 
 **Description:** Get the content for a list of fields from the message. 
 
-####Parameters
+***Parameters:****
+
 <i>s: field_list</i>
 The list of fields to get the content for. 
 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: field_data</i>
 The data of the requested fields. 
 
@@ -71,7 +71,8 @@ The data of the requested fields.
 
 **Description:** Move this message to a different folder. 
 
-####Parameters
+***Parameters:****
+
 <i>s: folder_name</i>
 The name of the folder to move the message to. 
 
@@ -82,7 +83,8 @@ The name of the folder to move the message to.
 
 **Description:** Update one or more fields of this message. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: message_data</i>
 The list of fields/values to update for this message. 
 
@@ -103,10 +105,11 @@ The list of fields/values to update for this message.
 
 **Description:** Sent when message is updated. 
 
-####Parameters
+***Parameters:***
+
 <i>a{sv}: data</i>
 Data used to update message. 
 
 
 
-the footer here
+

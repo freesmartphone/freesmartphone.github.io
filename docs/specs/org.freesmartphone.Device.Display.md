@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Display Interface
+# freesmartphone.org Display Interface
             
-
-#org.freesmartphone.Device.Display
-
 ##Description
 
 
@@ -42,7 +39,8 @@ This interface provides access to a display device.
 
 **Description:** Get the current brightness level. 
 
-####Returns
+***Returns:***
+
 <i>i: brightness</i>
 The brightness level in percent (0-100). 
 
@@ -59,7 +57,8 @@ A brightness level of 0 does not necessarily mean that the backlight power is of
 
 
 
-####Parameters
+***Parameters:****
+
 <i>i: brightness</i>
 The brightness level in percent (0-100). 
 
@@ -70,7 +69,8 @@ The brightness level in percent (0-100).
 
 **Description:** Get whether the backlight is powered or not. 
 
-####Returns
+***Returns:***
+
 <i>b: power</i>
 True, if the backlight is powered. False, otherwise. 
 
@@ -81,7 +81,8 @@ True, if the backlight is powered. False, otherwise.
 
 **Description:** Set whether the backlight should be powered or not. 
 
-####Parameters
+***Parameters:****
+
 <i>b: power</i>
 True, if the backlight should be powered. False, otherwise. 
 
@@ -94,10 +95,11 @@ True, if the backlight should be powered. False, otherwise.
 
 **Description:** Send when the backlight brightness (or power) moves to 0 or out of 0. 
 
-####Parameters
+***Parameters:***
+
 <i>b: power</i>
 True, if the backlight has been turned on. False, otherwise. 
 
 
 
-the footer here
+

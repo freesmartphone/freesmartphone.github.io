@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.ContactQuery Interface
+# freesmartphone.org PIM.ContactQuery Interface
             
-
-#org.freesmartphone.PIM.ContactQuery
-
 ##Description
 
 
@@ -45,7 +42,8 @@ This interface gives access to a contact query.
 
 **Description:** Return the number of items in the query result 
 
-####Returns
+***Returns:***
+
 <i>i: count</i>
 Amount of contacts in the query result. 
 
@@ -61,7 +59,8 @@ Amount of contacts in the query result.
 
 **Description:** Skip n contacts in the result cursor (for this dbus client only). 
 
-####Parameters
+***Parameters:****
+
 <i>i: count</i>
 Amount of contacts to skip. 
 
@@ -72,7 +71,8 @@ Amount of contacts to skip.
 
 **Description:** Path for the contact the result cursor points to. 
 
-####Returns
+***Returns:***
+
 <i>s: contact_path</i>
 The path to the contact. 
 
@@ -83,7 +83,8 @@ The path to the contact.
 
 **Description:** Return the next contact in the query result, and move the query to the next contact. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: item</i>
 fields of the result. 
 
@@ -94,12 +95,14 @@ fields of the result.
 
 **Description:** Get multiple contacts from the result set at once. 
 
-####Parameters
+***Parameters:****
+
 <i>i: count</i>
 The number of contacts to get from the result set. A negative value means all. 
 
 
-####Returns
+***Returns:***
+
 <i>aa{sv}: resultset</i>
 The list of the returned contacts data. 
 
@@ -117,10 +120,11 @@ The list of the returned contacts data.
 
 **Description:** Sent when a new contact which matches this query is loaded. 
 
-####Parameters
+***Parameters:***
+
 <i>s: contact_path</i>
 The path of the newly loaded contact. 
 
 
 
-the footer here
+

@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PowerControl Interface
+# freesmartphone.org PowerControl Interface
             
-
-#org.freesmartphone.Device.PowerControl
-
 ##Description
 
 
@@ -40,7 +37,8 @@ This interface provides access to a power-controllable device.
 
 **Description:** Get the power status. 
 
-####Returns
+***Returns:***
+
 <i>b: on</i>
 True, if the device is powered on. False, otherwise. 
 
@@ -51,7 +49,8 @@ True, if the device is powered on. False, otherwise.
 
 **Description:** Power the device on, or turn the device off. 
 
-####Parameters
+***Parameters:****
+
 <i>b: on</i>
 True, if the device should be turned on. False, otherwise. 
 
@@ -64,10 +63,11 @@ True, if the device should be turned on. False, otherwise.
 
 **Description:** Sent, when the device has changed power status. 
 
-####Parameters
+***Parameters:***
+
 <i>b: on</i>
 True, if the device is now powered on. False, otherwise. 
 
 
 
-the footer here
+

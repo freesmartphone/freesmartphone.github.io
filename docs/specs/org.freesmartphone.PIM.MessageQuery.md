@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.MessageQuery Interface
+# freesmartphone.org PIM.MessageQuery Interface
             
-
-#org.freesmartphone.PIM.MessageQuery
-
 ##Description
 
 
@@ -45,7 +42,8 @@ Represent the result of a Query
 
 **Description:** Return the number of items in the query result 
 
-####Returns
+***Returns:***
+
 <i>i: count</i>
 Number of contacts in the query result. 
 
@@ -61,7 +59,8 @@ Number of contacts in the query result.
 
 **Description:** Skip n messages in the result cursor (for this dbus client only) 
 
-####Parameters
+***Parameters:****
+
 <i>i: count</i>
 Amount of messages to skip 
 
@@ -72,7 +71,8 @@ Amount of messages to skip
 
 **Description:** Path for the message the result cursor points to. 
 
-####Returns
+***Returns:***
+
 <i>s: message_path</i>
 The path to the message. 
 
@@ -83,7 +83,8 @@ The path to the message.
 
 **Description:** Return the next message in the query result, and move the query to the next message. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: item</i>
 Fields of the message. 
 
@@ -94,12 +95,14 @@ Fields of the message.
 
 **Description:** Get multiple message from the result set at once. 
 
-####Parameters
+***Parameters:****
+
 <i>i: count</i>
 The amount of messages to get from the result set. A negative value means all. 
 
 
-####Returns
+***Returns:***
+
 <i>aa{sv}: resultset</i>
 The list of the returned messages data. 
 
@@ -117,10 +120,11 @@ The list of the returned messages data.
 
 **Description:** Sent when a new message which matches this query is loaded. 
 
-####Parameters
+***Parameters:***
+
 <i>s: message_path</i>
 The path of the newly loaded message. 
 
 
 
-the footer here
+

@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Notification Interface
+# freesmartphone.org Notification Interface
             
-
-#org.freesmartphone.Notification
-
 ##Description
 
 
@@ -36,4 +33,4 @@ The Notification interface is used to signalize important information about cert
 
 **Description:** Sent, when an alarm that has been scheduled with <a href="specs/org.freesmartphone.Time.Alarm/#AddAlarm">AddAlarm</a>  has been triggered. 
 
-the footer here
+

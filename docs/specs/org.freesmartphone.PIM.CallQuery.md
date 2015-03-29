@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.CallQuery Interface
+# freesmartphone.org PIM.CallQuery Interface
             
-
-#org.freesmartphone.PIM.CallQuery
-
 ##Description
 
 
@@ -45,7 +42,8 @@ This interface gives access to a call query.
 
 **Description:** Return the number of items in the query result 
 
-####Returns
+***Returns:***
+
 <i>i: count</i>
 Amount of calls in the query result. 
 
@@ -61,7 +59,8 @@ Amount of calls in the query result.
 
 **Description:** Skip n calls in the result cursor (for this dbus client only). 
 
-####Parameters
+***Parameters:****
+
 <i>i: count</i>
 Amount of calls to skip. 
 
@@ -72,7 +71,8 @@ Amount of calls to skip.
 
 **Description:** Path for the call the result cursor points to. 
 
-####Returns
+***Returns:***
+
 <i>s: call_path</i>
 The path to the call. 
 
@@ -83,7 +83,8 @@ The path to the call.
 
 **Description:** Return the next call in the query result, and move the query to the next call. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: item</i>
 fields of the result. 
 
@@ -94,12 +95,14 @@ fields of the result.
 
 **Description:** Get multiple calls from the result set at once. 
 
-####Parameters
+***Parameters:****
+
 <i>i: count</i>
 The number of calls to get from the result set. A negative value means all. 
 
 
-####Returns
+***Returns:***
+
 <i>aa{sv}: resultset</i>
 The list of the returned calls data. 
 
@@ -117,10 +120,11 @@ The list of the returned calls data.
 
 **Description:** Sent when a new call which matches this query is loaded. 
 
-####Parameters
+***Parameters:***
+
 <i>s: call_path</i>
 The path of the newly loaded call. 
 
 
 
-the footer here
+

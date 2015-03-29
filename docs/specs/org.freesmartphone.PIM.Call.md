@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.Call Interface
+# freesmartphone.org PIM.Call Interface
             
-
-#org.freesmartphone.PIM.Call
-
 ##Description
 
 
@@ -44,7 +41,8 @@ This interface provides access to one PIM call.
 
 **Description:** Get the fields of one call. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: call_data</i>
 The call's data. 
 
@@ -55,12 +53,14 @@ The call's data.
 
 **Description:** Get a specified field list of the call's data. 
 
-####Parameters
+***Parameters:****
+
 <i>s: field_list</i>
 The list of fields to get, split by "," (coma) char. 
 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: field_data</i>
 The data of the requested fields. 
 
@@ -71,7 +71,8 @@ The data of the requested fields.
 
 **Description:** Get used backends in call. 
 
-####Returns
+***Returns:***
+
 <i>as: backends</i>
 The list of backends used in this call. 
 
@@ -82,7 +83,8 @@ The list of backends used in this call.
 
 **Description:** Update one or more fields of this call. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: call_data</i>
 The list of fields/values to update for this call. 
 
@@ -103,10 +105,11 @@ The list of fields/values to update for this call.
 
 **Description:** Sent when call is updated. 
 
-####Parameters
+***Parameters:***
+
 <i>a{sv}: data</i>
 Data used to update call. 
 
 
 
-the footer here
+

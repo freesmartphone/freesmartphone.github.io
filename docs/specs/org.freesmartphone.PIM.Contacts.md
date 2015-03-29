@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.Contacts Interface
+# freesmartphone.org PIM.Contacts Interface
             
-
-#org.freesmartphone.PIM.Contacts
-
 ##Description
 
 
@@ -43,12 +40,14 @@ This interface provides access to the collection of PIM contacts.
 
 **Description:** Add a new contact to the default backend for contacts. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: contact_data</i>
 The new contacts data. 
 
 
-####Returns
+***Returns:***
+
 <i>s: contact_path</i>
 The contact path of the added contact. 
 
@@ -59,7 +58,8 @@ The contact path of the added contact.
 
 **Description:** Query the content of one field of one contact. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: query</i>
 The query. 
 
@@ -67,7 +67,8 @@ The query.
 The name of the field to query. 
 
 
-####Returns
+***Returns:***
+
 <i>s: value</i>
 The content of the queried field. 
 
@@ -78,12 +79,14 @@ The content of the queried field.
 
 **Description:** Start a query for contacts. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: query</i>
 The query. 
 
 
-####Returns
+***Returns:***
+
 <i>s: query_path</i>
 The path for the started query. 
 
@@ -96,7 +99,8 @@ The path for the started query.
 
 **Description:** Sent when a new contact is loaded. 
 
-####Parameters
+***Parameters:***
+
 <i>s: contact_path</i>
 The path of the newly loaded contact. 
 
@@ -108,7 +112,8 @@ The path of the newly loaded contact.
 
 **Description:** Sent when an existing contact got updated. 
 
-####Parameters
+***Parameters:***
+
 <i>s: contact_path</i>
 The path of the updated contact. 
 
@@ -123,10 +128,11 @@ The part of the contacts data that got changed.
 
 **Description:** Sent when a contact got deleted. 
 
-####Parameters
+***Parameters:***
+
 <i>s: contact_path</i>
 The path of that deleted contact. 
 
 
 
-the footer here
+

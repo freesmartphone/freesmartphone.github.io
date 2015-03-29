@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Phone Interface
+# freesmartphone.org Phone Interface
             
-
-#org.freesmartphone.Phone
-
 ##Description
 
 
@@ -40,7 +37,8 @@ The Phone object is used to create Call objects using different protocols.
 
 **Description:** Initialize all the protocols. 
 
-####Returns
+***Returns:***
+
 <i>as: protocols</i>
 The list of all the protocols names. 
 
@@ -51,7 +49,8 @@ The list of all the protocols names.
 
 **Description:** Create a new Call to a given number, with an optional protocol. 
 
-####Parameters
+***Parameters:****
+
 <i>s: number</i>
 A string representing the number of the peer. 
 
@@ -62,7 +61,8 @@ The name of the protocol as returned by InitProtocols,  if None the best protoco
 If true, we destroy any already present call object to this number. Default to True 
 
 
-####Returns
+***Returns:***
+
 <i>o: call</i>
 The path to the new Call object 
 
@@ -75,10 +75,11 @@ The path to the new Call object
 
 **Description:** Emitted when a new call is incoming 
 
-####Parameters
+***Parameters:***
+
 <i>o: call</i>
 Path to the Call object. 
 
 
 
-the footer here
+

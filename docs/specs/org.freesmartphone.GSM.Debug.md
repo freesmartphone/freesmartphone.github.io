@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org GSM Debug Interface
+# freesmartphone.org GSM Debug Interface
             
-
-#org.freesmartphone.GSM.Debug
-
 ##Description
 
 
@@ -47,7 +44,8 @@ WARNING: Only use this, if you know what you are doing.  You may crash the devic
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: command</i>
 The command to send. Note that the validity of commands depends  on the actual modem channel. Not all modem channels are AT channels!  It is recommended to implement a 'help' command that returns a  list of valid commands. 
 
@@ -55,7 +53,8 @@ The command to send. Note that the validity of commands depends  on the actual m
 The channel to send this command on. Set to "" to use the default one. 
 
 
-####Returns
+***Returns:***
+
 <i>s: result</i>
 The result of the command 
 
@@ -72,7 +71,8 @@ WARNING: Only use this, if you know what you are doing.  You may crash the devic
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: response</i>
 The response to inject. 
 
@@ -93,10 +93,11 @@ The channel to inject this command on. Set to "" to use the default one.
 
 **Description:** Sent, when the modem status changes. 
 
-####Parameters
+***Parameters:***
+
 <i>a{ss}: channels</i>
  
 
 
 
-the footer here
+

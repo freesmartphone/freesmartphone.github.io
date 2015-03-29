@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Data World Interface
+# freesmartphone.org Data World Interface
             
-
-#org.freesmartphone.Data.World
-
 ##Description
 
 
@@ -41,7 +38,8 @@ The World interface is used to query (more or less static) information about  th
 
 **Description:** Retrieves all known country codes and their (english) name. 
 
-####Returns
+***Returns:***
+
 <i>a(ss): countries</i>
 A list of country codes and their (english) names. 
 
@@ -52,12 +50,14 @@ A list of country codes and their (english) names.
 
 **Description:** Retrieve a country code for MCC or concatenated MCC and MNC.  Raises <a href="specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. 
 
-####Parameters
+***Parameters:****
+
 <i>s: mcc_mnc</i>
 MCC or concatenated MCC and MNC. 
 
 
-####Returns
+***Returns:***
+
 <i>s: country_code</i>
 The country code that owns the specified MCC (and MNC). 
 
@@ -68,12 +68,14 @@ The country code that owns the specified MCC (and MNC).
 
 **Description:** Retrieves the list of timezones given a country code.  Raises <a href="specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. 
 
-####Parameters
+***Parameters:****
+
 <i>s: country_code</i>
 The country code. 
 
 
-####Returns
+***Returns:***
+
 <i>a{ss}: timezones</i>
 A dictionary of coordinates and timezone names. 
 
@@ -84,12 +86,14 @@ A dictionary of coordinates and timezone names.
 
 **Description:** Retrieves a list of data connectivity (GPRS, EDGE, 3G)  access point names for MCC or concatenated MCC and MNC.  Raises <a href="specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. 
 
-####Parameters
+***Parameters:****
+
 <i>s: mcc_mnc</i>
 MCC or concatenated MCC and MNC. 
 
 
-####Returns
+***Returns:***
+
 <i>a(ssssss): apns</i>
 A list of six-tuples descriping a connectivity access point. Structure is: 
 
@@ -100,14 +104,16 @@ A list of six-tuples descriping a connectivity access point. Structure is:
 
 **Description:** Retrieves the name of a provider for a supplied concatenated MCC and MNC.  Raises <a href="specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. 
 
-####Parameters
+***Parameters:****
+
 <i>s: mcc_mnc</i>
 MCC or concatenated MCC and MNC. 
 
 
-####Returns
+***Returns:***
+
 <i>s: provider</i>
 Name of the provider. 
 
 
-the footer here
+

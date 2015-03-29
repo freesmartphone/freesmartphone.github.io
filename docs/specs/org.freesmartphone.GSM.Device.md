@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org GSM Device Interface
+# freesmartphone.org GSM Device Interface
             
-
-#org.freesmartphone.GSM.Device
-
 ##Description
 
 
@@ -47,7 +44,8 @@ The Device interface is used to give information about the GSM  or CDMA device a
 
 **Description:** Retrieve the current functionality status of the device. 
 
-####Returns
+***Returns:***
+
 <i>s: level</i>
 The functionality level. Expected values are:  <ul>  <li>"minimal": The device is in maximum powersave mode, SIM access is not possible</li>  <li>"airplane": The device is in airplane mode (RF receivers and transmitters have been turned off), SIM access is possible</li>  <li>"full": The device operates with maximum functionality (all units are powered up).</li>  </ul> 
 
@@ -64,7 +62,8 @@ The SIM PIN being used to authenticate if necessary, or an empty string.  This p
 
 **Description:** Set the functionality status for this device. 
 
-####Parameters
+***Parameters:****
+
 <i>s: level</i>
 See <a href="specs/org.freesmartphone.GSM.Device/#GetFunctionality">GetFunctionality</a> 
 
@@ -81,7 +80,8 @@ The SIM PIN being used to authenticate if necessary, or an empty string.  This p
 
 **Description:** Get information about the telephony features supported by this device. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: features</i>
 The telephony features supported by this device. Valid tuples are:  <ul>  <li>("voice", bool) = true, if the device supports voice calls,</li>  <li>("csd", bool) = true, if the device supports circuit-switched (data) calls,</li>  <li>("gsm", bool) = true, if the device can operate in a GSM network,</li>  <li>("cdma", bool) = true, if the device can operate in a CDMA network,</li>  <li>("pdp", string) = supported pdp classes, if the device supports packet data communication,</li>  <li>("fax", string) = supported fax classes, if the device supports fax communication,</li>  <li>("facilities", string) = supported security facilities.</li>  </ul> 
 
@@ -92,7 +92,8 @@ The telephony features supported by this device. Valid tuples are:  <ul>  <li>("
 
 **Description:** Retrieve the current device status. SIM commands, such as  <a href="specs/org.freesmartphone.GSM.SIM/#ListPhonebooks">ListPhonebooks</a> can not be performed  before the device is in the status 'alive-sim-ready'. 
 
-####Returns
+***Returns:***
+
 <i>s: status</i>
 The device status. Expected values are:  <ul>  <li>"unknown" = Device status could not be found,</li>  <li>"closed" = Device is present, but not opened,</li>  <li>"initializing" = Device is being opened,</li>  <li>"alive-no-sim" = Device is operating without a SIM card,</li>  <li>"alive-sim-locked" = Device is operating, SIM card is locked,</li>  <li>"alive-sim-unlocked" = Device is operating, SIM card unlocked,</li>  <li>"alive-sim-ready" = Device is operating, SIM card is ready for access,</li>  <li>"alive-registered" = Device is operating and camped to the network,</li>  <li>"suspending" = Device is suspending,</li>  <li>"suspended" = Device is suspended,</li>  <li>"resuming" = Device is resuming,</li>  <li>"closing" = Device is closing.</li>  </ul> 
 
@@ -103,7 +104,8 @@ The device status. Expected values are:  <ul>  <li>"unknown" = Device status cou
 
 **Description:** Retrieve the current loudspeaker volume. 
 
-####Returns
+***Returns:***
+
 <i>i: volume</i>
 The volume in percent (0-100). 
 
@@ -120,7 +122,8 @@ This maps to the GSM 07.07 command +CLVL=... see 3GPP TS 07.07 Chapter 8.2.3.
 
 
 
-####Parameters
+***Parameters:****
+
 <i>i: volume</i>
 The volume in percent (0-100). 
 
@@ -137,7 +140,8 @@ This maps to the GSM 07.07 command +CMUT?, see 3GPP TS 07.07 Chapter 8.2.4.
 
 
 
-####Returns
+***Returns:***
+
 <i>b: muted</i>
 True, if the microphone is muted. False, otherwise. 
 
@@ -154,7 +158,8 @@ This maps to the GSM 07.07 command +CMUT=... see 3GPP TS 07.07 Chapter 8.2.4.
 
 
 
-####Parameters
+***Parameters:****
+
 <i>b: muted</i>
 True, to mute the microphone. False, otherwise. 
 
@@ -167,7 +172,8 @@ True, to mute the microphone. False, otherwise.
 
 **Description:** Sent on a change in device status. 
 
-####Parameters
+***Parameters:***
+
 <i>s: status</i>
 The device status. See <a href="specs/org.freesmartphone.GSM.Device/#GetDeviceStatus">GetDeviceStatus</a> for expected values. 
 
@@ -179,7 +185,8 @@ The device status. See <a href="specs/org.freesmartphone.GSM.Device/#GetDeviceSt
 
 **Description:** Sent, when a keypad input event occurs. 
 
-####Parameters
+***Parameters:***
+
 <i>s: name</i>
 The name of the event source. 
 
@@ -188,4 +195,4 @@ True, if the keypad key has been pressed. False, otherwise.
 
 
 
-the footer here
+

@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org GSM Voice Mail Interface
+# freesmartphone.org GSM Voice Mail Interface
             
-
-#org.freesmartphone.GSM.VoiceMail
-
 ##Description
 
 
@@ -41,7 +38,8 @@ The Voice Mail interface gives access to the voice mail status.   Voice Mail is 
 
 **Description:** Retrieve phone number of Voice Mailbox. 
 
-####Returns
+***Returns:***
+
 <i>s: number</i>
 The Voice mailbox number. 
 
@@ -52,7 +50,8 @@ The Voice mailbox number.
 
 **Description:** Set phone number of Voice Mailbox. 
 
-####Parameters
+***Parameters:****
+
 <i>s: number</i>
 The Voice mailbox nNumber. 
 
@@ -63,7 +62,8 @@ The Voice mailbox nNumber.
 
 **Description:** Retrieve the indices of stored voice mails on your voice mailbox. 
 
-####Returns
+***Returns:***
+
 <i>as: zones</i>
 The home zone names. 
 
@@ -76,10 +76,11 @@ The home zone names.
 
 **Description:** Sent, when a new voice mail has been stored on the voice mailbox. 
 
-####Parameters
+***Parameters:***
+
 <i>i: index</i>
 The storage index of the new message. 
 
 
 
-the footer here
+

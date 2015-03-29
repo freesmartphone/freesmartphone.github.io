@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Proximity Interface
+# freesmartphone.org Proximity Interface
             
-
-#org.freesmartphone.Device.Proximity
-
 ##Description
 
 
@@ -39,7 +36,8 @@ This interface provides access to a proximity device.
 
 **Description:** Get the last percentage value of the proximity device (most probably 0 or 100), or -1 if unknown. 
 
-####Returns
+***Returns:***
+
 <i>i: proximity</i>
 The last proximity. 
 
@@ -55,10 +53,11 @@ Timestamp indicating when this value has been received.
 
 **Description:** Sent, when the proximity changes. 
 
-####Parameters
+***Parameters:***
+
 <i>i: proximity</i>
 The new proximity in percentage (most probably 0 or 100). 
 
 
 
-the footer here
+

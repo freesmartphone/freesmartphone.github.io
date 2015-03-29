@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Vibrator Interface
+# freesmartphone.org Vibrator Interface
             
-
-#org.freesmartphone.Device.Vibrator
-
 ##Description
 
 
@@ -39,7 +36,8 @@ This interface provides access to a Vibrator device.
 
 **Description:** Vibrate in an on/off pattern for a specified number of pulses. 
 
-####Parameters
+***Parameters:****
+
 <i>i: pulses</i>
 The amount of pulses (on+off iterations). 
 
@@ -59,7 +57,8 @@ Strength of vibration in percent (0-100). Note that not all vibrators honor this
 
 **Description:** Pulse the vibrator for a specified number of seconds. 
 
-####Parameters
+***Parameters:****
+
 <i>i: duration_ms</i>
 The amount of time (in milliseconds) to vibrate. 
 
@@ -72,4 +71,4 @@ Strength of vibration in percent (0-100). Note that not all vibrators honor this
 
 **Description:** Cancel any previous commands and stop the vibrator immediately. 
 
-the footer here
+

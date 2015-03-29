@@ -4,10 +4,11 @@ freesmartphone.org (**FSO**) is a modern service-based middleware platform for L
 
 ## Site Map
 
+* [Index](index) – This page
 * [About](about) – More info about how far the corresponding initiative reaches
 * [History](history) – How the FSO project came to live
 * [Contribute](contribute) – How to contribute to this project
 * [Resource Handling](usage-intro) – An introduction to the FSO Resource Handling
 * [PIM Handling](pim-intro) – An introduction to the FSO PIM
-* [Specifications](specifications) – FSO DBus specifications
 * [Implementations](implementations) – FSO reference implementations
+* [Specifications](specifications) – FSO DBus specifications

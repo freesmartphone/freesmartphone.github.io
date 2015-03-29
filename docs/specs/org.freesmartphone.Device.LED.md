@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org LED Interface
+# freesmartphone.org LED Interface
             
-
-#org.freesmartphone.Device.LED
-
 ##Description
 
 
@@ -40,7 +37,8 @@ This interface provides access to a LED device.
 
 **Description:** Set the brightness level. 
 
-####Parameters
+***Parameters:****
+
 <i>i: brightness</i>
 The brightness level in percent (0-100). 
 
@@ -57,7 +55,8 @@ This requires the Linux 2.6 LED class trigger 'timer' to be available.
 
 
 
-####Parameters
+***Parameters:****
+
 <i>i: on_duration</i>
 Duration of being lit in milliseconds. 
 
@@ -77,7 +76,8 @@ This requires the Linux 2.6 LED class trigger 'timer' to be available.
 
 
 
-####Parameters
+***Parameters:****
+
 <i>i: seconds</i>
 The amount of time (in seconds) to blink this LED. 
 
@@ -100,7 +100,8 @@ This requires the Linux 2.6 LED class trigger 'netdev' to be available.
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: interface</i>
 The interface to visualize. 
 
@@ -108,4 +109,4 @@ The interface to visualize.
 A string combined of elements describing the visualization mode. Valid elements are:  <ul>  <li>"link": Visualizes the interface link status (up = lit),</li>  <li>"rx": Visualizes the interface receiving data,</li>  <li>"tx": Visualizes the interface transmitting data.</li>  </ul> 
 
 
-the footer here
+

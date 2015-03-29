@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.Dates Interface
+# freesmartphone.org PIM.Dates Interface
             
-
-#org.freesmartphone.PIM.Dates
-
 ##Description
 
 
@@ -41,12 +38,14 @@ This interface provides access to the collection of PIM dates.
 
 **Description:** Add a new date to the default backend for dates. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: date_data</i>
 The new dates data. 
 
 
-####Returns
+***Returns:***
+
 <i>s: date_path</i>
 The contact path of the added date. 
 
@@ -57,7 +56,8 @@ The contact path of the added date.
 
 **Description:** Query the content of one field of one date. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: query</i>
 The query. 
 
@@ -65,7 +65,8 @@ The query.
 The name of the field to query. 
 
 
-####Returns
+***Returns:***
+
 <i>s: value</i>
 The content of the queried field. 
 
@@ -76,12 +77,14 @@ The content of the queried field.
 
 **Description:** Start a query for dates. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: query</i>
 The query. 
 
 
-####Returns
+***Returns:***
+
 <i>s: query_path</i>
 The path for the started query. 
 
@@ -94,10 +97,11 @@ The path for the started query.
 
 **Description:** Sent when a new date is loaded. 
 
-####Parameters
+***Parameters:***
+
 <i>s: date_path</i>
 The path of the newly loaded date. 
 
 
 
-the footer here
+

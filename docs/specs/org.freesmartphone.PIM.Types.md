@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.Types Interface
+# freesmartphone.org PIM.Types Interface
             
-
-#org.freesmartphone.PIM.Types
-
 ##Description
 
 
@@ -37,9 +34,10 @@ This interface provides access to available field types.
 
 **Description:** Get the available field types. 
 
-####Returns
+***Returns:***
+
 <i>as: types</i>
 The list of types. 
 
 
-the footer here
+

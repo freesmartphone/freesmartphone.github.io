@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Context Client Interface
+# freesmartphone.org Context Client Interface
             
-
-#org.freesmartphone.Context.Client
-
 ##Description
 
 
@@ -37,7 +34,8 @@ The Context Client interface is being used by the  Context Manager to deliver en
 
 **Description:** Called to deliver a location update. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: from</i>
 The new location information. 
 
@@ -45,4 +43,4 @@ The new location information.
 The new location information. 
 
 
-the footer here
+

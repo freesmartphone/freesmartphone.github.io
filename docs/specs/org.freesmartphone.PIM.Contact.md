@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.Contact Interface
+# freesmartphone.org PIM.Contact Interface
             
-
-#org.freesmartphone.PIM.Contact
-
 ##Description
 
 
@@ -44,7 +41,8 @@ This interface provides access to one PIM contact.
 
 **Description:** Get the fields of one contact. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: contact_data</i>
 The contact's data. 
 
@@ -55,12 +53,14 @@ The contact's data.
 
 **Description:** Get a specified field list of the contact's data. 
 
-####Parameters
+***Parameters:****
+
 <i>s: field_list</i>
 The list of fields to get, split by "," (coma) char. 
 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: field_data</i>
 The data of the requested fields. 
 
@@ -71,7 +71,8 @@ The data of the requested fields.
 
 **Description:** Get used backends in contact. 
 
-####Returns
+***Returns:***
+
 <i>as: backends</i>
 The list of backends used in this contact. 
 
@@ -82,7 +83,8 @@ The list of backends used in this contact.
 
 **Description:** Update one or more fields of this contact. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: contact_data</i>
 The list of fields/values to update for this contact. 
 
@@ -103,10 +105,11 @@ The list of fields/values to update for this contact.
 
 **Description:** Sent when contact is updated. 
 
-####Parameters
+***Parameters:***
+
 <i>a{sv}: data</i>
 Data used to update contact. 
 
 
 
-the footer here
+

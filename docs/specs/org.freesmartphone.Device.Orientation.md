@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Orientation Interface
+# freesmartphone.org Orientation Interface
             
-
-#org.freesmartphone.Device.Orientation
-
 ##Description
 
 
@@ -39,7 +36,8 @@ This interface provides access to the device's physical orientation.
 
 **Description:** Returns the orientation of the device. 
 
-####Returns
+***Returns:***
+
 <i>s: orientation</i>
 The orientation. Expected substrings are:  <ul>  <li>"flat" (Laying flat on a level surface, e.g. a table),</li>  <li>"held" (Being held slightly tilt towards your face),</li>  <li>"portrait" (Display held with the long side vertically),</li>  <li>"landscape" (Display held with the long side horizontally,</li>  <li>"faceup" (Display being oriented towards the sky),</li>  <li>"facedown" (Display being oriented towards the floor),</li>  <li>"normal", (Not rotated)</li>  <li>"reverse", (180 degrees rotated)</li>  </ul> 
 
@@ -52,10 +50,11 @@ The orientation. Expected substrings are:  <ul>  <li>"flat" (Laying flat on a le
 
 **Description:** Sent whenever there is a change of the device orientation. 
 
-####Parameters
+***Parameters:***
+
 <i>s: orientation</i>
 The new orientation. See <a href="specs/org.freesmartphone.Device.Orientation/#GetOrientation">GetOrientation</a> for supported values. 
 
 
 
-the footer here
+

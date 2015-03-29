@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Audio Interface
+# freesmartphone.org Audio Interface
             
-
-#org.freesmartphone.Device.Audio
-
 ##Description
 
 
@@ -58,7 +55,8 @@ This interface provides access to notification sounds, sound scenarios, and mixe
 
 **Description:** Play a sound resource. 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 The identification of the sound resource. Will be treated as filename, if no schema is given.  Format-specific options may be supplied by appending multiple ";foo=bar" statements to the  filename. Player engines that do not support these options should ignore them. 
 
@@ -75,7 +73,8 @@ Length in seconds. Set this to anything other than 0 if you want to override the
 
 **Description:** Stop playing a sound resource. 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 The identification of the sound resource. Will be treated as filename, if no schema is given. 
 
@@ -91,7 +90,8 @@ The identification of the sound resource. Will be treated as filename, if no sch
 
 **Description:** Returns a list of supported audio scenarios. 
 
-####Returns
+***Returns:***
+
 <i>as: scenarios</i>
 The supported audio scenarios. 
 
@@ -102,7 +102,8 @@ The supported audio scenarios.
 
 **Description:** Get the current audio scenario. 
 
-####Returns
+***Returns:***
+
 <i>s: scenario</i>
 The name of the scenario. 
 
@@ -113,7 +114,8 @@ The name of the scenario.
 
 **Description:** Set a new audio scenario. 
 
-####Parameters
+***Parameters:****
+
 <i>s: scenario</i>
 The name of the scenario. 
 
@@ -124,7 +126,8 @@ The name of the scenario.
 
 **Description:** Push a new audio scenario onto the stack and active it. 
 
-####Parameters
+***Parameters:****
+
 <i>s: scenario</i>
 The new active scenario. 
 
@@ -135,7 +138,8 @@ The new active scenario.
 
 **Description:** Pull an audio scenario from the stack and activate the next one. 
 
-####Returns
+***Returns:***
+
 <i>s: scenario</i>
 The new active scenario. 
 
@@ -146,7 +150,8 @@ The new active scenario.
 
 **Description:** Save the current scenario as a file. 
 
-####Parameters
+***Parameters:****
+
 <i>s: scenario</i>
 The name of the scenario. 
 
@@ -163,7 +168,8 @@ The main volume can depend on the current scenario. A change of scenario may cha
 
 
 
-####Returns
+***Returns:***
+
 <i>y: volume</i>
 The volume in percent (0-100). 
 
@@ -180,7 +186,8 @@ The main volume can depend on the current scenario. A change of scenario may cha
 
 
 
-####Parameters
+***Parameters:****
+
 <i>y: volume</i>
 The volume in percent (0-100). 
 
@@ -193,7 +200,8 @@ The volume in percent (0-100).
 
 **Description:** Sent whenever a sound has been started or stopped. 
 
-####Parameters
+***Parameters:***
+
 <i>s: id</i>
 The identification of sound resource that changed its status. 
 
@@ -211,7 +219,8 @@ An array of property values. Note that properties are optional. Expected tuples 
 
 **Description:** Sent whenever there is a change of the global sound scenario. 
 
-####Parameters
+***Parameters:***
+
 <i>s: scenario</i>
 The scenario that is now active. 
 
@@ -257,4 +266,4 @@ The reason for this change. Expected reasons are:  <ul>  <li>...to be defined...
 
 **Description:** Raised, if the audio device reported a problem. 
 
-the footer here
+

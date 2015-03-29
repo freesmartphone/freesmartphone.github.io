@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Common Errors
+# freesmartphone.org Common Errors
             
-
-#org.freesmartphone.Error0
-
 ##Description
 
 
@@ -60,4 +57,4 @@ The org.freesmartphone.Error domain describes common errors clients should expec
 
 **Description:** Raised, if the requested function is currently not available. 
 
-the footer here
+

@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.Notes Interface
+# freesmartphone.org PIM.Notes Interface
             
-
-#org.freesmartphone.PIM.Notes
-
 ##Description
 
 
@@ -44,12 +41,14 @@ This interface provides access to the collection of PIM notes.
 
 **Description:** Add a new note to the default backend for notes. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: note_data</i>
 The new notes data. 
 
 
-####Returns
+***Returns:***
+
 <i>s: note_path</i>
 The path of the added note. 
 
@@ -60,7 +59,8 @@ The path of the added note.
 
 **Description:** Returns list of all tags used in loaded notes. 
 
-####Returns
+***Returns:***
+
 <i>as: used_tags</i>
 List of tags. 
 
@@ -71,7 +71,8 @@ List of tags.
 
 **Description:** Query the content of one field of one note. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: query</i>
 The query. 
 
@@ -79,7 +80,8 @@ The query.
 The name of the field to query. 
 
 
-####Returns
+***Returns:***
+
 <i>s: value</i>
 The content of the queried field. 
 
@@ -90,12 +92,14 @@ The content of the queried field.
 
 **Description:** Start a query for notes. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: query</i>
 The query. 
 
 
-####Returns
+***Returns:***
+
 <i>s: query_path</i>
 The path for the started query. 
 
@@ -108,7 +112,8 @@ The path for the started query.
 
 **Description:** Sent when a new note is loaded. 
 
-####Parameters
+***Parameters:***
+
 <i>s: note_path</i>
 The path of the newly loaded note. 
 
@@ -120,7 +125,8 @@ The path of the newly loaded note.
 
 **Description:** Sent when a newly loaded or updated note has some unused before tag. 
 
-####Parameters
+***Parameters:***
+
 <i>s: tag</i>
 The name of new tag. 
 
@@ -132,10 +138,11 @@ The name of new tag.
 
 **Description:** Sent when last instance of tag in notes is removed. 
 
-####Parameters
+***Parameters:***
+
 <i>s: tag</i>
 The name of removed tag. 
 
 
 
-the footer here
+

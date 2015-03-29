@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.Fields Interface
+# freesmartphone.org PIM.Fields Interface
             
-
-#org.freesmartphone.PIM.Fields
-
 ##Description
 
 
@@ -41,7 +38,8 @@ This interface provides access to field types in domains.
 
 **Description:** Add new field to the list. 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 The field's name. 
 
@@ -55,7 +53,8 @@ The field's type.
 
 **Description:** Delete field from list. 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 The field's name. 
 
@@ -66,12 +65,14 @@ The field's name.
 
 **Description:** Get type of specified field. 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 The field's name. 
 
 
-####Returns
+***Returns:***
+
 <i>s: type</i>
 The field's type. 
 
@@ -82,7 +83,8 @@ The field's type.
 
 **Description:** List all specified fields and their types. 
 
-####Returns
+***Returns:***
+
 <i>a{ss}: fields</i>
 A dictionary with field names and types. 
 
@@ -93,14 +95,16 @@ A dictionary with field names and types.
 
 **Description:** List all fields with specified type. 
 
-####Parameters
+***Parameters:****
+
 <i>s: type</i>
 Field type. 
 
 
-####Returns
+***Returns:***
+
 <i>as: fields</i>
 A list with field names. 
 
 
-the footer here
+

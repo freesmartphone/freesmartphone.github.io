@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Phone Call Interface
+# freesmartphone.org Phone Call Interface
             
-
-#org.freesmartphone.Phone.Call
-
 ##Description
 
 
@@ -49,7 +46,8 @@ The Call Interface is used to represent a communication channel.
 
 **Description:** Return the number of the peer (usually the number of the call). 
 
-####Returns
+***Returns:***
+
 <i>s: peer</i>
 The number of the peer. 
 
@@ -60,7 +58,8 @@ The number of the peer.
 
 **Description:** Initiate the call. 
 
-####Returns
+***Returns:***
+
 <i>s: status</i>
 The new status of the Call (should be 'Initiating'). 
 
@@ -71,7 +70,8 @@ The new status of the Call (should be 'Initiating').
 
 **Description:** Accept the call. 
 
-####Returns
+***Returns:***
+
 <i>s: status</i>
 The new status of the Call (should be 'Activating'). 
 
@@ -82,7 +82,8 @@ The new status of the Call (should be 'Activating').
 
 **Description:** Release the call. 
 
-####Returns
+***Returns:***
+
 <i>s: status</i>
 The new status of the Call (should be 'Releasing'). 
 
@@ -93,7 +94,8 @@ The new status of the Call (should be 'Releasing').
 
 **Description:** Return the current status of the call. 
 
-####Returns
+***Returns:***
+
 <i>s: status</i>
 The current status of the Call. 
 
@@ -124,4 +126,4 @@ The current status of the Call.
 
 **Description:** Raised, if registering with the specified network is not possible. 
 
-the footer here
+

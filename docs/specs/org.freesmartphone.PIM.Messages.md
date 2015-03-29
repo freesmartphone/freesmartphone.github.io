@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.Messages Interface
+# freesmartphone.org PIM.Messages Interface
             
-
-#org.freesmartphone.PIM.Messages
-
 ##Description
 
 
@@ -48,12 +45,14 @@ This interface provides access to the list of messages.
 
 **Description:** Add a new message to the default message backend. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: message_data</i>
 The data of the message. 
 
 
-####Returns
+***Returns:***
+
 <i>s: message_path</i>
 The path of the newly added message. 
 
@@ -64,12 +63,14 @@ The path of the newly added message.
 
 **Description:** Add a new message to the default message backend and notify client about incoming message. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: message_data</i>
 The data of the message. 
 
 
-####Returns
+***Returns:***
+
 <i>s: message_path</i>
 The path of the newly added message. 
 
@@ -80,7 +81,8 @@ The path of the newly added message.
 
 **Description:** Query the content of a single field of one message. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: query</i>
 The query. 
 
@@ -88,7 +90,8 @@ The query.
 The name of the field to return the value for. 
 
 
-####Returns
+***Returns:***
+
 <i>s: value</i>
 The value of the queried field. 
 
@@ -99,12 +102,14 @@ The value of the queried field.
 
 **Description:** Query a list of messages. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: query</i>
 The query. 
 
 
-####Returns
+***Returns:***
+
 <i>s: query_path</i>
 The path for the started query. 
 
@@ -115,12 +120,14 @@ The path for the started query.
 
 **Description:** Query a list of message threads. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: query</i>
 The query. 
 
 
-####Returns
+***Returns:***
+
 <i>s: query_path</i>
 The path for the started query. 
 
@@ -131,7 +138,8 @@ The path for the started query.
 
 **Description:** Get the amount of unread incoming messages. 
 
-####Returns
+***Returns:***
+
 <i>i: amount</i>
 Amount of unread messages 
 
@@ -144,7 +152,8 @@ Amount of unread messages
 
 **Description:** Sent when a new message is loaded. 
 
-####Parameters
+***Parameters:***
+
 <i>s: message_path</i>
 The path of the newly loaded message. 
 
@@ -156,7 +165,8 @@ The path of the newly loaded message.
 
 **Description:** Sent when a incoming message arrives. 
 
-####Parameters
+***Parameters:***
+
 <i>s: message_path</i>
 The path of the newly arrived incoming message. 
 
@@ -168,7 +178,8 @@ The path of the newly arrived incoming message.
 
 **Description:** Sent when amount of unread incoming messages changes. 
 
-####Parameters
+***Parameters:***
+
 <i>i: amount</i>
 Amount of unread incoming messages. 
 
@@ -180,7 +191,8 @@ Amount of unread incoming messages.
 
 **Description:** Sent whenever a message has been updated. 
 
-####Parameters
+***Parameters:***
+
 <i>s: message_path</i>
 The DBus path of the message that was updated. 
 
@@ -195,10 +207,11 @@ The data that was changed for the message.
 
 **Description:** Sent whenever a message has been deleted. 
 
-####Parameters
+***Parameters:***
+
 <i>s: message_path</i>
 The DBus path of the message that has been deleted. 
 
 
 
-the footer here
+

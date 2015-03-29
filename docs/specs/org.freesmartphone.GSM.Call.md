@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org GSM Call Interface
+# freesmartphone.org GSM Call Interface
             
-
-#org.freesmartphone.GSM.Call
-
 ##Description
 
 
@@ -57,7 +54,8 @@ This maps to ATD(number);, see v.250.
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: number</i>
 The emergency number to dial. National and world-wide restrictions apply. 
 
@@ -74,7 +72,8 @@ This can map to ATA, see v.250. It might also map to GSM 07.07 +CHLD=..., see 3G
 
 
 
-####Parameters
+***Parameters:****
+
 <i>i: id</i>
  
 
@@ -91,7 +90,8 @@ This maps to GSM 07.07 +CHLD=..., see 3GPP TS 07.07 Chapter 7.12.
 
 
 
-####Parameters
+***Parameters:****
+
 <i>i: id</i>
  
 
@@ -108,7 +108,8 @@ This can map to ATH, see v.250. It might also map to GSM 07.07 +CHLD=..., see 3G
 
 
 
-####Parameters
+***Parameters:****
+
 <i>i: id</i>
  
 
@@ -158,7 +159,8 @@ This maps to GSM 07.07 +CTFR=..., see 3GPP TS 27.07 Chapter 7.14.
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: number</i>
 The number to transfer the call to. 
 
@@ -197,7 +199,8 @@ This maps to ATD(number);, see v.250.
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: number</i>
 The number to call. 
 
@@ -205,7 +208,8 @@ The number to call.
 The type of call to made. Valid values are:  <ul>  <li>"voice" - a GSM voice call,</li>  <li>"data" - a GSM data call,</li>  <li>"fax" - a FAX call.</li>  </ul> 
 
 
-####Returns
+***Returns:***
+
 <i>i: id</i>
 The reference id for this call. It will get assigned by the system. 
 
@@ -216,7 +220,8 @@ The reference id for this call. It will get assigned by the system.
 
 **Description:** Retrieve the status for all calls in the system. 
 
-####Returns
+***Returns:***
+
 <i>a(isa{sv}): call_details</i>
 The call status. This is an array containing a call status record for every single call.  See <a href="specs/org.freesmartphone.GSM.Call/#CallStatus">CallStatus</a> signal for a description of the format. 
 
@@ -233,7 +238,8 @@ This maps to the TIA IS 101 command +VTS=(value), see 3GPP TS 07.07 Chapter C.2.
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: tones</i>
 The tones to send. Allowed values are: (0-9,#,*,A-D) 
 
@@ -246,7 +252,8 @@ The tones to send. Allowed values are: (0-9,#,*,A-D)
 
 **Description:** Sent whenever there is any status or property change on a call in the system,  no matter whether this is an incoming, active, held, or released call. 
 
-####Parameters
+***Parameters:***
+
 <i>i: id</i>
 The index of the call that changed its status or properties. 
 
@@ -258,4 +265,4 @@ An array of property values. Note that some properties are optional. Mandatory t
 
 
 
-the footer here
+

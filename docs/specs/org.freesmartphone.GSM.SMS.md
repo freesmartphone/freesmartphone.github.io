@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org GSM SMS Interface
+# freesmartphone.org GSM SMS Interface
             
-
-#org.freesmartphone.GSM.SMS
-
 ##Description
 
 
@@ -42,7 +39,8 @@ org.freesmartphone.GSM.SMS is a high level interface for  textual Short Message 
 
 **Description:** Retrieve all text messages. 
 
-####Returns
+***Returns:***
+
 <i>a(issssa{sv}): messages</i>
 Messages matching the given category. This is an array of four-tuples. Every entry has the following structure:  <ul>  <li>(int:index) = storage index,</li>  <li>(string:status) = status of message, one of ("read", "unread", "sent", "unsent"),</li>  <li>(string:number) = sender number.</li>  <li>(string:timestamp) = timestamp.</li>  <li>(string:content) = contents of the message.</li>  </ul> 
 
@@ -53,12 +51,14 @@ Messages matching the given category. This is an array of four-tuples. Every ent
 
 **Description:** Calculates the number of GSM Short Messages necessary to deliver a given text. 
 
-####Parameters
+***Parameters:****
+
 <i>s: contents</i>
 The contents of the message. 
 
 
-####Returns
+***Returns:***
+
 <i>u: messages</i>
 The number of SMS to be sent, if this message were to be delivered. 
 
@@ -75,7 +75,8 @@ Text messages can be of unlimited length. They might get fragmented by the  unde
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: recipient_number</i>
 The number of the recipient. 
 
@@ -86,7 +87,8 @@ The contents of the message.
 If true, status reports (message receipts) will be sent by the  SMS Center, delivered via the <a href="specs/org.freesmartphone.GSM.SMS/#IncomingMessageReceipt">IncomingMessageReceipt</a> signal. 
 
 
-####Returns
+***Returns:***
+
 <i>i: reference</i>
 This is the message-reference number of this message.  This can be used to identify status reports. 
 
@@ -102,7 +104,8 @@ The timestamp this message was received by the SMSC.
 
 **Description:** Sent, when a text message has been received. 
 
-####Parameters
+***Parameters:***
+
 <i>s: number</i>
 The number of the sender. 
 
@@ -120,7 +123,8 @@ The contents of the message.
 
 **Description:** Sent when a status report for a message has been received. 
 
-####Parameters
+***Parameters:***
+
 <i>i: reference</i>
 The message-reference number as returned by <a href="specs/org.freesmartphone.GSM.SMS/#SendTextMessage">SendTextMessage</a> 
 
@@ -135,4 +139,4 @@ Optional contents of the receipt. Will usually be empty.
 
 
 
-the footer here
+

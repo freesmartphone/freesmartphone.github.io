@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org RealtimeClock Interface
+# freesmartphone.org RealtimeClock Interface
             
-
-#org.freesmartphone.Device.RealtimeClock
-
 ##Description
 
 
@@ -43,7 +40,8 @@ This interface provides access to a Realtime Clock device.
 
 **Description:** Retrieve the current time from the RTC. 
 
-####Returns
+***Returns:***
+
 <i>i: time</i>
 The current time in seconds since epoch. 
 
@@ -54,7 +52,8 @@ The current time in seconds since epoch.
 
 **Description:** Set the current time in the RTC. 
 
-####Parameters
+***Parameters:****
+
 <i>i: time</i>
 The current time in seconds since epoch. 
 
@@ -65,7 +64,8 @@ The current time in seconds since epoch.
 
 **Description:** Retrieve the currently programmed wakeup time from the RTC. 
 
-####Returns
+***Returns:***
+
 <i>i: time</i>
 The wakeup time in seconds since epoch, if programmed. 0, otherwise. 
 
@@ -76,7 +76,8 @@ The wakeup time in seconds since epoch, if programmed. 0, otherwise.
 
 **Description:** Program a wakeup time in the RTC. 
 
-####Parameters
+***Parameters:****
+
 <i>i: time</i>
 The wakeuptime in seconds since epoch. Set to 0, if you want to disable wakeup. 
 
@@ -89,7 +90,8 @@ The wakeuptime in seconds since epoch. Set to 0, if you want to disable wakeup.
 
 **Description:** Sent, when the programmed RTC wakeup time has been changed. 
 
-####Parameters
+***Parameters:***
+
 <i>i: time</i>
 The wakeup time in seconds since epoch, if programmed. 0, otherwise. 
 
@@ -101,10 +103,11 @@ The wakeup time in seconds since epoch, if programmed. 0, otherwise.
 
 **Description:** Sent, when the programmed RTC wakeup time has been reached. 
 
-####Parameters
+***Parameters:***
+
 <i>i: time</i>
 The wakeup time in seconds since epoch. 
 
 
 
-the footer here
+

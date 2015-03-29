@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.Note Interface
+# freesmartphone.org PIM.Note Interface
             
-
-#org.freesmartphone.PIM.Note
-
 ##Description
 
 
@@ -44,7 +41,8 @@ This interface provides access to one PIM note.
 
 **Description:** Get the fields of one note. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: note_data</i>
 The note's data. 
 
@@ -55,12 +53,14 @@ The note's data.
 
 **Description:** Get a specified field list of the note's data. 
 
-####Parameters
+***Parameters:****
+
 <i>s: field_list</i>
 The list of fields to get, split by "," (coma) char. 
 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: field_data</i>
 The data of the requested fields. 
 
@@ -71,7 +71,8 @@ The data of the requested fields.
 
 **Description:** Get used backends in note. 
 
-####Returns
+***Returns:***
+
 <i>as: backends</i>
 The list of backends used in this note. 
 
@@ -82,7 +83,8 @@ The list of backends used in this note.
 
 **Description:** Update one or more fields of this note. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: note_data</i>
 The list of fields/values to update for this note. 
 
@@ -103,10 +105,11 @@ The list of fields/values to update for this note.
 
 **Description:** Sent when note is updated. 
 
-####Parameters
+***Parameters:***
+
 <i>a{sv}: data</i>
 Data used to update note. 
 
 
 
-the footer here
+

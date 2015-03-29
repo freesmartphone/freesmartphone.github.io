@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.TaskQuery Interface
+# freesmartphone.org PIM.TaskQuery Interface
             
-
-#org.freesmartphone.PIM.TaskQuery
-
 ##Description
 
 
@@ -43,7 +40,8 @@ This interface gives access to a task query.
 
 **Description:** Return the number of items in the query result 
 
-####Returns
+***Returns:***
+
 <i>i: count</i>
 Amount of tasks in the query result. 
 
@@ -59,7 +57,8 @@ Amount of tasks in the query result.
 
 **Description:** Skip n tasks in the result cursor (for this dbus client only). 
 
-####Parameters
+***Parameters:****
+
 <i>i: count</i>
 Amount of tasks to skip. 
 
@@ -70,7 +69,8 @@ Amount of tasks to skip.
 
 **Description:** Path for the task the result cursor points to. 
 
-####Returns
+***Returns:***
+
 <i>s: task_path</i>
 The path to the task. 
 
@@ -81,7 +81,8 @@ The path to the task.
 
 **Description:** Return the next task in the query result, and move the query to the next task. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: item</i>
 fields of the result. 
 
@@ -92,12 +93,14 @@ fields of the result.
 
 **Description:** Get multiple tasks from the result set at once. 
 
-####Parameters
+***Parameters:****
+
 <i>i: count</i>
 The number of tasks to get from the result set. A negative value means all. 
 
 
-####Returns
+***Returns:***
+
 <i>aa{sv}: resultset</i>
 The list of the returned tasks data. 
 
@@ -107,4 +110,4 @@ The list of the returned tasks data.
 
 **Description:** Delete the query result object. 
 
-the footer here
+

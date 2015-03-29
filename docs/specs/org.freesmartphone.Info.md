@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Info Interface
+# freesmartphone.org Info Interface
             
-
-#org.freesmartphone.Info
-
 ##Description
 
 
@@ -37,9 +34,10 @@ The org.freesmartphone.Info interface provides access to generic textual descrip
 
 **Description:** Enable the resource. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: info</i>
 A key/value map of information properties. Expected keys and  values are application specific. 
 
 
-the footer here
+

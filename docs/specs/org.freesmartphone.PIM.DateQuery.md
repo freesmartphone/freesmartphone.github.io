@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.DateQuery Interface
+# freesmartphone.org PIM.DateQuery Interface
             
-
-#org.freesmartphone.PIM.DateQuery
-
 ##Description
 
 
@@ -45,7 +42,8 @@ This interface gives access to a date query.
 
 **Description:** Return the number of items in the query result 
 
-####Returns
+***Returns:***
+
 <i>i: count</i>
 Amount of dates in the query result. 
 
@@ -61,7 +59,8 @@ Amount of dates in the query result.
 
 **Description:** Skip n dates in the result cursor (for this dbus client only). 
 
-####Parameters
+***Parameters:****
+
 <i>i: count</i>
 Amount of dates to skip. 
 
@@ -72,7 +71,8 @@ Amount of dates to skip.
 
 **Description:** Path for the date the result cursor points to. 
 
-####Returns
+***Returns:***
+
 <i>s: date_path</i>
 The path to the date. 
 
@@ -83,7 +83,8 @@ The path to the date.
 
 **Description:** Return the next date in the query result, and move the query to the next date. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: item</i>
 fields of the result. 
 
@@ -94,12 +95,14 @@ fields of the result.
 
 **Description:** Get multiple dates from the result set at once. 
 
-####Parameters
+***Parameters:****
+
 <i>i: count</i>
 The number of dates to get from the result set. A negative value means all. 
 
 
-####Returns
+***Returns:***
+
 <i>aa{sv}: resultset</i>
 The list of the returned dates data. 
 
@@ -117,10 +120,11 @@ The list of the returned dates data.
 
 **Description:** Sent when a new date which matches this query is loaded. 
 
-####Parameters
+***Parameters:***
+
 <i>s: date_path</i>
 The path of the newly loaded date. 
 
 
 
-the footer here
+

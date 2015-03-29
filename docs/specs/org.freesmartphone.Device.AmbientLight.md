@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Ambient Light Interface
+# freesmartphone.org Ambient Light Interface
             
-
-#org.freesmartphone.Device.AmbientLight
-
 ##Description
 
 
@@ -39,7 +36,8 @@ This interface provides access to an ambient light device.
 
 **Description:** Get the last ambient light brightness, or -1 if unknown. 
 
-####Returns
+***Returns:***
+
 <i>i: brightness</i>
 The last ambientlight. 
 
@@ -55,10 +53,11 @@ Timestamp indicating when this value has been received.
 
 **Description:** Sent, when the ambient light brightness changes. 
 
-####Parameters
+***Parameters:***
+
 <i>i: brightness</i>
 The new ambient light brightness. 
 
 
 
-the footer here
+

@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org PIM.Date Interface
+# freesmartphone.org PIM.Date Interface
             
-
-#org.freesmartphone.PIM.Date
-
 ##Description
 
 
@@ -44,7 +41,8 @@ This interface provides access to one PIM date.
 
 **Description:** Get the fields of one date. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: date_data</i>
 The date's data. 
 
@@ -55,12 +53,14 @@ The date's data.
 
 **Description:** Get a specified field list of the date's data. 
 
-####Parameters
+***Parameters:****
+
 <i>s: field_list</i>
 The list of fields to get, split by "," (coma) char. 
 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: field_data</i>
 The data of the requested fields. 
 
@@ -71,7 +71,8 @@ The data of the requested fields.
 
 **Description:** Get used backends in date. 
 
-####Returns
+***Returns:***
+
 <i>as: backends</i>
 The list of backends used in this date. 
 
@@ -82,7 +83,8 @@ The list of backends used in this date.
 
 **Description:** Update one or more fields of this date. 
 
-####Parameters
+***Parameters:****
+
 <i>a{sv}: date_data</i>
 The list of fields/values to update for this date. 
 
@@ -103,10 +105,11 @@ The list of fields/values to update for this date.
 
 **Description:** Sent when date is updated. 
 
-####Parameters
+***Parameters:***
+
 <i>a{sv}: data</i>
 Data used to update date. 
 
 
 
-the footer here
+

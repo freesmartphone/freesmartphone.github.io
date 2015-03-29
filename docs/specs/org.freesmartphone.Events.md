@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Events Interface
+# freesmartphone.org Events Interface
             
-
-#org.freesmartphone.Events
-
 ##Description
 
 
@@ -39,7 +36,8 @@ The Events interface provides access to the rules.  All the rules are specified 
 
 **Description:** Parse a rule string and add it into the rule list. 
 
-####Parameters
+***Parameters:****
+
 <i>s: rule</i>
 The rule in the same format used by the rules file. 
 
@@ -50,7 +48,8 @@ The rule in the same format used by the rules file.
 
 **Description:** Remove a rule by name. 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 The name of the rule, as specified by the 'name' attribute of the rule. 
 
@@ -61,7 +60,8 @@ The name of the rule, as specified by the 'name' attribute of the rule.
 
 **Description:** Trigger or untrigger all the 'Test' triggers with matching names. 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 the name of the Test triggers to trigger/untrigger. 
 
@@ -69,4 +69,4 @@ the name of the Test triggers to trigger/untrigger.
 True to trigger, False to untrigger. 
 
 
-the footer here
+

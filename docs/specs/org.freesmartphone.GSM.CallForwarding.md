@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org GSM Call Forwarding Interface
+# freesmartphone.org GSM Call Forwarding Interface
             
-
-#org.freesmartphone.GSM.CallForwarding
-
 ##Description
 
 
@@ -42,7 +39,8 @@ The call forwarding interface allows to access the call forwarding  supplementar
 
 **Description:** Disable all (or only conditional) call forwarding rules. 
 
-####Parameters
+***Parameters:****
+
 <i>s: type</i>
 Type of call forwarding rules to disable. Expected values are  <ul>  <li>"all": disable all rules,</li>  <li>"conditional": disable only coniditonal rules  (e.g. busy, not reachable, no reply).</li>  </ul> 
 
@@ -53,7 +51,8 @@ Type of call forwarding rules to disable. Expected values are  <ul>  <li>"all": 
 
 **Description:** Enable a call forwarding rule. The corresponding properties for the  specified rules will be populated with the values specified. 
 
-####Parameters
+***Parameters:****
+
 <i>s: rule</i>
 Call forwarding rule to assign a number and timeout for. Expected values are:  <ul>  <li>"voice unconditional",</li>  <li>"voice busy",</li>  <li>"voice no reply",</li>  <li>"voice not reachable".</li>  </ul> 
 
@@ -70,7 +69,8 @@ Timeout after the call forwarding rule should become active. Only accepted  if r
 
 **Description:** Disable a call forwarding rule. 
 
-####Parameters
+***Parameters:****
+
 <i>s: rule</i>
 Name of the call forwarding rule. See  <a href="specs/org.freesmartphone.GSM.CallForwarding/#Enable">Enable</a> for a list  of valid values.  The corresponding property for the rule will be unset. 
 
@@ -81,12 +81,14 @@ Name of the call forwarding rule. See  <a href="specs/org.freesmartphone.GSM.Cal
 
 **Description:** Retrieve the current status for a call forwarding rule. 
 
-####Parameters
+***Parameters:****
+
 <i>s: rule</i>
 Name of the call forwarding rule. See  <a href="specs/org.freesmartphone.GSM.CallForwarding/#Enable">Enable</a> for a list  of valid values. 
 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: status</i>
 Status of the call forwarding rule. See <a href="specs/org.freesmartphone.GSM.CallForwarding/#StatusChanged">StatusChanged</a>  for a description of the format. 
 
@@ -99,7 +101,8 @@ Status of the call forwarding rule. See <a href="specs/org.freesmartphone.GSM.Ca
 
 **Description:** Sent whenver a status of a call forwarding rule has changed. 
 
-####Parameters
+***Parameters:***
+
 <i>s: rule</i>
 Name of the call forwarding rule it's status has changed. 
 
@@ -108,4 +111,4 @@ Changed status of the call forwarding rule. Expected values are:  <ul>  <li>"act
 
 
 
-the footer here
+

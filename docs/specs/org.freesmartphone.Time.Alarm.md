@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Time Alarm Interface
+# freesmartphone.org Time Alarm Interface
             
-
-#org.freesmartphone.Time.Alarm
-
 ##Description
 
 
@@ -40,7 +37,8 @@ The Alarm interface is used to register wakeup alarms. Alarm notifications  will
 
 **Description:** Clear all scheduled alarms for a given dbus service name. 
 
-####Parameters
+***Parameters:****
+
 <i>s: busname</i>
 The dbus service bus name to clear all alarms for. 
 
@@ -51,7 +49,8 @@ The dbus service bus name to clear all alarms for.
 
 **Description:** List all currently scheduled alarms. 
 
-####Returns
+***Returns:***
+
 <i>a(si): alarms</i>
 All currently scheduled alarms. 
 
@@ -62,7 +61,8 @@ All currently scheduled alarms.
 
 **Description:** Removes a scheduled alarm. 
 
-####Parameters
+***Parameters:****
+
 <i>s: busname</i>
 The dbus service bus name to clear the alarm for. 
 
@@ -82,7 +82,8 @@ Make sure to specify a dbus system service configuration file for  the services 
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: busname</i>
 The dbus service name to call. 
 
@@ -90,4 +91,4 @@ The dbus service name to call.
 When to call in seconds since 1970 (epoch). 
 
 
-the footer here
+

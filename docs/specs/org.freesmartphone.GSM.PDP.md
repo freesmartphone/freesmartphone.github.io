@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org GSM Packet Data Protocol Interface
+# freesmartphone.org GSM Packet Data Protocol Interface
             
-
-#org.freesmartphone.GSM.PDP
-
 ##Description
 
 
@@ -46,7 +43,8 @@ The Packet Data Protocol interface is used to set up  binary data connections th
 
 **Description:** Set the credentials for PDP context activation. 
 
-####Parameters
+***Parameters:****
+
 <i>s: apn</i>
 The access point name to connect to. 
 
@@ -63,7 +61,8 @@ The password to identify as.
 
 **Description:** Get the credentials for PDP context activation. 
 
-####Returns
+***Returns:***
+
 <i>s: apn</i>
 The access point name to connect to. 
 
@@ -102,7 +101,8 @@ This command might change your network default route.
 
 **Description:** Retrieve the current PDP context status. 
 
-####Returns
+***Returns:***
+
 <i>s: status</i>
 The context status. See <a href="specs/org.freesmartphone.GSM.PDP/#ContextStatus">ContextStatus</a> for a list of valid values. 
 
@@ -116,7 +116,8 @@ The context status properties.  See <a href="specs/org.freesmartphone.GSM.PDP/#C
 
 **Description:** This method is for internal use only. 
 
-####Parameters
+***Parameters:****
+
 <i>s: status</i>
 Internal use only. 
 
@@ -132,7 +133,8 @@ Internal use only.
 
 **Description:** Sent whenever there is any status or property change on a pdp context in the system. 
 
-####Parameters
+***Parameters:***
+
 <i>s: status</i>
 The new status of the context. Expected values are:  <ul>  <li>"incoming" = The context is incoming (but not yet accepted),</li>  <li>"outgoing" = The context is outgoing (but not yet established),</li>  <li>"active" = The context is active and has offered a route,</li>  <li>"held" = The context has been interrupted,</li>  <li>"released" = The context is released.</li>  <li>  "suspended" = The context is suspended due out of network coverage or  another internal reason (for example network does not support  simultaneous packet and voice data)  </li>  </ul>  Further information can be part of the properties. 
 
@@ -152,4 +154,4 @@ An array of property values. Note that properties are optional.  Expected tuples
  
 
 
-the footer here
+

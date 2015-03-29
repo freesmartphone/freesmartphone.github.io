@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org GSM Home Zone Interface
+# freesmartphone.org GSM Home Zone Interface
             
-
-#org.freesmartphone.GSM.HZ
-
 ##Description
 
 
@@ -40,7 +37,8 @@ The Home Zone interface allows you to be informed about the home zone status.   
 
 **Description:** Get the names of known home zones as stored on your SIM card. 
 
-####Returns
+***Returns:***
+
 <i>as: zones</i>
 The home zone names. 
 
@@ -51,7 +49,8 @@ The home zone names.
 
 **Description:** Get current zone name. 
 
-####Returns
+***Returns:***
+
 <i>s: zone</i>
 The home zone you are currently on. An empty string denotes  that you are out of all home zones. "unknown" indicates that the system  has not processed the necessary data to compute this information. 
 
@@ -64,10 +63,11 @@ The home zone you are currently on. An empty string denotes  that you are out of
 
 **Description:** Sent, when the home zone status has changed. 
 
-####Parameters
+***Parameters:***
+
 <i>s: name</i>
 The home zone you are currently on. See <a href="specs/org.freesmartphone.GSM.HZ/#GetHomeZoneStatus">GetHomeZoneStatus</a> 
 
 
 
-the footer here
+

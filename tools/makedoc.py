@@ -84,15 +84,15 @@ class Entity(object):
             t += "\n"
             return t
 
-    def outputHeader(self, cssfile=None):
+    def outputHeader(self):
         return \
             """
-# freesmartphone.org: %s
+# %s
             """ % ( self.title )
 
     def outputFooter(self):
         return \
-            """the footer here"""
+            """"""
 
 ##############################################################################
 class Interface(Entity):
@@ -117,10 +117,8 @@ class Interface(Entity):
         self.outfilename = "./docs/specs/%s" % (basename)
         self.outfile = open(self.outfilename, "w")
 
-        text = self.outputHeader(__file__.replace("makedoc.py", "style.xml"))
-        text += "\n"
-
-        text += self.outputSectionHeader(self.namespace)
+        # title
+        text = self.outputHeader()
 
         # description
         text += self.outputSectionHeader("Description", 2)
@@ -136,23 +134,19 @@ class Interface(Entity):
 
         # method overview
         text += self.outputSectionHeader("Methods", 2)
-        text += self.outputList([self.outputAnchorLink(method.name)
-                                 for method in self.methods])
+        text += self.outputList( [self.outputAnchorLink(method.name) for method in self.methods] )
 
         # signal overview
         text += self.outputSectionHeader("Signals", 2)
-        text += self.outputList([self.outputAnchorLink(signal.name)
-                                 for signal in self.signals])
+        text += self.outputList( [self.outputAnchorLink(signal.name) for signal in self.signals] )
 
         # property overview
         text += self.outputSectionHeader("Properties", 2)
-        text += self.outputList([self.outputAnchorLink(prop.name)
-                                 for prop in self.properties])
+        text += self.outputList( [self.outputAnchorLink(prop.name) for prop in self.properties] )
 
         # error overview
         text += self.outputSectionHeader("Errors", 2)
-        text += self.outputList([self.outputAnchorLink(error.name)
-                                 for error in self.errors])
+        text += self.outputList( [self.outputAnchorLink(error.name) for error in self.errors] )
 
         # methods en detail
         if len(self.methods):
@@ -196,11 +190,9 @@ class Describable(Entity):
     def describe(self):
         text = ""
         if self.description is not None:
-            text += self.outputParagraph(
-                self.outputDescription(self.description))
+            text += self.outputParagraph(self.outputDescription(self.description))
         if self.inote is not None:
-            text += self.outputParagraph(
-                self.outputImplementationNote(self.inote))
+            text += self.outputParagraph(self.outputImplementationNote(self.inote))
         return text
 
     def __repr__(self):
@@ -234,8 +226,7 @@ class Method(Describable):
         text = ""
         inparam, outparam = self.signature()
         if inparam and outparam:
-            text += "%s ( %s ) &rarr; %s" % (self.outputAnchorLabel(self.name),
-                                             inparam, outparam)
+            text += "%s ( %s ) &rarr; %s" % (self.outputAnchorLabel(self.name), inparam, outparam)
             text = self.outputSectionHeader(text, 3)
             text += "\n"
             text += self.describe()
@@ -248,8 +239,7 @@ class Method(Describable):
             text += self.describe()
             text += self.inparam()
         elif not inparam and outparam:
-            text += "%s ( ) &rarr; %s" % (self.outputAnchorLabel(self.name),
-                                          outparam)
+            text += "%s ( ) &rarr; %s" % (self.outputAnchorLabel(self.name), outparam)
             text = self.outputSectionHeader(text, 3)
             text += "\n"
             text += self.describe()
@@ -264,14 +254,14 @@ class Method(Describable):
         return text
 
     def inparam(self):
-        text = self.outputSectionHeader("Parameters", 4)
+        text = "\n***Parameters:****\n\n"
         for arg in self.args:
             if arg.attrs["direction"] == "in":
                 text += arg.out()
         return text
 
     def outparam(self):
-        text = self.outputSectionHeader("Returns", 4)
+        text = "\n***Returns:***\n\n"
         for arg in self.args:
             if arg.attrs["direction"] == "out":
                 text += arg.out()
@@ -308,7 +298,7 @@ class Signal(Describable):
         return text
 
     def param(self):
-        text = self.outputSectionHeader("Parameters", 4)
+        text = "\n***Parameters:***\n\n"
         for arg in self.args:
             text += arg.out()
         return text

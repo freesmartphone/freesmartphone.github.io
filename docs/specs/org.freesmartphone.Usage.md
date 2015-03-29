@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Usage Interface
+# freesmartphone.org Usage Interface
             
-
-#org.freesmartphone.Usage
-
 ##Description
 
 
@@ -67,7 +64,8 @@ Providers can chose the name of the resource freely, note that there are  some w
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 The resource name. 
 
@@ -87,7 +85,8 @@ Leaving the bus will automatically unregister yourself for all resources you are
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 The resource name. 
 
@@ -98,7 +97,8 @@ The resource name.
 
 **Description:** List available resources. 
 
-####Returns
+***Returns:***
+
 <i>as: resources</i>
 An array of resource names. 
 
@@ -109,12 +109,14 @@ An array of resource names.
 
 **Description:** Get the current resource policy for a given resource. 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 The resource name. 
 
 
-####Returns
+***Returns:***
+
 <i>s: policy</i>
 The resource policy. Expected values are:  <ul>  <li>"disabled" - using this resource is currently not allowed,</li>  <li>"auto" - the resource is enabled as long as it is used by at least one client,</li>  <li>"enabled" - the resource is enabled even without a client.</li>  </ul> 
 
@@ -125,7 +127,8 @@ The resource policy. Expected values are:  <ul>  <li>"disabled" - using this res
 
 **Description:** Set a new resource policy for a given resource. 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 The resource name. 
 
@@ -139,12 +142,14 @@ The new resource policy. See <a href="specs/org.freesmartphone.Usage/#GetResourc
 
 **Description:** Get the current state for a given resource. 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 The resource name. 
 
 
-####Returns
+***Returns:***
+
 <i>b: state</i>
 The resource state. True if the resource is currently enabled. 
 
@@ -155,12 +160,14 @@ The resource state. True if the resource is currently enabled.
 
 **Description:** Get the users which currently use a given resource. 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 The resource name. 
 
 
-####Returns
+***Returns:***
+
 <i>as: users</i>
 An array of bus names using the resource. 
 
@@ -171,7 +178,8 @@ An array of bus names using the resource.
 
 **Description:** Request occupation of a given resource. An error is returned if the resource was not occupied sucessfully. 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 The resource name. 
 
@@ -188,7 +196,8 @@ Resources in use get autoreleased when a client leaves the bus.
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: name</i>
 The resource name. 
 
@@ -210,7 +219,8 @@ This method is only useful on systems where a suspend does not halt the main CPU
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: source</i>
 The resume source. 
 
@@ -236,7 +246,8 @@ The resume reason.
 
 **Description:** Sent whenever a resource is added or removed. 
 
-####Parameters
+***Parameters:***
+
 <i>s: name</i>
 The name of the resource. 
 
@@ -251,7 +262,8 @@ The resource availability. True if the resource is currently available.
 
 **Description:** Sent whenever a resource status changes. 
 
-####Parameters
+***Parameters:***
+
 <i>s: name</i>
 The name of the resource. 
 
@@ -269,7 +281,8 @@ The new status of the resource. Expected values are:  <ul>  <li>"policy": The cu
 
 **Description:** Sent whenever a system state action is performed. 
 
-####Parameters
+***Parameters:***
+
 <i>s: action</i>
 The name of the action. Expected values are:  <ul>  <li>"suspend": The system is suspending.</li>  <li>"resume": The system has resumed.</li>  <li>"reboot": The system is rebooting.</li>  <li>"shutdown": The system is shutting down.</li>  </ul> 
 
@@ -312,4 +325,4 @@ The name of the action. Expected values are:  <ul>  <li>"suspend": The system is
 
 **Description:** Raised, if the to-be-released resource has never been requested by the user. 
 
-the footer here
+

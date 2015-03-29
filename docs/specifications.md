@@ -1,10 +1,11 @@
 # Specifications
 
-The purpose of the D-Bus interface specifications is to provide interoperatibility between implementations.
+The purpose of the freesmartphone.org.* D-Bus interface specifications is to provide interoperatibility between implementations
+and a reliable API contract between all processes.
 
 ## Active
 
-For details, please see our automatically generated docs at [TODO: UNDER CONSTRUCTION]()
+For details, please see our automatically generated docs that follow right after this page.
  
 ## Brainstorming
 

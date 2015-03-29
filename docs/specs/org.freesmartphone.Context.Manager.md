@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Context Manager Interface
+# freesmartphone.org Context Manager Interface
             
-
-#org.freesmartphone.Context.Manager
-
 ##Description
 
 
@@ -44,7 +41,8 @@ To receive location updates, clients need to implement the <a href="specs/org.fr
 
 
 
-####Parameters
+***Parameters:****
+
 <i>s: desired_accuracy</i>
 The desired accuracy. Valid values are: navigation, best, nearest-ten-meters, hundred-meters, one-kilometer, three-kilometers, hundred-kilometers. 
 
@@ -54,4 +52,4 @@ The desired accuracy. Valid values are: navigation, best, nearest-ten-meters, hu
 
 **Description:** Unsubscribe from receiving location updates. 
 
-the footer here
+

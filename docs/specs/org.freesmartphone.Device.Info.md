@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org Device Information Interface
+# freesmartphone.org Device Information Interface
             
-
-#org.freesmartphone.Device.Info
-
 ##Description
 
 
@@ -37,9 +34,10 @@ The Device Information Interface provides information about the device's softwar
 
 **Description:** Get the CPU information. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: info</i>
 The CPU information. 
 
 
-the footer here
+

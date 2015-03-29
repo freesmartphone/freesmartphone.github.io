@@ -1,9 +1,6 @@
 
-# freesmartphone.org: freesmartphone.org GSM SIM Interface
+# freesmartphone.org GSM SIM Interface
             
-
-#org.freesmartphone.GSM.SIM
-
 ##Description
 
 
@@ -60,7 +57,8 @@ The SIM interface is used to access the Subscriber Identification Module (SIM)  
 
 **Description:** Retrieve the authentication status for the SIM card. 
 
-####Returns
+***Returns:***
+
 <i>s: status</i>
 The authentication status for the SIM card. Values to expect:  <ul>  <li>"UNKNOWN" = unknown (possibly due to SIM communication error or SIM not inserted)</li>  <li>"READY" = not waiting for any PIN or PUK,</li>  <li>"SIM PIN" = waiting for SIM PIN to be given,</li>  <li>"SIM PUK" = waiting for SIM PUK to be given,</li>  <li>"SIM PIN2" = waiting for SIM PIN 2 to be given,</li>  <li>"SIM PUK2" = waiting for SIM PUK 2 to be given.</li>  </ul> 
 
@@ -71,7 +69,8 @@ The authentication status for the SIM card. Values to expect:  <ul>  <li>"UNKNOW
 
 **Description:** Send authentication code (PIN) for the SIM card. 
 
-####Parameters
+***Parameters:****
+
 <i>s: pin</i>
 The authentication code. 
 
@@ -88,7 +87,8 @@ This is outside the GSM standard and only supported on some devices.
 
 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: counters</i>
 The unlock counters for the SIM card. 
 
@@ -99,7 +99,8 @@ The unlock counters for the SIM card.
 
 **Description:** Send unlock code (PUK) and new authentication code (PIN). 
 
-####Parameters
+***Parameters:****
+
 <i>s: puk</i>
 The unlock code. 
 
@@ -113,7 +114,8 @@ The new authentication code.
 
 **Description:** Change the authentication code. 
 
-####Parameters
+***Parameters:****
+
 <i>s: old_pin</i>
 The old authentication code. 
 
@@ -127,7 +129,8 @@ The new authentication code.
 
 **Description:** Enable or disable checking for the SIM card authentification on startup. 
 
-####Parameters
+***Parameters:****
+
 <i>b: check</i>
 True, to turn SIM card authentification on. False, to turn it off. 
 
@@ -141,7 +144,8 @@ A valid authentication code.
 
 **Description:** Retrieve whether the SIM card checks for authentification on startup. 
 
-####Returns
+***Returns:***
+
 <i>b: check</i>
 True, if SIM card authentification is turned on. False, otherwise. 
 
@@ -152,7 +156,8 @@ True, if SIM card authentification is turned on. False, otherwise.
 
 **Description:** Get information stored on the SIM card. 
 
-####Returns
+***Returns:***
+
 <i>a{sv}: info</i>
 Information about the SIM card. Possible tuples are:  <ul>  <li>("imsi", string) = The unique subscriber identification stored on your SIM.</li>  <li>("issuer", string) = The unique subscriber identification stored on your SIM.</li>  <li>("phonebooks", space-separated string) = The phonebooks stored on this SIM.  Expected values are "contacts", "dialed", "received", "own", "missed", "emergency".  Other phonebooks are named included with their native code and prefixed "aux:".</li>  <li>("slots") = The capacity of the messagebook</li>  <li>("messages") = The messages in the messagebook</li>  </ul> 
 
@@ -163,12 +168,14 @@ Information about the SIM card. Possible tuples are:  <ul>  <li>("imsi", string)
 
 **Description:** Send a generic SIM command to the SIM card. 
 
-####Parameters
+***Parameters:****
+
 <i>s: command</i>
 The command to send, encoded as described in GSM 11.11. 
 
 
-####Returns
+***Returns:***
+
 <i>s: result</i>
 The result of the command, encoded as described in GSM 11.11. 
 
@@ -179,7 +186,8 @@ The result of the command, encoded as described in GSM 11.11.
 
 **Description:** Send a restricted SIM command to the SIM card. 
 
-####Parameters
+***Parameters:****
+
 <i>i: command</i>
 The command to send. Valid values are:  <ul>  <li>176 = READ BINARY,</li>  <li>178 = READ RECORD,</li>  <li>192 = GET RESPONSE,</li>  <li>214 = UPDATE BINARY,</li>  <li>220 = UPDATE RECORD,</li>  <li>242 = STATUS.</li>  </ul> 
 
@@ -199,7 +207,8 @@ Parameter 1 passed to the SIM. Mandatory for every command except STATUS and GET
 The command data to the SIM, encoded as described in GSM 11.11. 
 
 
-####Returns
+***Returns:***
+
 <i>s: result</i>
 The result of the command, encoded as described in GSM 11.11. 
 
@@ -210,7 +219,8 @@ The result of the command, encoded as described in GSM 11.11.
 
 **Description:** Retrieve the homezones coordinates, if stored on the SIM. 
 
-####Returns
+***Returns:***
+
 <i>a(siii): homezones</i>
 An array containing up to four homezones in Gauss-Krueger coordinates. The array contains of four-tuples with the following format:  <ol>  <li>(name:string), the name of the zone,</li>  <li>(x:int), the X value of the zone center in Gauss-Krueger format,</li>  <li>(y:int), the Y value of the zone center in Gauss-Krueger format,</li>  <li>(r:radius), the R*R value of the zone dimension in meters.</li>  </ol> 
 
@@ -221,12 +231,14 @@ An array containing up to four homezones in Gauss-Krueger coordinates. The array
 
 **Description:** Request information about a phonebook. 
 
-####Parameters
+***Parameters:****
+
 <i>s: category</i>
 The phonebook storage category.  See <a href="specs/org.freesmartphone.GSM.SIM/#GetSimInfo">GetSimInfo</a> for valid categories. 
 
 
-####Returns
+***Returns:***
+
 <i>i: slots</i>
 Capacity of the phonebook. 
 
@@ -243,7 +255,8 @@ Maximum length for the associated name.
 
 **Description:** Delete an entry in the SIM phonebook. 
 
-####Parameters
+***Parameters:****
+
 <i>s: category</i>
 The phonebook storage category. See <a href="specs/org.freesmartphone.GSM.SIM/#GetSimInfo">GetSimInfo</a>  for a list of valid categories. 
 
@@ -257,7 +270,8 @@ Index of entry to delete.
 
 **Description:** Store an entry in the SIM phonebook. 
 
-####Parameters
+***Parameters:****
+
 <i>s: category</i>
 The phonebook storage category. See <a href="specs/org.freesmartphone.GSM.SIM/#GetSimInfo">GetSimInfo</a>  for a list of valid categories. 
 
@@ -277,7 +291,8 @@ The number corresponding to the name.
 
 **Description:** Retrieve (parts of) a SIM phonebook. 
 
-####Parameters
+***Parameters:****
+
 <i>s: category</i>
 The phonebook storage category.  Use <a href="specs/org.freesmartphone.GSM.SIM/#GetSimInfo">GetSimInfo</a> to gather the list of valid categories. 
 
@@ -288,7 +303,8 @@ The minimum index of the entry to retrieve.
 The maximum index of entries to receive. 
 
 
-####Returns
+***Returns:***
+
 <i>a(iss): entries</i>
 The phonebook entries. This is an array of three-tuples. Every entry has the following structure:  <ul>  <li>(int:index) = storage index.</li>  <li>(string:name) = name.</li>  <li>(string:number) = number.</li>  </ul> 
 
@@ -299,7 +315,8 @@ The phonebook entries. This is an array of three-tuples. Every entry has the fol
 
 **Description:** Retrieve phone number of SMS Center. 
 
-####Returns
+***Returns:***
+
 <i>s: number</i>
 The SMS Center Number. 
 
@@ -310,7 +327,8 @@ The SMS Center Number.
 
 **Description:** Set phone number of SMS Center. 
 
-####Parameters
+***Parameters:****
+
 <i>s: number</i>
 The SMS Center Number. 
 
@@ -321,7 +339,8 @@ The SMS Center Number.
 
 **Description:** Delete a message in the SIM messagebook. 
 
-####Parameters
+***Parameters:****
+
 <i>i: index</i>
 The storage index of the message to delete. 
 
@@ -332,7 +351,8 @@ The storage index of the message to delete.
 
 **Description:** Store a message in the SIM messagebook. 
 
-####Parameters
+***Parameters:****
+
 <i>s: recipient_number</i>
 The number of the recipient. 
 
@@ -343,7 +363,8 @@ The contents of the message.
 For a list of valid properties see <a href="specs/org.freesmartphone.GSM.SMS/#SendMessage">SendMessage</a> 
 
 
-####Returns
+***Returns:***
+
 <i>i: index</i>
 The index of the new message. 
 
@@ -354,12 +375,14 @@ The index of the new message.
 
 **Description:** Sends a message stored in the SIM messagebook. 
 
-####Parameters
+***Parameters:****
+
 <i>i: index</i>
 The index of the message. 
 
 
-####Returns
+***Returns:***
+
 <i>i: transaction_index</i>
 The given transaction index for this message. 
 
@@ -373,12 +396,14 @@ The timestamp this message was received by the SMSC
 
 **Description:** Retrieve a message from the SIM messagebook. 
 
-####Parameters
+***Parameters:****
+
 <i>i: index</i>
 The index of the message to retrieve. 
 
 
-####Returns
+***Returns:***
+
 <i>s: status</i>
 The category the message is in, one of ("read", "sent", "unread", "unsent"). 
 
@@ -400,7 +425,8 @@ Additional properties (TBD).
 
 **Description:** Sent, when the authentication status for the SIM card changes. 
 
-####Parameters
+***Parameters:***
+
 <i>s: status</i>
 The authentication status for the SIM card. See <a href="specs/org.freesmartphone.GSM.SIM/#GetAuthStatus">GetAuthStatus</a> for a list of expected values. 
 
@@ -412,10 +438,11 @@ The authentication status for the SIM card. See <a href="specs/org.freesmartphon
 
 **Description:** Sent, when a new message has been received and stored on the SIM card. 
 
-####Parameters
+***Parameters:***
+
 <i>i: index</i>
 The storage index of the new message. 
 
 
 
-the footer here
+
