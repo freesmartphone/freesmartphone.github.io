@@ -1,12 +1,16 @@
 DBUS_DOCFILES = $(wildcard $(FSO_SPECS_DATADIR)/doc/*/*.in)
 DBUS_MDFILES = $(patsubst %.xml.in,%.md,$(DBUS_DOCFILES))
 
-handwritten: mkdocs.yml $(wildcard docs/*.md) docs/specs/intro.md
+handwritten: tools/makedoc.py mkdocs.yml $(wildcard docs/*.md)
 	$(MKDOCS) --clean build	
 
-generated: $(DBUS_MDFILES)
+generated: tools/makedoc.py $(DBUS_MDFILES)
 
 all: generated handwritten
+
+test: generated handwritten
+	killall `basename $(MKDOCS)` || true
+	$(MKDOCS) serve
 
 %.md: %.xml.in
 	tools/makedoc.py $<
