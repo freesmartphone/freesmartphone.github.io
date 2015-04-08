@@ -15,16 +15,16 @@ This interface provides access to a Realtime Clock device.
 
 ##Methods
 
-* [GetCurrentTime](GetCurrentTime)
-* [SetCurrentTime](SetCurrentTime)
-* [GetWakeupTime](GetWakeupTime)
-* [SetWakeupTime](SetWakeupTime)
+* [GetCurrentTime](#GetCurrentTime)
+* [SetCurrentTime](#SetCurrentTime)
+* [GetWakeupTime](#GetWakeupTime)
+* [SetWakeupTime](#SetWakeupTime)
 
 
 ##Signals
 
-* [WakeupTimeChanged](WakeupTimeChanged)
-* [Alarm](Alarm)
+* [WakeupTimeChanged](#WakeupTimeChanged)
+* [Alarm](#Alarm)
 
 
 ##Properties

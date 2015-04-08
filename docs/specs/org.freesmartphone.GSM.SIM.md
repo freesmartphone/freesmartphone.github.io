@@ -15,33 +15,33 @@ The SIM interface is used to access the Subscriber Identification Module (SIM)  
 
 ##Methods
 
-* [GetAuthStatus](GetAuthStatus)
-* [SendAuthCode](SendAuthCode)
-* [GetUnlockCounters](GetUnlockCounters)
-* [Unlock](Unlock)
-* [ChangeAuthCode](ChangeAuthCode)
-* [SetAuthCodeRequired](SetAuthCodeRequired)
-* [GetAuthCodeRequired](GetAuthCodeRequired)
-* [GetSimInfo](GetSimInfo)
-* [SendGenericSimCommand](SendGenericSimCommand)
-* [SendRestrictedSimCommand](SendRestrictedSimCommand)
-* [GetHomeZoneParameters](GetHomeZoneParameters)
-* [GetPhonebookInfo](GetPhonebookInfo)
-* [DeleteEntry](DeleteEntry)
-* [StoreEntry](StoreEntry)
-* [RetrievePhonebook](RetrievePhonebook)
-* [GetServiceCenterNumber](GetServiceCenterNumber)
-* [SetServiceCenterNumber](SetServiceCenterNumber)
-* [DeleteMessage](DeleteMessage)
-* [StoreMessage](StoreMessage)
-* [SendStoredMessage](SendStoredMessage)
-* [RetrieveMessage](RetrieveMessage)
+* [GetAuthStatus](#GetAuthStatus)
+* [SendAuthCode](#SendAuthCode)
+* [GetUnlockCounters](#GetUnlockCounters)
+* [Unlock](#Unlock)
+* [ChangeAuthCode](#ChangeAuthCode)
+* [SetAuthCodeRequired](#SetAuthCodeRequired)
+* [GetAuthCodeRequired](#GetAuthCodeRequired)
+* [GetSimInfo](#GetSimInfo)
+* [SendGenericSimCommand](#SendGenericSimCommand)
+* [SendRestrictedSimCommand](#SendRestrictedSimCommand)
+* [GetHomeZoneParameters](#GetHomeZoneParameters)
+* [GetPhonebookInfo](#GetPhonebookInfo)
+* [DeleteEntry](#DeleteEntry)
+* [StoreEntry](#StoreEntry)
+* [RetrievePhonebook](#RetrievePhonebook)
+* [GetServiceCenterNumber](#GetServiceCenterNumber)
+* [SetServiceCenterNumber](#SetServiceCenterNumber)
+* [DeleteMessage](#DeleteMessage)
+* [StoreMessage](#StoreMessage)
+* [SendStoredMessage](#SendStoredMessage)
+* [RetrieveMessage](#RetrieveMessage)
 
 
 ##Signals
 
-* [AuthStatus](AuthStatus)
-* [IncomingMessage](IncomingMessage)
+* [AuthStatus](#AuthStatus)
+* [IncomingMessage](#IncomingMessage)
 
 
 ##Properties
@@ -234,7 +234,7 @@ An array containing up to four homezones in Gauss-Krueger coordinates. The array
 ***Parameters:****
 
 <i>s: category</i>
-The phonebook storage category.  See <a href="specs/org.freesmartphone.GSM.SIM/#GetSimInfo">GetSimInfo</a> for valid categories. 
+The phonebook storage category.  See [GetSimInfo](specs/org.freesmartphone.GSM.SIM.GetSimInfo)</a> for valid categories. 
 
 
 ***Returns:***
@@ -258,7 +258,7 @@ Maximum length for the associated name.
 ***Parameters:****
 
 <i>s: category</i>
-The phonebook storage category. See <a href="specs/org.freesmartphone.GSM.SIM/#GetSimInfo">GetSimInfo</a>  for a list of valid categories. 
+The phonebook storage category. See [GetSimInfo](specs/org.freesmartphone.GSM.SIM.GetSimInfo)</a>  for a list of valid categories. 
 
 <i>i: index</i>
 Index of entry to delete. 
@@ -273,7 +273,7 @@ Index of entry to delete.
 ***Parameters:****
 
 <i>s: category</i>
-The phonebook storage category. See <a href="specs/org.freesmartphone.GSM.SIM/#GetSimInfo">GetSimInfo</a>  for a list of valid categories. 
+The phonebook storage category. See [GetSimInfo](specs/org.freesmartphone.GSM.SIM.GetSimInfo)</a>  for a list of valid categories. 
 
 <i>i: index</i>
 The index of the entry to store. 
@@ -294,7 +294,7 @@ The number corresponding to the name.
 ***Parameters:****
 
 <i>s: category</i>
-The phonebook storage category.  Use <a href="specs/org.freesmartphone.GSM.SIM/#GetSimInfo">GetSimInfo</a> to gather the list of valid categories. 
+The phonebook storage category.  Use [GetSimInfo](specs/org.freesmartphone.GSM.SIM.GetSimInfo)</a> to gather the list of valid categories. 
 
 <i>i: mindex</i>
 The minimum index of the entry to retrieve. 
@@ -360,7 +360,7 @@ The number of the recipient.
 The contents of the message. 
 
 <i>a{sv}: properties</i>
-For a list of valid properties see <a href="specs/org.freesmartphone.GSM.SMS/#SendMessage">SendMessage</a> 
+For a list of valid properties see [SendMessage](specs/org.freesmartphone.GSM.SMS.SendMessage)</a> 
 
 
 ***Returns:***
@@ -428,7 +428,7 @@ Additional properties (TBD).
 ***Parameters:***
 
 <i>s: status</i>
-The authentication status for the SIM card. See <a href="specs/org.freesmartphone.GSM.SIM/#GetAuthStatus">GetAuthStatus</a> for a list of expected values. 
+The authentication status for the SIM card. See [GetAuthStatus](specs/org.freesmartphone.GSM.SIM.GetAuthStatus)</a> for a list of expected values. 
 
 
 

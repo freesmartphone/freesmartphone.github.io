@@ -15,8 +15,8 @@ The Context Manager interface allows you to register for environmental  context 
 
 ##Methods
 
-* [SubscribeLocationUpdates](SubscribeLocationUpdates)
-* [UnsubscribeLocationUpdates](UnsubscribeLocationUpdates)
+* [SubscribeLocationUpdates](#SubscribeLocationUpdates)
+* [UnsubscribeLocationUpdates](#UnsubscribeLocationUpdates)
 
 
 ##Signals
@@ -37,7 +37,7 @@ The Context Manager interface allows you to register for environmental  context 
 
 ***Implementation Note***
 
-To receive location updates, clients need to implement the <a href="specs/org.freesmartphone.Context/#Client">Client</a> interface 
+To receive location updates, clients need to implement the [Client](specs/org.freesmartphone.Context.Client)</a> interface 
 
 
 

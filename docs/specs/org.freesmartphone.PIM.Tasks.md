@@ -15,15 +15,15 @@ This interface provides access to the collection of PIM tasks.
 
 ##Methods
 
-* [Add](Add)
-* [GetSingleTaskSingleField](GetSingleTaskSingleField)
-* [Query](Query)
+* [Add](#Add)
+* [GetSingleTaskSingleField](#GetSingleTaskSingleField)
+* [Query](#Query)
 
 
 ##Signals
 
-* [NewTask](NewTask)
-* [UnfinishedTasks](UnfinishedTasks)
+* [NewTask](#NewTask)
+* [UnfinishedTasks](#UnfinishedTasks)
 
 
 ##Properties

@@ -15,8 +15,8 @@ The Monitor interface is used to gather auxiallary information  about the GSM ne
 
 ##Methods
 
-* [GetServingCellInformation](GetServingCellInformation)
-* [GetNeighbourCellInformation](GetNeighbourCellInformation)
+* [GetServingCellInformation](#GetServingCellInformation)
+* [GetNeighbourCellInformation](#GetNeighbourCellInformation)
 
 
 ##Signals

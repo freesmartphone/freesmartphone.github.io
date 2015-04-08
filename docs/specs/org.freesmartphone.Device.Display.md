@@ -15,15 +15,15 @@ This interface provides access to a display device.
 
 ##Methods
 
-* [GetBrightness](GetBrightness)
-* [SetBrightness](SetBrightness)
-* [GetBacklightPower](GetBacklightPower)
-* [SetBacklightPower](SetBacklightPower)
+* [GetBrightness](#GetBrightness)
+* [SetBrightness](#SetBrightness)
+* [GetBacklightPower](#GetBacklightPower)
+* [SetBacklightPower](#SetBacklightPower)
 
 
 ##Signals
 
-* [BacklightPower](BacklightPower)
+* [BacklightPower](#BacklightPower)
 
 
 ##Properties

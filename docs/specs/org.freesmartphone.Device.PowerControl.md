@@ -15,13 +15,13 @@ This interface provides access to a power-controllable device.
 
 ##Methods
 
-* [GetPower](GetPower)
-* [SetPower](SetPower)
+* [GetPower](#GetPower)
+* [SetPower](#SetPower)
 
 
 ##Signals
 
-* [Power](Power)
+* [Power](#Power)
 
 
 ##Properties

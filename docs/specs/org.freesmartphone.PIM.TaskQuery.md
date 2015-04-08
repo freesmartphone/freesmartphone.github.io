@@ -15,13 +15,13 @@ This interface gives access to a task query.
 
 ##Methods
 
-* [GetResultCount](GetResultCount)
-* [Rewind](Rewind)
-* [Skip](Skip)
-* [GetTaskPath](GetTaskPath)
-* [GetResult](GetResult)
-* [GetMultipleResults](GetMultipleResults)
-* [Dispose](Dispose)
+* [GetResultCount](#GetResultCount)
+* [Rewind](#Rewind)
+* [Skip](#Skip)
+* [GetTaskPath](#GetTaskPath)
+* [GetResult](#GetResult)
+* [GetMultipleResults](#GetMultipleResults)
+* [Dispose](#Dispose)
 
 
 ##Signals

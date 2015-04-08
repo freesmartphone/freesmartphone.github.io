@@ -15,7 +15,7 @@ The Context Client interface is being used by the  Context Manager to deliver en
 
 ##Methods
 
-* [LocationUpdate](LocationUpdate)
+* [LocationUpdate](#LocationUpdate)
 
 
 ##Signals

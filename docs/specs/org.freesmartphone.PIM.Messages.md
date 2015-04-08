@@ -15,21 +15,21 @@ This interface provides access to the list of messages.
 
 ##Methods
 
-* [Add](Add)
-* [AddIncoming](AddIncoming)
-* [GetSingleEntrySingleField](GetSingleEntrySingleField)
-* [Query](Query)
-* [QueryThreads](QueryThreads)
-* [GetUnreadMessages](GetUnreadMessages)
+* [Add](#Add)
+* [AddIncoming](#AddIncoming)
+* [GetSingleEntrySingleField](#GetSingleEntrySingleField)
+* [Query](#Query)
+* [QueryThreads](#QueryThreads)
+* [GetUnreadMessages](#GetUnreadMessages)
 
 
 ##Signals
 
-* [NewMessage](NewMessage)
-* [IncomingMessage](IncomingMessage)
-* [UnreadMessages](UnreadMessages)
-* [UpdatedMessage](UpdatedMessage)
-* [DeletedMessage](DeletedMessage)
+* [NewMessage](#NewMessage)
+* [IncomingMessage](#IncomingMessage)
+* [UnreadMessages](#UnreadMessages)
+* [UpdatedMessage](#UpdatedMessage)
+* [DeletedMessage](#DeletedMessage)
 
 
 ##Properties

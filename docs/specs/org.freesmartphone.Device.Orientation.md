@@ -15,12 +15,12 @@ This interface provides access to the device's physical orientation.
 
 ##Methods
 
-* [GetOrientation](GetOrientation)
+* [GetOrientation](#GetOrientation)
 
 
 ##Signals
 
-* [OrientationChanged](OrientationChanged)
+* [OrientationChanged](#OrientationChanged)
 
 
 ##Properties
@@ -53,7 +53,7 @@ The orientation. Expected substrings are:  <ul>  <li>"flat" (Laying flat on a le
 ***Parameters:***
 
 <i>s: orientation</i>
-The new orientation. See <a href="specs/org.freesmartphone.Device.Orientation/#GetOrientation">GetOrientation</a> for supported values. 
+The new orientation. See [GetOrientation](specs/org.freesmartphone.Device.Orientation.GetOrientation)</a> for supported values. 
 
 
 

@@ -15,16 +15,16 @@ The service object deals with configuration values of a given service   The serv
 
 ##Methods
 
-* [GetKeys](GetKeys)
-* [GetValue](GetValue)
-* [SetValue](SetValue)
-* [IsProfilable](IsProfilable)
-* [GetType](GetType)
+* [GetKeys](#GetKeys)
+* [GetValue](#GetValue)
+* [SetValue](#SetValue)
+* [IsProfilable](#IsProfilable)
+* [GetType](#GetType)
 
 
 ##Signals
 
-* [Notify](Notify)
+* [Notify](#Notify)
 
 
 ##Properties

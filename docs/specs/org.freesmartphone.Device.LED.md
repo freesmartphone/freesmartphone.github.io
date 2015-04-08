@@ -15,10 +15,10 @@ This interface provides access to a LED device.
 
 ##Methods
 
-* [SetBrightness](SetBrightness)
-* [SetBlinking](SetBlinking)
-* [BlinkSeconds](BlinkSeconds)
-* [SetNetworking](SetNetworking)
+* [SetBrightness](#SetBrightness)
+* [SetBlinking](#SetBlinking)
+* [BlinkSeconds](#BlinkSeconds)
+* [SetNetworking](#SetNetworking)
 
 
 ##Signals

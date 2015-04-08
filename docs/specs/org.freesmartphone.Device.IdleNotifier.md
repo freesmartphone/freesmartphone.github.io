@@ -15,15 +15,15 @@ The Idle Notification Interface provides information about a device's idleness s
 
 ##Methods
 
-* [GetState](GetState)
-* [GetTimeouts](GetTimeouts)
-* [SetTimeout](SetTimeout)
-* [SetState](SetState)
+* [GetState](#GetState)
+* [GetTimeouts](#GetTimeouts)
+* [SetTimeout](#SetTimeout)
+* [SetState](#SetState)
 
 
 ##Signals
 
-* [State](State)
+* [State](#State)
 
 
 ##Properties
@@ -66,7 +66,7 @@ The list of the idle states, and their correspondent timeouts.
 ***Parameters:****
 
 <i>s: status</i>
-The idle status. See <a href="specs/org.freesmartphone.Device.IdleNotifier/#GetState">GetState</a> for a list of valid values. 
+The idle status. See [GetState](specs/org.freesmartphone.Device.IdleNotifier.GetState)</a> for a list of valid values. 
 
 <i>i: timeout</i>
 The timeout value. Set to -1 to disable the state. 
@@ -81,7 +81,7 @@ The timeout value. Set to -1 to disable the state.
 ***Parameters:****
 
 <i>s: status</i>
-The idle status. See <a href="specs/org.freesmartphone.Device.IdleNotifier/#GetState">GetState</a> for valid values. 
+The idle status. See [GetState](specs/org.freesmartphone.Device.IdleNotifier.GetState)</a> for valid values. 
 
 
 
@@ -95,7 +95,7 @@ The idle status. See <a href="specs/org.freesmartphone.Device.IdleNotifier/#GetS
 ***Parameters:***
 
 <i>s: status</i>
-The idle status. See <a href="specs/org.freesmartphone.Device.IdleNotifier/#GetState">GetState</a> for a list of expected values. 
+The idle status. See [GetState](specs/org.freesmartphone.Device.IdleNotifier.GetState)</a> for a list of expected values. 
 
 
 

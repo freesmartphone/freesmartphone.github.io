@@ -15,15 +15,15 @@ org.freesmartphone.GSM.SMS is a high level interface for  textual Short Message 
 
 ##Methods
 
-* [RetrieveTextMessages](RetrieveTextMessages)
-* [GetSizeForTextMessage](GetSizeForTextMessage)
-* [SendTextMessage](SendTextMessage)
+* [RetrieveTextMessages](#RetrieveTextMessages)
+* [GetSizeForTextMessage](#GetSizeForTextMessage)
+* [SendTextMessage](#SendTextMessage)
 
 
 ##Signals
 
-* [IncomingTextMessage](IncomingTextMessage)
-* [IncomingMessageReport](IncomingMessageReport)
+* [IncomingTextMessage](#IncomingTextMessage)
+* [IncomingMessageReport](#IncomingMessageReport)
 
 
 ##Properties
@@ -84,7 +84,7 @@ The number of the recipient.
 The contents of the message. 
 
 <i>b: report</i>
-If true, status reports (message receipts) will be sent by the  SMS Center, delivered via the <a href="specs/org.freesmartphone.GSM.SMS/#IncomingMessageReceipt">IncomingMessageReceipt</a> signal. 
+If true, status reports (message receipts) will be sent by the  SMS Center, delivered via the [IncomingMessageReceipt](specs/org.freesmartphone.GSM.SMS.IncomingMessageReceipt)</a> signal. 
 
 
 ***Returns:***
@@ -126,7 +126,7 @@ The contents of the message.
 ***Parameters:***
 
 <i>i: reference</i>
-The message-reference number as returned by <a href="specs/org.freesmartphone.GSM.SMS/#SendTextMessage">SendTextMessage</a> 
+The message-reference number as returned by [SendTextMessage](specs/org.freesmartphone.GSM.SMS.SendTextMessage)</a> 
 
 <i>s: status</i>
 The status. Expected values are:  <ul>  <li>COMPLETED_RECEIVED</li>  <li>COMPLETED_UNABLE_TO_CONFIRM</li>  <li>COMPLETED_REPLACED</li>  <li>COMPLETED_LAST</li>  <li>TEMPORARY_CONGESTION</li>  <li>TEMPORARY_SME_BUSY</li>  <li>TEMPORARY_NO_RESPONSE</li>  <li>TEMPORARY_SERVICE_REJECTED</li>  <li>TEMPORARY_QOS_UNAVAILABLE</li>  <li>TEMPORARY_SME_ERROR</li>  <li>TEMPORARY_LAST</li>  <li>PERMANENT_RP_ERROR</li>  <li>PERMANENT_INVALID_DESTINATION</li>  <li>PERMANENT_CONNECTION_REJECTED</li>  <li>PERMANENT_NOT_OBTAINABLE</li>  <li>PERMANENT_QOS_UNAVAILABLE</li>  <li>PERMANENT_INTERWORKING_UNAVAILABLE</li>  <li>PERMANENT_VALIDITY_PERIOD_EXPIRED</li>  <li>PERMANENT_DELETED</li>  <li>PERMANENT_SC_ADMIN_DELETED</li>  <li>PERMANENT_SM_DOES_NOT_EXIST</li>  <li>PERMANENT_LAST</li>  <li>TEMPFINAL_CONGESTION</li>  <li>TEMPFINAL_SME_BUSY</li>  <li>TEMPFINAL_NO_RESPONSE</li>  <li>TEMPFINAL_SERVICE_REJECTED</li>  <li>TEMPFINAL_QOS_UNAVAILABLE</li>  <li>TEMPFINAL_SME_ERROR</li>  <li>TEMPFINAL_LAST  </ul> 

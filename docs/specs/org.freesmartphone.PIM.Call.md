@@ -15,17 +15,17 @@ This interface provides access to one PIM call.
 
 ##Methods
 
-* [GetContent](GetContent)
-* [GetMultipleFields](GetMultipleFields)
-* [GetUsedBackends](GetUsedBackends)
-* [Update](Update)
-* [Delete](Delete)
+* [GetContent](#GetContent)
+* [GetMultipleFields](#GetMultipleFields)
+* [GetUsedBackends](#GetUsedBackends)
+* [Update](#Update)
+* [Delete](#Delete)
 
 
 ##Signals
 
-* [CallDeleted](CallDeleted)
-* [CallUpdated](CallUpdated)
+* [CallDeleted](#CallDeleted)
+* [CallUpdated](#CallUpdated)
 
 
 ##Properties

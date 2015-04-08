@@ -15,7 +15,7 @@ The Device Information Interface provides information about the device's softwar
 
 ##Methods
 
-* [GetCpuInfo](GetCpuInfo)
+* [GetCpuInfo](#GetCpuInfo)
 
 
 ##Signals

@@ -15,17 +15,17 @@ This interface provides access to one PIM date.
 
 ##Methods
 
-* [GetContent](GetContent)
-* [GetMultipleFields](GetMultipleFields)
-* [GetUsedBackends](GetUsedBackends)
-* [Update](Update)
-* [Delete](Delete)
+* [GetContent](#GetContent)
+* [GetMultipleFields](#GetMultipleFields)
+* [GetUsedBackends](#GetUsedBackends)
+* [Update](#Update)
+* [Delete](#Delete)
 
 
 ##Signals
 
-* [DateDeleted](DateDeleted)
-* [DateUpdated](DateUpdated)
+* [DateDeleted](#DateDeleted)
+* [DateUpdated](#DateUpdated)
 
 
 ##Properties

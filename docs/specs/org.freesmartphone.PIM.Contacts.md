@@ -15,16 +15,16 @@ This interface provides access to the collection of PIM contacts.
 
 ##Methods
 
-* [Add](Add)
-* [GetSingleEntrySingleField](GetSingleEntrySingleField)
-* [Query](Query)
+* [Add](#Add)
+* [GetSingleEntrySingleField](#GetSingleEntrySingleField)
+* [Query](#Query)
 
 
 ##Signals
 
-* [NewContact](NewContact)
-* [UpdatedContact](UpdatedContact)
-* [DeletedContact](DeletedContact)
+* [NewContact](#NewContact)
+* [UpdatedContact](#UpdatedContact)
+* [DeletedContact](#DeletedContact)
 
 
 ##Properties

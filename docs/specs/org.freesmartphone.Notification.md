@@ -15,7 +15,7 @@ The Notification interface is used to signalize important information about cert
 
 ##Methods
 
-* [Alarm](Alarm)
+* [Alarm](#Alarm)
 
 
 ##Signals
@@ -31,6 +31,6 @@ The Notification interface is used to signalize important information about cert
 
 ###<a name="Alarm">Alarm</a> ( )
 
-**Description:** Sent, when an alarm that has been scheduled with <a href="specs/org.freesmartphone.Time.Alarm/#AddAlarm">AddAlarm</a>  has been triggered. 
+**Description:** Sent, when an alarm that has been scheduled with [AddAlarm](specs/org.freesmartphone.Time.Alarm.AddAlarm)</a>  has been triggered. 
 
 

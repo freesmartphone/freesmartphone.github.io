@@ -15,26 +15,26 @@ The Usage interface provides access to subsystem resource management.  The usage
 
 ##Methods
 
-* [RegisterResource](RegisterResource)
-* [UnregisterResource](UnregisterResource)
-* [ListResources](ListResources)
-* [GetResourcePolicy](GetResourcePolicy)
-* [SetResourcePolicy](SetResourcePolicy)
-* [GetResourceState](GetResourceState)
-* [GetResourceUsers](GetResourceUsers)
-* [RequestResource](RequestResource)
-* [ReleaseResource](ReleaseResource)
-* [Suspend](Suspend)
-* [Resume](Resume)
-* [Shutdown](Shutdown)
-* [Reboot](Reboot)
+* [RegisterResource](#RegisterResource)
+* [UnregisterResource](#UnregisterResource)
+* [ListResources](#ListResources)
+* [GetResourcePolicy](#GetResourcePolicy)
+* [SetResourcePolicy](#SetResourcePolicy)
+* [GetResourceState](#GetResourceState)
+* [GetResourceUsers](#GetResourceUsers)
+* [RequestResource](#RequestResource)
+* [ReleaseResource](#ReleaseResource)
+* [Suspend](#Suspend)
+* [Resume](#Resume)
+* [Shutdown](#Shutdown)
+* [Reboot](#Reboot)
 
 
 ##Signals
 
-* [ResourceAvailable](ResourceAvailable)
-* [ResourceChanged](ResourceChanged)
-* [SystemAction](SystemAction)
+* [ResourceAvailable](#ResourceAvailable)
+* [ResourceChanged](#ResourceChanged)
+* [SystemAction](#SystemAction)
 
 
 ##Properties
@@ -42,13 +42,13 @@ The Usage interface provides access to subsystem resource management.  The usage
 
 ##Errors
 
-* [PolicyUnknown](PolicyUnknown)
-* [PolicyDisabled](PolicyDisabled)
-* [ResourceUnknown](ResourceUnknown)
-* [ResourceExists](ResourceExists)
-* [ResourceInUse](ResourceInUse)
-* [UserExists](UserExists)
-* [UserUnknown](UserUnknown)
+* [PolicyUnknown](#PolicyUnknown)
+* [PolicyDisabled](#PolicyDisabled)
+* [ResourceUnknown](#ResourceUnknown)
+* [ResourceExists](#ResourceExists)
+* [ResourceInUse](#ResourceInUse)
+* [UserExists](#UserExists)
+* [UserUnknown](#UserUnknown)
 
 
 #Methods
@@ -133,7 +133,7 @@ The resource policy. Expected values are:  <ul>  <li>"disabled" - using this res
 The resource name. 
 
 <i>s: policy</i>
-The new resource policy. See <a href="specs/org.freesmartphone.Usage/#GetResourcePolicy">GetResourcePolicy</a> for a list of valid values. 
+The new resource policy. See [GetResourcePolicy](specs/org.freesmartphone.Usage.GetResourcePolicy)</a> for a list of valid values. 
 
 
 
@@ -205,7 +205,7 @@ The resource name.
 
 ###<a name="Suspend">Suspend</a> ( )
 
-**Description:** Triggers a suspend on all managed resources and puts the device into suspend mode.  When the device comes back from suspend, all resources are resumed.  All Resources need to implement <a href="specs/org.freesmartphone.Resource/#Suspend">Suspend</a> and  <a href="specs/org.freesmartphone.Resource/#Resume">Resume</a> if they have anything to prepare / recover  on suspend and resume. 
+**Description:** Triggers a suspend on all managed resources and puts the device into suspend mode.  When the device comes back from suspend, all resources are resumed.  All Resources need to implement [Suspend](specs/org.freesmartphone.Resource.Suspend)</a> and  [Resume](specs/org.freesmartphone.Resource.Resume)</a> if they have anything to prepare / recover  on suspend and resume. 
 
 
 ###<a name="Resume">Resume</a> ( ss )

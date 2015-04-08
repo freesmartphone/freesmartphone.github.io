@@ -15,7 +15,7 @@ This interface provides access to available field types.
 
 ##Methods
 
-* [List](List)
+* [List](#List)
 
 
 ##Signals

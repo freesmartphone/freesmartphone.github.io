@@ -471,11 +471,11 @@
 <p><code>org.freesmartphone.Data.World</code></p>
 <h2 id="methods">Methods</h2>
 <ul>
-<li><a href="../../GetAllCountries">GetAllCountries</a></li>
-<li><a href="../../GetCountryCodeForMccMnc">GetCountryCodeForMccMnc</a></li>
-<li><a href="../../GetTimezonesForCountryCode">GetTimezonesForCountryCode</a></li>
-<li><a href="../../GetApnsForMccMnc">GetApnsForMccMnc</a></li>
-<li><a href="../../GetProviderNameForMccMnc">GetProviderNameForMccMnc</a></li>
+<li><a href="#GetAllCountries">GetAllCountries</a></li>
+<li><a href="#GetCountryCodeForMccMnc">GetCountryCodeForMccMnc</a></li>
+<li><a href="#GetTimezonesForCountryCode">GetTimezonesForCountryCode</a></li>
+<li><a href="#GetApnsForMccMnc">GetApnsForMccMnc</a></li>
+<li><a href="#GetProviderNameForMccMnc">GetProviderNameForMccMnc</a></li>
 </ul>
 <h2 id="signals">Signals</h2>
 <p><em>None</em></p>
@@ -490,7 +490,7 @@
 <p><i>a(ss): countries</i>
 A list of country codes and their (english) names. </p>
 <h3 id="getcountrycodeformccmnc-s-s"><a name="GetCountryCodeForMccMnc">GetCountryCodeForMccMnc</a> ( s ) &rarr; s</h3>
-<p><strong>Description:</strong> Retrieve a country code for MCC or concatenated MCC and MNC.  Raises <a href="../../specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. </p>
+<p><strong>Description:</strong> Retrieve a country code for MCC or concatenated MCC and MNC.  Raises <a href="../../specs/org.freesmartphone.Error.InvalidParameter">InvalidParameter</a></a> if not found. </p>
 <p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: mcc_mnc</i>
 MCC or concatenated MCC and MNC. </p>
@@ -498,7 +498,7 @@ MCC or concatenated MCC and MNC. </p>
 <p><i>s: country_code</i>
 The country code that owns the specified MCC (and MNC). </p>
 <h3 id="gettimezonesforcountrycode-s-ass"><a name="GetTimezonesForCountryCode">GetTimezonesForCountryCode</a> ( s ) &rarr; a{ss}</h3>
-<p><strong>Description:</strong> Retrieves the list of timezones given a country code.  Raises <a href="../../specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. </p>
+<p><strong>Description:</strong> Retrieves the list of timezones given a country code.  Raises <a href="../../specs/org.freesmartphone.Error.InvalidParameter">InvalidParameter</a></a> if not found. </p>
 <p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: country_code</i>
 The country code. </p>
@@ -506,7 +506,7 @@ The country code. </p>
 <p><i>a{ss}: timezones</i>
 A dictionary of coordinates and timezone names. </p>
 <h3 id="getapnsformccmnc-s-assssss"><a name="GetApnsForMccMnc">GetApnsForMccMnc</a> ( s ) &rarr; a(ssssss)</h3>
-<p><strong>Description:</strong> Retrieves a list of data connectivity (GPRS, EDGE, 3G)  access point names for MCC or concatenated MCC and MNC.  Raises <a href="../../specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. </p>
+<p><strong>Description:</strong> Retrieves a list of data connectivity (GPRS, EDGE, 3G)  access point names for MCC or concatenated MCC and MNC.  Raises <a href="../../specs/org.freesmartphone.Error.InvalidParameter">InvalidParameter</a></a> if not found. </p>
 <p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: mcc_mnc</i>
 MCC or concatenated MCC and MNC. </p>
@@ -514,7 +514,7 @@ MCC or concatenated MCC and MNC. </p>
 <p><i>a(ssssss): apns</i>
 A list of six-tuples descriping a connectivity access point. Structure is: </p>
 <h3 id="getprovidernameformccmnc-s-s"><a name="GetProviderNameForMccMnc">GetProviderNameForMccMnc</a> ( s ) &rarr; s</h3>
-<p><strong>Description:</strong> Retrieves the name of a provider for a supplied concatenated MCC and MNC.  Raises <a href="../../specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. </p>
+<p><strong>Description:</strong> Retrieves the name of a provider for a supplied concatenated MCC and MNC.  Raises <a href="../../specs/org.freesmartphone.Error.InvalidParameter">InvalidParameter</a></a> if not found. </p>
 <p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: mcc_mnc</i>
 MCC or concatenated MCC and MNC. </p>

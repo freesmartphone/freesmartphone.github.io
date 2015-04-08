@@ -15,27 +15,27 @@ The Manager interface is used to manage various audio related aspects. It is  su
 
 ##Methods
 
-* [SetMode](SetMode)
-* [GetMode](GetMode)
-* [SetDevice](SetDevice)
-* [GetDevice](GetDevice)
-* [PushDevice](PushDevice)
-* [PullDevice](PullDevice)
-* [GetAvailableDevices](GetAvailableDevices)
-* [GetVolume](GetVolume)
-* [SetVolume](SetVolume)
-* [SetMute](SetMute)
-* [GetMute](GetMute)
-* [RegisterSession](RegisterSession)
-* [ReleaseSession](ReleaseSession)
+* [SetMode](#SetMode)
+* [GetMode](#GetMode)
+* [SetDevice](#SetDevice)
+* [GetDevice](#GetDevice)
+* [PushDevice](#PushDevice)
+* [PullDevice](#PullDevice)
+* [GetAvailableDevices](#GetAvailableDevices)
+* [GetVolume](#GetVolume)
+* [SetVolume](#SetVolume)
+* [SetMute](#SetMute)
+* [GetMute](#GetMute)
+* [RegisterSession](#RegisterSession)
+* [ReleaseSession](#ReleaseSession)
 
 
 ##Signals
 
-* [ModeChanged](ModeChanged)
-* [DeviceChanged](DeviceChanged)
-* [VolumeChanged](VolumeChanged)
-* [MuteChanged](MuteChanged)
+* [ModeChanged](#ModeChanged)
+* [DeviceChanged](#DeviceChanged)
+* [VolumeChanged](#VolumeChanged)
+* [MuteChanged](#MuteChanged)
 
 
 ##Properties
@@ -43,8 +43,8 @@ The Manager interface is used to manage various audio related aspects. It is  su
 
 ##Errors
 
-* [NotSupportedDevice](NotSupportedDevice)
-* [DeviceStackUnderflow](DeviceStackUnderflow)
+* [NotSupportedDevice](#NotSupportedDevice)
+* [DeviceStackUnderflow](#DeviceStackUnderflow)
 
 
 #Methods
@@ -69,7 +69,7 @@ The new audio mode to set. Expected values are:  <ul>  <li>"normal" = Normal aud
 ***Returns:***
 
 <i>s: mode</i>
-See <a href="specs/org.freesmartphone.Audio.Manager/#SetMode">SetMode</a> for a list of expected values. 
+See [SetMode](specs/org.freesmartphone.Audio.Manager.SetMode)</a> for a list of expected values. 
 
 
 
@@ -93,7 +93,7 @@ Set the current audio device to use to play audio. Expected values are:  <ul>  <
 ***Returns:***
 
 <i>s: device</i>
-The current device used to play audio. For Expected values see  <a href="specs/org.freesmartphone.Audio.Manager/#SetDevice">SetDevice</a> 
+The current device used to play audio. For Expected values see  [SetDevice](specs/org.freesmartphone.Audio.Manager.SetDevice)</a> 
 
 
 
@@ -105,7 +105,7 @@ The current device used to play audio. For Expected values see  <a href="specs/o
 ***Parameters:****
 
 <i>s: device</i>
-The new active audio device. For a list of expected values see  <a href="specs/org.freesmartphone.Audio.Manager/#SetDevice">SetDevice</a> 
+The new active audio device. For a list of expected values see  [SetDevice](specs/org.freesmartphone.Audio.Manager.SetDevice)</a> 
 
 
 
@@ -117,7 +117,7 @@ The new active audio device. For a list of expected values see  <a href="specs/o
 ***Returns:***
 
 <i>s: device</i>
-The new active audio device. For a list of expected values see  <a href="specs/org.freesmartphone.Audio.Manager/#SetDevice">SetDevice</a> 
+The new active audio device. For a list of expected values see  [SetDevice](specs/org.freesmartphone.Audio.Manager.SetDevice)</a> 
 
 
 
@@ -129,13 +129,13 @@ The new active audio device. For a list of expected values see  <a href="specs/o
 ***Parameters:****
 
 <i>s: mode</i>
-Mode to retrieve the possible devices for. See  <a href="specs/org.freesmartphone.Audio.Manager/#SetMode">SetMode</a> for a list of expected values. 
+Mode to retrieve the possible devices for. See  [SetMode](specs/org.freesmartphone.Audio.Manager.SetMode)</a> for a list of expected values. 
 
 
 ***Returns:***
 
 <i>as: outputs</i>
-List of available output devices. For a list of expected values see  <a href="specs/org.freesmartphone.Audio.Manager/#SetDevice">SetDevice</a> 
+List of available output devices. For a list of expected values see  [SetDevice](specs/org.freesmartphone.Audio.Manager.SetDevice)</a> 
 
 
 
@@ -176,7 +176,7 @@ The volume in percent (0-100).
 ***Parameters:****
 
 <i>s: control</i>
-The control you want to set the mute state for. See  <a href="specs/org.freesmartphone.Audio/#Manager">Manager</a> for detailed description of the available  controls. 
+The control you want to set the mute state for. See  [Manager](specs/org.freesmartphone.Audio.Manager)</a> for detailed description of the available  controls. 
 
 <i>b: mute</i>
 The mute state of the control. The possible two values are:  <ul>  <li>true: mute the control</li>  <li>false: unmute the control</li>  </ul>  Please note:  <ul>  <li>Muting/unmuting a already muted/unmuted control does not has any effect.</li>  <li>Setting a volume of 0/100 for a control has the same effect as muting/unmuting it.</li>  </ul> 
@@ -191,7 +191,7 @@ The mute state of the control. The possible two values are:  <ul>  <li>true: mut
 ***Parameters:****
 
 <i>s: control</i>
-The control you want to set the mute state for. See  <a href="specs/org.freesmartphone.Audio/#Control">Control</a> for detailed description of the available  controls. 
+The control you want to set the mute state for. See  [Control](specs/org.freesmartphone.Audio.Control)</a> for detailed description of the available  controls. 
 
 
 ***Returns:***
@@ -239,7 +239,7 @@ A four byte long byte sequence to identify the audio session. The  token is gene
 ***Parameters:***
 
 <i>s: mode</i>
-The new audio mode. See <a href="specs/org.freesmartphone.Audio/#Mode">Mode</a> for possible values. 
+The new audio mode. See [Mode](specs/org.freesmartphone.Audio.Mode)</a> for possible values. 
 
 
 
@@ -250,7 +250,7 @@ The new audio mode. See <a href="specs/org.freesmartphone.Audio/#Mode">Mode</a> 
 ***Parameters:***
 
 <i>s: device</i>
-The new audio output device. See <a href="specs/org.freesmartphone.Audio.Manager/#SetDevice">SetDevice</a>  for a list of expected values. 
+The new audio output device. See [SetDevice](specs/org.freesmartphone.Audio.Manager.SetDevice)</a>  for a list of expected values. 
 
 
 
@@ -261,7 +261,7 @@ The new audio output device. See <a href="specs/org.freesmartphone.Audio.Manager
 ***Parameters:***
 
 <i>s: control</i>
-The control the volume was changed for. See  <a href="specs/org.freesmartphone.Audio.Manager/#SetVolume">SetVolume</a> for a list of expected values. 
+The control the volume was changed for. See  [SetVolume](specs/org.freesmartphone.Audio.Manager.SetVolume)</a> for a list of expected values. 
 
 <i>i: volume</i>
 The new volume for the control in percent [0-100]. 
@@ -275,7 +275,7 @@ The new volume for the control in percent [0-100].
 ***Parameters:***
 
 <i>s: control</i>
-The control the mute state was changed for. See  <a href="specs/org.freesmartphone.Audio.Manager/#SetVolume">SetVolume</a> for a list of expected values. 
+The control the mute state was changed for. See  [SetVolume](specs/org.freesmartphone.Audio.Manager.SetVolume)</a> for a list of expected values. 
 
 <i>b: mute</i>
 The new mute state for the control. Possible valus are:  <ul>  <li>true: control was muted</li>  <li>false: control was unmuted</li>  </ul> 

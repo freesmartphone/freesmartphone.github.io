@@ -24,11 +24,11 @@ The org.freesmartphone.Error domain describes common errors clients should expec
 
 ##Errors
 
-* [InvalidParameter](InvalidParameter)
-* [InternalError](InternalError)
-* [SystemError](SystemError)
-* [Unsupported](Unsupported)
-* [Unavailable](Unavailable)
+* [InvalidParameter](#InvalidParameter)
+* [InternalError](#InternalError)
+* [SystemError](#SystemError)
+* [Unsupported](#Unsupported)
+* [Unavailable](#Unavailable)
 
 
 #Errors

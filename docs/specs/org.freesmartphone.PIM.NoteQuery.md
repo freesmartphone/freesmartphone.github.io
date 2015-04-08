@@ -15,18 +15,18 @@ This interface gives access to a note query.
 
 ##Methods
 
-* [GetResultCount](GetResultCount)
-* [Rewind](Rewind)
-* [Skip](Skip)
-* [GetNotePath](GetNotePath)
-* [GetResult](GetResult)
-* [GetMultipleResults](GetMultipleResults)
-* [Dispose](Dispose)
+* [GetResultCount](#GetResultCount)
+* [Rewind](#Rewind)
+* [Skip](#Skip)
+* [GetNotePath](#GetNotePath)
+* [GetResult](#GetResult)
+* [GetMultipleResults](#GetMultipleResults)
+* [Dispose](#Dispose)
 
 
 ##Signals
 
-* [NoteAdded](NoteAdded)
+* [NoteAdded](#NoteAdded)
 
 
 ##Properties

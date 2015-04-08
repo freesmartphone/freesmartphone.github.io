@@ -474,19 +474,19 @@
 <p><code>org.freesmartphone.GSM.Device</code></p>
 <h2 id="methods">Methods</h2>
 <ul>
-<li><a href="../../GetFunctionality">GetFunctionality</a></li>
-<li><a href="../../SetFunctionality">SetFunctionality</a></li>
-<li><a href="../../GetFeatures">GetFeatures</a></li>
-<li><a href="../../GetDeviceStatus">GetDeviceStatus</a></li>
-<li><a href="../../GetSpeakerVolume">GetSpeakerVolume</a></li>
-<li><a href="../../SetSpeakerVolume">SetSpeakerVolume</a></li>
-<li><a href="../../GetMicrophoneMuted">GetMicrophoneMuted</a></li>
-<li><a href="../../SetMicrophoneMuted">SetMicrophoneMuted</a></li>
+<li><a href="#GetFunctionality">GetFunctionality</a></li>
+<li><a href="#SetFunctionality">SetFunctionality</a></li>
+<li><a href="#GetFeatures">GetFeatures</a></li>
+<li><a href="#GetDeviceStatus">GetDeviceStatus</a></li>
+<li><a href="#GetSpeakerVolume">GetSpeakerVolume</a></li>
+<li><a href="#SetSpeakerVolume">SetSpeakerVolume</a></li>
+<li><a href="#GetMicrophoneMuted">GetMicrophoneMuted</a></li>
+<li><a href="#SetMicrophoneMuted">SetMicrophoneMuted</a></li>
 </ul>
 <h2 id="signals">Signals</h2>
 <ul>
-<li><a href="../../DeviceStatus">DeviceStatus</a></li>
-<li><a href="../../KeypadEvent">KeypadEvent</a></li>
+<li><a href="#DeviceStatus">DeviceStatus</a></li>
+<li><a href="#KeypadEvent">KeypadEvent</a></li>
 </ul>
 <h2 id="properties">Properties</h2>
 <p><em>None</em></p>
@@ -506,7 +506,7 @@ The SIM PIN being used to authenticate if necessary, or an empty string.  This p
 <p><strong>Description:</strong> Set the functionality status for this device. </p>
 <p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: level</i>
-See <a href="../../specs/org.freesmartphone.GSM.Device/#GetFunctionality">GetFunctionality</a> </p>
+See <a href="../../specs/org.freesmartphone.GSM.Device.GetFunctionality">GetFunctionality</a></a> </p>
 <p><i>b: autoregister</i>
 Whether the device should try to maintain registration with a provider.  This parameter is only valid, if level = &#8220;full&#8221;. </p>
 <p><i>s: pin</i>
@@ -517,7 +517,7 @@ The SIM PIN being used to authenticate if necessary, or an empty string.  This p
 <p><i>a{sv}: features</i>
 The telephony features supported by this device. Valid tuples are:  <ul>  <li>(&#8220;voice&#8221;, bool) = true, if the device supports voice calls,</li>  <li>(&#8220;csd&#8221;, bool) = true, if the device supports circuit-switched (data) calls,</li>  <li>(&#8220;gsm&#8221;, bool) = true, if the device can operate in a GSM network,</li>  <li>(&#8220;cdma&#8221;, bool) = true, if the device can operate in a CDMA network,</li>  <li>(&#8220;pdp&#8221;, string) = supported pdp classes, if the device supports packet data communication,</li>  <li>(&#8220;fax&#8221;, string) = supported fax classes, if the device supports fax communication,</li>  <li>(&#8220;facilities&#8221;, string) = supported security facilities.</li>  </ul> </p>
 <h3 id="getdevicestatus-s"><a name="GetDeviceStatus">GetDeviceStatus</a> ( ) &rarr; s</h3>
-<p><strong>Description:</strong> Retrieve the current device status. SIM commands, such as  <a href="../../specs/org.freesmartphone.GSM.SIM/#ListPhonebooks">ListPhonebooks</a> can not be performed  before the device is in the status &#8216;alive-sim-ready&#8217;. </p>
+<p><strong>Description:</strong> Retrieve the current device status. SIM commands, such as  <a href="../../specs/org.freesmartphone.GSM.SIM.ListPhonebooks">ListPhonebooks</a></a> can not be performed  before the device is in the status &#8216;alive-sim-ready&#8217;. </p>
 <p><strong><em>Returns:</em></strong></p>
 <p><i>s: status</i>
 The device status. Expected values are:  <ul>  <li>&#8220;unknown&#8221; = Device status could not be found,</li>  <li>&#8220;closed&#8221; = Device is present, but not opened,</li>  <li>&#8220;initializing&#8221; = Device is being opened,</li>  <li>&#8220;alive-no-sim&#8221; = Device is operating without a SIM card,</li>  <li>&#8220;alive-sim-locked&#8221; = Device is operating, SIM card is locked,</li>  <li>&#8220;alive-sim-unlocked&#8221; = Device is operating, SIM card unlocked,</li>  <li>&#8220;alive-sim-ready&#8221; = Device is operating, SIM card is ready for access,</li>  <li>&#8220;alive-registered&#8221; = Device is operating and camped to the network,</li>  <li>&#8220;suspending&#8221; = Device is suspending,</li>  <li>&#8220;suspended&#8221; = Device is suspended,</li>  <li>&#8220;resuming&#8221; = Device is resuming,</li>  <li>&#8220;closing&#8221; = Device is closing.</li>  </ul> </p>
@@ -553,7 +553,7 @@ True, to mute the microphone. False, otherwise. </p>
 <p><strong>Description:</strong> Sent on a change in device status. </p>
 <p><strong><em>Parameters:</em></strong></p>
 <p><i>s: status</i>
-The device status. See <a href="../../specs/org.freesmartphone.GSM.Device/#GetDeviceStatus">GetDeviceStatus</a> for expected values. </p>
+The device status. See <a href="../../specs/org.freesmartphone.GSM.Device.GetDeviceStatus">GetDeviceStatus</a></a> for expected values. </p>
 <h3></h3>
 <h3 id="keypadevent-sb"><a name="KeypadEvent">KeypadEvent</a> ( sb )</h3>
 <p><strong>Description:</strong> Sent, when a keypad input event occurs. </p>

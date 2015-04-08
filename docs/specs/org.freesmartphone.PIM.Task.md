@@ -15,11 +15,11 @@ This interface provides access to one PIM task.
 
 ##Methods
 
-* [GetContent](GetContent)
-* [GetMultipleFields](GetMultipleFields)
-* [GetUsedBackends](GetUsedBackends)
-* [Update](Update)
-* [Delete](Delete)
+* [GetContent](#GetContent)
+* [GetMultipleFields](#GetMultipleFields)
+* [GetUsedBackends](#GetUsedBackends)
+* [Update](#Update)
+* [Delete](#Delete)
 
 
 ##Signals

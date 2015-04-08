@@ -15,12 +15,12 @@ The Resource interface provides access to a resource as visible from the FSO usa
 
 ##Methods
 
-* [Enable](Enable)
-* [Disable](Disable)
-* [Suspend](Suspend)
-* [Resume](Resume)
-* [GetDependencies](GetDependencies)
-* [GetDefaultPolicy](GetDefaultPolicy)
+* [Enable](#Enable)
+* [Disable](#Disable)
+* [Suspend](#Suspend)
+* [Resume](#Resume)
+* [GetDependencies](#GetDependencies)
+* [GetDefaultPolicy](#GetDefaultPolicy)
 
 
 ##Signals
@@ -31,8 +31,8 @@ The Resource interface provides access to a resource as visible from the FSO usa
 
 ##Errors
 
-* [NotEnabled](NotEnabled)
-* [UnableToEnable](UnableToEnable)
+* [NotEnabled](#NotEnabled)
+* [UnableToEnable](#UnableToEnable)
 
 
 #Methods
@@ -77,7 +77,7 @@ Dependencies required for resource operation. Expected values are:  <ul>  <li>"s
 ***Returns:***
 
 <i>s: policy</i>
-The default policy to use for this resource. See  <a href="specs/org.freesmartphone.Usage/#GetResourcePolicy">GetResourcePolicy</a> for a list of possible values. 
+The default policy to use for this resource. See  [GetResourcePolicy](specs/org.freesmartphone.Usage.GetResourcePolicy)</a> for a list of possible values. 
 
 
 

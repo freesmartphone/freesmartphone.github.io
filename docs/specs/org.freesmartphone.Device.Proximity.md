@@ -15,12 +15,12 @@ This interface provides access to a proximity device.
 
 ##Methods
 
-* [GetProximity](GetProximity)
+* [GetProximity](#GetProximity)
 
 
 ##Signals
 
-* [Proximity](Proximity)
+* [Proximity](#Proximity)
 
 
 ##Properties

@@ -6,9 +6,12 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 AM_PATH_PYTHON([3.1])
 
 MKDOCS_REQUIRED=0.11.1
-AC_PATH_PROG(MKDOCS, mkdocs, mkdocs)
+AC_CHECK_PROG(MKDOCS, mkdocs, yes)
 AC_SUBST(MKDOCS)
-m4_ifdef([AM_PROG_MKDOCS], [AM_PROG_MKDOCS([$VALA_REQUIRED])])
+if test x"$MKDOCS" != x"yes"; then
+    AC_MSG_ERROR([mkdocs is mandatory for this package])
+fi
+AC_PATH_PROG(MKDOCS)
 
 FSO_SPECS_REQUIRED=2012.01.01
 

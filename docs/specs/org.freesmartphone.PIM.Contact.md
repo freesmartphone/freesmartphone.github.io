@@ -15,17 +15,17 @@ This interface provides access to one PIM contact.
 
 ##Methods
 
-* [GetContent](GetContent)
-* [GetMultipleFields](GetMultipleFields)
-* [GetUsedBackends](GetUsedBackends)
-* [Update](Update)
-* [Delete](Delete)
+* [GetContent](#GetContent)
+* [GetMultipleFields](#GetMultipleFields)
+* [GetUsedBackends](#GetUsedBackends)
+* [Update](#Update)
+* [Delete](#Delete)
 
 
 ##Signals
 
-* [ContactDeleted](ContactDeleted)
-* [ContactUpdated](ContactUpdated)
+* [ContactDeleted](#ContactDeleted)
+* [ContactUpdated](#ContactUpdated)
 
 
 ##Properties

@@ -15,24 +15,24 @@ The Call interface is used to initiate, accept, release, and otherwise deal  wit
 
 ##Methods
 
-* [Emergency](Emergency)
-* [Activate](Activate)
-* [ActivateConference](ActivateConference)
-* [Release](Release)
-* [HoldActive](HoldActive)
-* [Join](Join)
-* [Transfer](Transfer)
-* [Deflect](Deflect)
-* [ReleaseHeld](ReleaseHeld)
-* [ReleaseAll](ReleaseAll)
-* [Initiate](Initiate)
-* [ListCalls](ListCalls)
-* [SendDtmf](SendDtmf)
+* [Emergency](#Emergency)
+* [Activate](#Activate)
+* [ActivateConference](#ActivateConference)
+* [Release](#Release)
+* [HoldActive](#HoldActive)
+* [Join](#Join)
+* [Transfer](#Transfer)
+* [Deflect](#Deflect)
+* [ReleaseHeld](#ReleaseHeld)
+* [ReleaseAll](#ReleaseAll)
+* [Initiate](#Initiate)
+* [ListCalls](#ListCalls)
+* [SendDtmf](#SendDtmf)
 
 
 ##Signals
 
-* [CallStatus](CallStatus)
+* [CallStatus](#CallStatus)
 
 
 ##Properties
@@ -223,7 +223,7 @@ The reference id for this call. It will get assigned by the system.
 ***Returns:***
 
 <i>a(isa{sv}): call_details</i>
-The call status. This is an array containing a call status record for every single call.  See <a href="specs/org.freesmartphone.GSM.Call/#CallStatus">CallStatus</a> signal for a description of the format. 
+The call status. This is an array containing a call status record for every single call.  See [CallStatus](specs/org.freesmartphone.GSM.Call.CallStatus)</a> signal for a description of the format. 
 
 
 

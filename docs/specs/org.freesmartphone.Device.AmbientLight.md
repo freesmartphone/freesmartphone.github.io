@@ -15,12 +15,12 @@ This interface provides access to an ambient light device.
 
 ##Methods
 
-* [GetAmbientLightBrightness](GetAmbientLightBrightness)
+* [GetAmbientLightBrightness](#GetAmbientLightBrightness)
 
 
 ##Signals
 
-* [AmbientLightBrightness](AmbientLightBrightness)
+* [AmbientLightBrightness](#AmbientLightBrightness)
 
 
 ##Properties

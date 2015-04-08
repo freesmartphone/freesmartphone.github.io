@@ -15,13 +15,13 @@ The Cell Broadcast interface allows you to manage cell broadcast subscriptions. 
 
 ##Methods
 
-* [GetCellBroadcastSubscriptions](GetCellBroadcastSubscriptions)
-* [SetCellBroadcastSubscriptions](SetCellBroadcastSubscriptions)
+* [GetCellBroadcastSubscriptions](#GetCellBroadcastSubscriptions)
+* [SetCellBroadcastSubscriptions](#SetCellBroadcastSubscriptions)
 
 
 ##Signals
 
-* [IncomingCellBroadcast](IncomingCellBroadcast)
+* [IncomingCellBroadcast](#IncomingCellBroadcast)
 
 
 ##Properties

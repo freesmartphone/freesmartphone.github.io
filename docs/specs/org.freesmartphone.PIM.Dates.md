@@ -15,14 +15,14 @@ This interface provides access to the collection of PIM dates.
 
 ##Methods
 
-* [Add](Add)
-* [GetSingleEntrySingleField](GetSingleEntrySingleField)
-* [Query](Query)
+* [Add](#Add)
+* [GetSingleEntrySingleField](#GetSingleEntrySingleField)
+* [Query](#Query)
 
 
 ##Signals
 
-* [NewDate](NewDate)
+* [NewDate](#NewDate)
 
 
 ##Properties

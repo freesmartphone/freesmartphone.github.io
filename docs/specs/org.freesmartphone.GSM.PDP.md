@@ -15,22 +15,22 @@ The Packet Data Protocol interface is used to set up  binary data connections th
 
 ##Methods
 
-* [SetCredentials](SetCredentials)
-* [GetCredentials](GetCredentials)
-* [ActivateContext](ActivateContext)
-* [DeactivateContext](DeactivateContext)
-* [GetContextStatus](GetContextStatus)
-* [InternalStatusUpdate](InternalStatusUpdate)
+* [SetCredentials](#SetCredentials)
+* [GetCredentials](#GetCredentials)
+* [ActivateContext](#ActivateContext)
+* [DeactivateContext](#DeactivateContext)
+* [GetContextStatus](#GetContextStatus)
+* [InternalStatusUpdate](#InternalStatusUpdate)
 
 
 ##Signals
 
-* [ContextStatus](ContextStatus)
+* [ContextStatus](#ContextStatus)
 
 
 ##Properties
 
-* [RoamingAllowed](RoamingAllowed)
+* [RoamingAllowed](#RoamingAllowed)
 
 
 ##Errors
@@ -104,10 +104,10 @@ This command might change your network default route.
 ***Returns:***
 
 <i>s: status</i>
-The context status. See <a href="specs/org.freesmartphone.GSM.PDP/#ContextStatus">ContextStatus</a> for a list of valid values. 
+The context status. See [ContextStatus](specs/org.freesmartphone.GSM.PDP.ContextStatus)</a> for a list of valid values. 
 
 <i>a{sv}: properties</i>
-The context status properties.  See <a href="specs/org.freesmartphone.GSM.PDP/#ContextStatus">ContextStatus</a> for details. 
+The context status properties.  See [ContextStatus](specs/org.freesmartphone.GSM.PDP.ContextStatus)</a> for details. 
 
 
 

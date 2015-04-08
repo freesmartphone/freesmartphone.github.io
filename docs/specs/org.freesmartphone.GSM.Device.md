@@ -15,20 +15,20 @@ The Device interface is used to give information about the GSM  or CDMA device a
 
 ##Methods
 
-* [GetFunctionality](GetFunctionality)
-* [SetFunctionality](SetFunctionality)
-* [GetFeatures](GetFeatures)
-* [GetDeviceStatus](GetDeviceStatus)
-* [GetSpeakerVolume](GetSpeakerVolume)
-* [SetSpeakerVolume](SetSpeakerVolume)
-* [GetMicrophoneMuted](GetMicrophoneMuted)
-* [SetMicrophoneMuted](SetMicrophoneMuted)
+* [GetFunctionality](#GetFunctionality)
+* [SetFunctionality](#SetFunctionality)
+* [GetFeatures](#GetFeatures)
+* [GetDeviceStatus](#GetDeviceStatus)
+* [GetSpeakerVolume](#GetSpeakerVolume)
+* [SetSpeakerVolume](#SetSpeakerVolume)
+* [GetMicrophoneMuted](#GetMicrophoneMuted)
+* [SetMicrophoneMuted](#SetMicrophoneMuted)
 
 
 ##Signals
 
-* [DeviceStatus](DeviceStatus)
-* [KeypadEvent](KeypadEvent)
+* [DeviceStatus](#DeviceStatus)
+* [KeypadEvent](#KeypadEvent)
 
 
 ##Properties
@@ -65,7 +65,7 @@ The SIM PIN being used to authenticate if necessary, or an empty string.  This p
 ***Parameters:****
 
 <i>s: level</i>
-See <a href="specs/org.freesmartphone.GSM.Device/#GetFunctionality">GetFunctionality</a> 
+See [GetFunctionality](specs/org.freesmartphone.GSM.Device.GetFunctionality)</a> 
 
 <i>b: autoregister</i>
 Whether the device should try to maintain registration with a provider.  This parameter is only valid, if level = "full". 
@@ -90,7 +90,7 @@ The telephony features supported by this device. Valid tuples are:  <ul>  <li>("
 ###<a name="GetDeviceStatus">GetDeviceStatus</a> ( ) &rarr; s
 
 
-**Description:** Retrieve the current device status. SIM commands, such as  <a href="specs/org.freesmartphone.GSM.SIM/#ListPhonebooks">ListPhonebooks</a> can not be performed  before the device is in the status 'alive-sim-ready'. 
+**Description:** Retrieve the current device status. SIM commands, such as  [ListPhonebooks](specs/org.freesmartphone.GSM.SIM.ListPhonebooks)</a> can not be performed  before the device is in the status 'alive-sim-ready'. 
 
 ***Returns:***
 
@@ -175,7 +175,7 @@ True, to mute the microphone. False, otherwise.
 ***Parameters:***
 
 <i>s: status</i>
-The device status. See <a href="specs/org.freesmartphone.GSM.Device/#GetDeviceStatus">GetDeviceStatus</a> for expected values. 
+The device status. See [GetDeviceStatus](specs/org.freesmartphone.GSM.Device.GetDeviceStatus)</a> for expected values. 
 
 
 

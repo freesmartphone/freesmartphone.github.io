@@ -474,32 +474,32 @@
 <p><code>org.freesmartphone.GSM.SIM</code></p>
 <h2 id="methods">Methods</h2>
 <ul>
-<li><a href="../../GetAuthStatus">GetAuthStatus</a></li>
-<li><a href="../../SendAuthCode">SendAuthCode</a></li>
-<li><a href="../../GetUnlockCounters">GetUnlockCounters</a></li>
-<li><a href="../../Unlock">Unlock</a></li>
-<li><a href="../../ChangeAuthCode">ChangeAuthCode</a></li>
-<li><a href="../../SetAuthCodeRequired">SetAuthCodeRequired</a></li>
-<li><a href="../../GetAuthCodeRequired">GetAuthCodeRequired</a></li>
-<li><a href="../../GetSimInfo">GetSimInfo</a></li>
-<li><a href="../../SendGenericSimCommand">SendGenericSimCommand</a></li>
-<li><a href="../../SendRestrictedSimCommand">SendRestrictedSimCommand</a></li>
-<li><a href="../../GetHomeZoneParameters">GetHomeZoneParameters</a></li>
-<li><a href="../../GetPhonebookInfo">GetPhonebookInfo</a></li>
-<li><a href="../../DeleteEntry">DeleteEntry</a></li>
-<li><a href="../../StoreEntry">StoreEntry</a></li>
-<li><a href="../../RetrievePhonebook">RetrievePhonebook</a></li>
-<li><a href="../../GetServiceCenterNumber">GetServiceCenterNumber</a></li>
-<li><a href="../../SetServiceCenterNumber">SetServiceCenterNumber</a></li>
-<li><a href="../../DeleteMessage">DeleteMessage</a></li>
-<li><a href="../../StoreMessage">StoreMessage</a></li>
-<li><a href="../../SendStoredMessage">SendStoredMessage</a></li>
-<li><a href="../../RetrieveMessage">RetrieveMessage</a></li>
+<li><a href="#GetAuthStatus">GetAuthStatus</a></li>
+<li><a href="#SendAuthCode">SendAuthCode</a></li>
+<li><a href="#GetUnlockCounters">GetUnlockCounters</a></li>
+<li><a href="#Unlock">Unlock</a></li>
+<li><a href="#ChangeAuthCode">ChangeAuthCode</a></li>
+<li><a href="#SetAuthCodeRequired">SetAuthCodeRequired</a></li>
+<li><a href="#GetAuthCodeRequired">GetAuthCodeRequired</a></li>
+<li><a href="#GetSimInfo">GetSimInfo</a></li>
+<li><a href="#SendGenericSimCommand">SendGenericSimCommand</a></li>
+<li><a href="#SendRestrictedSimCommand">SendRestrictedSimCommand</a></li>
+<li><a href="#GetHomeZoneParameters">GetHomeZoneParameters</a></li>
+<li><a href="#GetPhonebookInfo">GetPhonebookInfo</a></li>
+<li><a href="#DeleteEntry">DeleteEntry</a></li>
+<li><a href="#StoreEntry">StoreEntry</a></li>
+<li><a href="#RetrievePhonebook">RetrievePhonebook</a></li>
+<li><a href="#GetServiceCenterNumber">GetServiceCenterNumber</a></li>
+<li><a href="#SetServiceCenterNumber">SetServiceCenterNumber</a></li>
+<li><a href="#DeleteMessage">DeleteMessage</a></li>
+<li><a href="#StoreMessage">StoreMessage</a></li>
+<li><a href="#SendStoredMessage">SendStoredMessage</a></li>
+<li><a href="#RetrieveMessage">RetrieveMessage</a></li>
 </ul>
 <h2 id="signals">Signals</h2>
 <ul>
-<li><a href="../../AuthStatus">AuthStatus</a></li>
-<li><a href="../../IncomingMessage">IncomingMessage</a></li>
+<li><a href="#AuthStatus">AuthStatus</a></li>
+<li><a href="#IncomingMessage">IncomingMessage</a></li>
 </ul>
 <h2 id="properties">Properties</h2>
 <p><em>None</em></p>
@@ -589,7 +589,7 @@ An array containing up to four homezones in Gauss-Krueger coordinates. The array
 <p><strong>Description:</strong> Request information about a phonebook. </p>
 <p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: category</i>
-The phonebook storage category.  See <a href="../../specs/org.freesmartphone.GSM.SIM/#GetSimInfo">GetSimInfo</a> for valid categories. </p>
+The phonebook storage category.  See <a href="../../specs/org.freesmartphone.GSM.SIM.GetSimInfo">GetSimInfo</a></a> for valid categories. </p>
 <p><strong><em>Returns:</em></strong></p>
 <p><i>i: slots</i>
 Capacity of the phonebook. </p>
@@ -601,14 +601,14 @@ Maximum length for the associated name. </p>
 <p><strong>Description:</strong> Delete an entry in the SIM phonebook. </p>
 <p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: category</i>
-The phonebook storage category. See <a href="../../specs/org.freesmartphone.GSM.SIM/#GetSimInfo">GetSimInfo</a>  for a list of valid categories. </p>
+The phonebook storage category. See <a href="../../specs/org.freesmartphone.GSM.SIM.GetSimInfo">GetSimInfo</a></a>  for a list of valid categories. </p>
 <p><i>i: index</i>
 Index of entry to delete. </p>
 <h3 id="storeentry-siss"><a name="StoreEntry">StoreEntry</a> ( siss )</h3>
 <p><strong>Description:</strong> Store an entry in the SIM phonebook. </p>
 <p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: category</i>
-The phonebook storage category. See <a href="../../specs/org.freesmartphone.GSM.SIM/#GetSimInfo">GetSimInfo</a>  for a list of valid categories. </p>
+The phonebook storage category. See <a href="../../specs/org.freesmartphone.GSM.SIM.GetSimInfo">GetSimInfo</a></a>  for a list of valid categories. </p>
 <p><i>i: index</i>
 The index of the entry to store. </p>
 <p><i>s: name</i>
@@ -619,7 +619,7 @@ The number corresponding to the name. </p>
 <p><strong>Description:</strong> Retrieve (parts of) a SIM phonebook. </p>
 <p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: category</i>
-The phonebook storage category.  Use <a href="../../specs/org.freesmartphone.GSM.SIM/#GetSimInfo">GetSimInfo</a> to gather the list of valid categories. </p>
+The phonebook storage category.  Use <a href="../../specs/org.freesmartphone.GSM.SIM.GetSimInfo">GetSimInfo</a></a> to gather the list of valid categories. </p>
 <p><i>i: mindex</i>
 The minimum index of the entry to retrieve. </p>
 <p><i>i: maxdex</i>
@@ -650,7 +650,7 @@ The number of the recipient. </p>
 <p><i>s: contents</i>
 The contents of the message. </p>
 <p><i>a{sv}: properties</i>
-For a list of valid properties see <a href="../../specs/org.freesmartphone.GSM.SMS/#SendMessage">SendMessage</a> </p>
+For a list of valid properties see <a href="../../specs/org.freesmartphone.GSM.SMS.SendMessage">SendMessage</a></a> </p>
 <p><strong><em>Returns:</em></strong></p>
 <p><i>i: index</i>
 The index of the new message. </p>
@@ -684,7 +684,7 @@ Additional properties (TBD). </p>
 <p><strong>Description:</strong> Sent, when the authentication status for the SIM card changes. </p>
 <p><strong><em>Parameters:</em></strong></p>
 <p><i>s: status</i>
-The authentication status for the SIM card. See <a href="../../specs/org.freesmartphone.GSM.SIM/#GetAuthStatus">GetAuthStatus</a> for a list of expected values. </p>
+The authentication status for the SIM card. See <a href="../../specs/org.freesmartphone.GSM.SIM.GetAuthStatus">GetAuthStatus</a></a> for a list of expected values. </p>
 <h3></h3>
 <h3 id="incomingmessage-i"><a name="IncomingMessage">IncomingMessage</a> ( i )</h3>
 <p><strong>Description:</strong> Sent, when a new message has been received and stored on the SIM card. </p>

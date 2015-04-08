@@ -15,11 +15,11 @@ The World interface is used to query (more or less static) information about  th
 
 ##Methods
 
-* [GetAllCountries](GetAllCountries)
-* [GetCountryCodeForMccMnc](GetCountryCodeForMccMnc)
-* [GetTimezonesForCountryCode](GetTimezonesForCountryCode)
-* [GetApnsForMccMnc](GetApnsForMccMnc)
-* [GetProviderNameForMccMnc](GetProviderNameForMccMnc)
+* [GetAllCountries](#GetAllCountries)
+* [GetCountryCodeForMccMnc](#GetCountryCodeForMccMnc)
+* [GetTimezonesForCountryCode](#GetTimezonesForCountryCode)
+* [GetApnsForMccMnc](#GetApnsForMccMnc)
+* [GetProviderNameForMccMnc](#GetProviderNameForMccMnc)
 
 
 ##Signals
@@ -48,7 +48,7 @@ A list of country codes and their (english) names.
 ###<a name="GetCountryCodeForMccMnc">GetCountryCodeForMccMnc</a> ( s ) &rarr; s
 
 
-**Description:** Retrieve a country code for MCC or concatenated MCC and MNC.  Raises <a href="specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. 
+**Description:** Retrieve a country code for MCC or concatenated MCC and MNC.  Raises [InvalidParameter](specs/org.freesmartphone.Error.InvalidParameter)</a> if not found. 
 
 ***Parameters:****
 
@@ -66,7 +66,7 @@ The country code that owns the specified MCC (and MNC).
 ###<a name="GetTimezonesForCountryCode">GetTimezonesForCountryCode</a> ( s ) &rarr; a{ss}
 
 
-**Description:** Retrieves the list of timezones given a country code.  Raises <a href="specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. 
+**Description:** Retrieves the list of timezones given a country code.  Raises [InvalidParameter](specs/org.freesmartphone.Error.InvalidParameter)</a> if not found. 
 
 ***Parameters:****
 
@@ -84,7 +84,7 @@ A dictionary of coordinates and timezone names.
 ###<a name="GetApnsForMccMnc">GetApnsForMccMnc</a> ( s ) &rarr; a(ssssss)
 
 
-**Description:** Retrieves a list of data connectivity (GPRS, EDGE, 3G)  access point names for MCC or concatenated MCC and MNC.  Raises <a href="specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. 
+**Description:** Retrieves a list of data connectivity (GPRS, EDGE, 3G)  access point names for MCC or concatenated MCC and MNC.  Raises [InvalidParameter](specs/org.freesmartphone.Error.InvalidParameter)</a> if not found. 
 
 ***Parameters:****
 
@@ -102,7 +102,7 @@ A list of six-tuples descriping a connectivity access point. Structure is:
 ###<a name="GetProviderNameForMccMnc">GetProviderNameForMccMnc</a> ( s ) &rarr; s
 
 
-**Description:** Retrieves the name of a provider for a supplied concatenated MCC and MNC.  Raises <a href="specs/org.freesmartphone.Error/#InvalidParameter">InvalidParameter</a> if not found. 
+**Description:** Retrieves the name of a provider for a supplied concatenated MCC and MNC.  Raises [InvalidParameter](specs/org.freesmartphone.Error.InvalidParameter)</a> if not found. 
 
 ***Parameters:****
 

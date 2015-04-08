@@ -15,14 +15,14 @@ The Debug interface is used to debug (sic!). You can ping the device,  execute t
 
 ##Methods
 
-* [DebugCommand](DebugCommand)
-* [DebugInjectResponse](DebugInjectResponse)
-* [DebugPing](DebugPing)
+* [DebugCommand](#DebugCommand)
+* [DebugInjectResponse](#DebugInjectResponse)
+* [DebugPing](#DebugPing)
 
 
 ##Signals
 
-* [DebugStatus](DebugStatus)
+* [DebugStatus](#DebugStatus)
 
 
 ##Properties

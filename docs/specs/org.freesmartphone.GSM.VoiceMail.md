@@ -15,14 +15,14 @@ The Voice Mail interface gives access to the voice mail status.   Voice Mail is 
 
 ##Methods
 
-* [GetVoiceMailboxNumber](GetVoiceMailboxNumber)
-* [SetVoiceMailboxNumber](SetVoiceMailboxNumber)
-* [GetStoredVoiceMails](GetStoredVoiceMails)
+* [GetVoiceMailboxNumber](#GetVoiceMailboxNumber)
+* [SetVoiceMailboxNumber](#SetVoiceMailboxNumber)
+* [GetStoredVoiceMails](#GetStoredVoiceMails)
 
 
 ##Signals
 
-* [IncomingVoiceMail](IncomingVoiceMail)
+* [IncomingVoiceMail](#IncomingVoiceMail)
 
 
 ##Properties

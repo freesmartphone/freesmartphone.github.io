@@ -15,13 +15,13 @@ The Phone object is used to create Call objects using different protocols.
 
 ##Methods
 
-* [InitProtocols](InitProtocols)
-* [CreateCall](CreateCall)
+* [InitProtocols](#InitProtocols)
+* [CreateCall](#CreateCall)
 
 
 ##Signals
 
-* [Incoming](Incoming)
+* [Incoming](#Incoming)
 
 
 ##Properties

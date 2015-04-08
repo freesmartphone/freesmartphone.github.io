@@ -15,16 +15,16 @@ All the preferences values are grouped into services.   The Preferences object i
 
 ##Methods
 
-* [GetServices](GetServices)
-* [GetService](GetService)
-* [GetProfiles](GetProfiles)
-* [GetProfile](GetProfile)
-* [SetProfile](SetProfile)
+* [GetServices](#GetServices)
+* [GetService](#GetService)
+* [GetProfiles](#GetProfiles)
+* [GetProfile](#GetProfile)
+* [SetProfile](#SetProfile)
 
 
 ##Signals
 
-* [Changed](Changed)
+* [Changed](#Changed)
 
 
 ##Properties

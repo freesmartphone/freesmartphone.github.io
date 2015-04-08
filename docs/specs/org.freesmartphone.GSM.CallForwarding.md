@@ -15,15 +15,15 @@ The call forwarding interface allows to access the call forwarding  supplementar
 
 ##Methods
 
-* [DisableAll](DisableAll)
-* [Enable](Enable)
-* [Disable](Disable)
-* [GetStatus](GetStatus)
+* [DisableAll](#DisableAll)
+* [Enable](#Enable)
+* [Disable](#Disable)
+* [GetStatus](#GetStatus)
 
 
 ##Signals
 
-* [StatusChanged](StatusChanged)
+* [StatusChanged](#StatusChanged)
 
 
 ##Properties
@@ -72,7 +72,7 @@ Timeout after the call forwarding rule should become active. Only accepted  if r
 ***Parameters:****
 
 <i>s: rule</i>
-Name of the call forwarding rule. See  <a href="specs/org.freesmartphone.GSM.CallForwarding/#Enable">Enable</a> for a list  of valid values.  The corresponding property for the rule will be unset. 
+Name of the call forwarding rule. See  [Enable](specs/org.freesmartphone.GSM.CallForwarding.Enable)</a> for a list  of valid values.  The corresponding property for the rule will be unset. 
 
 
 
@@ -84,13 +84,13 @@ Name of the call forwarding rule. See  <a href="specs/org.freesmartphone.GSM.Cal
 ***Parameters:****
 
 <i>s: rule</i>
-Name of the call forwarding rule. See  <a href="specs/org.freesmartphone.GSM.CallForwarding/#Enable">Enable</a> for a list  of valid values. 
+Name of the call forwarding rule. See  [Enable](specs/org.freesmartphone.GSM.CallForwarding.Enable)</a> for a list  of valid values. 
 
 
 ***Returns:***
 
 <i>a{sv}: status</i>
-Status of the call forwarding rule. See <a href="specs/org.freesmartphone.GSM.CallForwarding/#StatusChanged">StatusChanged</a>  for a description of the format. 
+Status of the call forwarding rule. See [StatusChanged](specs/org.freesmartphone.GSM.CallForwarding.StatusChanged)</a>  for a description of the format. 
 
 
 

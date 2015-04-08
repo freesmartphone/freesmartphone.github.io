@@ -15,17 +15,17 @@ This interface provides access to one PIM note.
 
 ##Methods
 
-* [GetContent](GetContent)
-* [GetMultipleFields](GetMultipleFields)
-* [GetUsedBackends](GetUsedBackends)
-* [Update](Update)
-* [Delete](Delete)
+* [GetContent](#GetContent)
+* [GetMultipleFields](#GetMultipleFields)
+* [GetUsedBackends](#GetUsedBackends)
+* [Update](#Update)
+* [Delete](#Delete)
 
 
 ##Signals
 
-* [NoteDeleted](NoteDeleted)
-* [NoteUpdated](NoteUpdated)
+* [NoteDeleted](#NoteDeleted)
+* [NoteUpdated](#NoteUpdated)
 
 
 ##Properties

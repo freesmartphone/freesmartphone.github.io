@@ -36,12 +36,17 @@ class Entity(object):
         return "```%s```" % (content)
 
     def outputAnchorLink(self, content):
-        return """[%s](%s)""" % ( content, content )
+        print( "outputAnchorLink: %s" % content )
+        return """[%s](#%s)""" % ( content, content )
 
     def outputAnchorLabel(self, content):
         return """<a name="%s">%s</a>""" % ( content, content )
 
     def outputCrosslinked(self, content):
+    	# TODO: This is actually wrong, at build time we can't
+    	# be sure whether a link refers to an interface or a method.
+    	# The proper fix is to have a seperate pass after all files
+    	# have been built.
         result = ""
         for word in content.split(' '):
             if word.startswith("org.freesmartphone"):
@@ -49,7 +54,7 @@ class Entity(object):
                 dotted = word.split('.')
                 html, method = '.'.join(dotted[:-1]), dotted[-1]
                 print("possible link to %s.%s detected" % ( html, method ) )
-                result += """<a href="specs/%s/#%s">%s</a>""" % ( html, method, method)
+                result += """[%s](specs/%s.%s)</a>""" % ( method, html, method )
             else:
                 result += word
             result += " "

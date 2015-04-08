@@ -15,17 +15,17 @@ This interface provides access to one message.
 
 ##Methods
 
-* [GetContent](GetContent)
-* [GetMultipleFields](GetMultipleFields)
-* [MoveToFolder](MoveToFolder)
-* [Update](Update)
-* [Delete](Delete)
+* [GetContent](#GetContent)
+* [GetMultipleFields](#GetMultipleFields)
+* [MoveToFolder](#MoveToFolder)
+* [Update](#Update)
+* [Delete](#Delete)
 
 
 ##Signals
 
-* [MessageDeleted](MessageDeleted)
-* [MessageUpdated](MessageUpdated)
+* [MessageDeleted](#MessageDeleted)
+* [MessageUpdated](#MessageUpdated)
 
 
 ##Properties

@@ -15,18 +15,18 @@ This interface gives access to a contact query.
 
 ##Methods
 
-* [GetResultCount](GetResultCount)
-* [Rewind](Rewind)
-* [Skip](Skip)
-* [GetContactPath](GetContactPath)
-* [GetResult](GetResult)
-* [GetMultipleResults](GetMultipleResults)
-* [Dispose](Dispose)
+* [GetResultCount](#GetResultCount)
+* [Rewind](#Rewind)
+* [Skip](#Skip)
+* [GetContactPath](#GetContactPath)
+* [GetResult](#GetResult)
+* [GetMultipleResults](#GetMultipleResults)
+* [Dispose](#Dispose)
 
 
 ##Signals
 
-* [ContactAdded](ContactAdded)
+* [ContactAdded](#ContactAdded)
 
 
 ##Properties

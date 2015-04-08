@@ -15,16 +15,16 @@ The MUX interface is used to manage and control virtual serial channels  (implem
 
 ##Methods
 
-* [OpenSession](OpenSession)
-* [CloseSession](CloseSession)
-* [AllocChannel](AllocChannel)
-* [ReleaseChannel](ReleaseChannel)
-* [SetStatus](SetStatus)
+* [OpenSession](#OpenSession)
+* [CloseSession](#CloseSession)
+* [AllocChannel](#AllocChannel)
+* [ReleaseChannel](#ReleaseChannel)
+* [SetStatus](#SetStatus)
 
 
 ##Signals
 
-* [Status](Status)
+* [Status](#Status)
 
 
 ##Properties
@@ -76,7 +76,7 @@ The device will be left in AT command mode.
 ###<a name="AllocChannel">AllocChannel</a> ( si ) &rarr; si
 
 
-**Description:** Allocate a new virtual channel. Raises <a href="specs/org.freesmartphone.GSM.MUX/#NoChannel">NoChannel</a>  if the requested channel can not be allocated. Raises <a href="specs/org.freesmartphone.GSM.MUX/#ChannelTaken">ChannelTaken</a>  if the requested channel is already allocated. 
+**Description:** Allocate a new virtual channel. Raises [NoChannel](specs/org.freesmartphone.GSM.MUX.NoChannel)</a>  if the requested channel can not be allocated. Raises [ChannelTaken](specs/org.freesmartphone.GSM.MUX.ChannelTaken)</a>  if the requested channel is already allocated. 
 
 ***Parameters:****
 
@@ -120,7 +120,7 @@ A handle for channel user identification.
 The virtual channel you want to change the outgoing status for. 
 
 <i>s: status</i>
-The new v.24 status. See <a href="specs/org.freesmartphone.GSM.MUX/#Status">Status</a> for the format. 
+The new v.24 status. See [Status](specs/org.freesmartphone.GSM.MUX.Status)</a> for the format. 
 
 
 

@@ -15,14 +15,14 @@ This interface provides access to a power supply device.
 
 ##Methods
 
-* [GetCapacity](GetCapacity)
-* [GetPowerStatus](GetPowerStatus)
+* [GetCapacity](#GetCapacity)
+* [GetPowerStatus](#GetPowerStatus)
 
 
 ##Signals
 
-* [PowerStatus](PowerStatus)
-* [Capacity](Capacity)
+* [PowerStatus](#PowerStatus)
+* [Capacity](#Capacity)
 
 
 ##Properties
@@ -79,7 +79,7 @@ The power status. Expected values for a battery are:  <ul>  <li>"charging"</li> 
 ***Parameters:***
 
 <i>s: status</i>
-The power status. See <a href="specs/org.freesmartphone.PowerSupply/#GetPowerStatus">GetPowerStatus</a> for a list of expected values. 
+The power status. See [GetPowerStatus](specs/org.freesmartphone.PowerSupply.GetPowerStatus)</a> for a list of expected values. 
 
 
 

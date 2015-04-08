@@ -15,9 +15,9 @@ The Events interface provides access to the rules.  All the rules are specified 
 
 ##Methods
 
-* [AddRule](AddRule)
-* [RemoveRule](RemoveRule)
-* [TriggerTest](TriggerTest)
+* [AddRule](#AddRule)
+* [RemoveRule](#RemoveRule)
+* [TriggerTest](#TriggerTest)
 
 
 ##Signals

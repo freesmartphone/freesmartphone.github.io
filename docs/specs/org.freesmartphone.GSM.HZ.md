@@ -15,13 +15,13 @@ The Home Zone interface allows you to be informed about the home zone status.   
 
 ##Methods
 
-* [GetKnownHomeZones](GetKnownHomeZones)
-* [GetHomeZoneStatus](GetHomeZoneStatus)
+* [GetKnownHomeZones](#GetKnownHomeZones)
+* [GetHomeZoneStatus](#GetHomeZoneStatus)
 
 
 ##Signals
 
-* [HomeZoneStatus](HomeZoneStatus)
+* [HomeZoneStatus](#HomeZoneStatus)
 
 
 ##Properties
@@ -66,7 +66,7 @@ The home zone you are currently on. An empty string denotes  that you are out of
 ***Parameters:***
 
 <i>s: name</i>
-The home zone you are currently on. See <a href="specs/org.freesmartphone.GSM.HZ/#GetHomeZoneStatus">GetHomeZoneStatus</a> 
+The home zone you are currently on. See [GetHomeZoneStatus](specs/org.freesmartphone.GSM.HZ.GetHomeZoneStatus)</a> 
 
 
 

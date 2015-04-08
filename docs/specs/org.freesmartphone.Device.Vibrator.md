@@ -15,9 +15,9 @@ This interface provides access to a Vibrator device.
 
 ##Methods
 
-* [VibratePattern](VibratePattern)
-* [Vibrate](Vibrate)
-* [Stop](Stop)
+* [VibratePattern](#VibratePattern)
+* [Vibrate](#Vibrate)
+* [Stop](#Stop)
 
 
 ##Signals

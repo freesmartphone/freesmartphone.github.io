@@ -15,23 +15,23 @@ This interface provides access to notification sounds, sound scenarios, and mixe
 
 ##Methods
 
-* [PlaySound](PlaySound)
-* [StopSound](StopSound)
-* [StopAllSounds](StopAllSounds)
-* [GetAvailableScenarios](GetAvailableScenarios)
-* [GetScenario](GetScenario)
-* [SetScenario](SetScenario)
-* [PushScenario](PushScenario)
-* [PullScenario](PullScenario)
-* [SaveScenario](SaveScenario)
-* [GetVolume](GetVolume)
-* [SetVolume](SetVolume)
+* [PlaySound](#PlaySound)
+* [StopSound](#StopSound)
+* [StopAllSounds](#StopAllSounds)
+* [GetAvailableScenarios](#GetAvailableScenarios)
+* [GetScenario](#GetScenario)
+* [SetScenario](#SetScenario)
+* [PushScenario](#PushScenario)
+* [PullScenario](#PullScenario)
+* [SaveScenario](#SaveScenario)
+* [GetVolume](#GetVolume)
+* [SetVolume](#SetVolume)
 
 
 ##Signals
 
-* [SoundStatus](SoundStatus)
-* [Scenario](Scenario)
+* [SoundStatus](#SoundStatus)
+* [Scenario](#Scenario)
 
 
 ##Properties
@@ -39,13 +39,13 @@ This interface provides access to notification sounds, sound scenarios, and mixe
 
 ##Errors
 
-* [UnknownFormat](UnknownFormat)
-* [PlayerError](PlayerError)
-* [NotPlaying](NotPlaying)
-* [AlreadyPlaying](AlreadyPlaying)
-* [ScenarioInvalid](ScenarioInvalid)
-* [ScenarioStackUnderflow](ScenarioStackUnderflow)
-* [DeviceFailed](DeviceFailed)
+* [UnknownFormat](#UnknownFormat)
+* [PlayerError](#PlayerError)
+* [NotPlaying](#NotPlaying)
+* [AlreadyPlaying](#AlreadyPlaying)
+* [ScenarioInvalid](#ScenarioInvalid)
+* [ScenarioStackUnderflow](#ScenarioStackUnderflow)
+* [DeviceFailed](#DeviceFailed)
 
 
 #Methods

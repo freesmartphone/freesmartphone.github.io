@@ -15,10 +15,10 @@ The Alarm interface is used to register wakeup alarms. Alarm notifications  will
 
 ##Methods
 
-* [ClearAlarms](ClearAlarms)
-* [ListAlarms](ListAlarms)
-* [RemoveAlarm](RemoveAlarm)
-* [AddAlarm](AddAlarm)
+* [ClearAlarms](#ClearAlarms)
+* [ListAlarms](#ListAlarms)
+* [RemoveAlarm](#RemoveAlarm)
+* [AddAlarm](#AddAlarm)
 
 
 ##Signals
@@ -74,7 +74,7 @@ When to call in seconds since 1970 (epoch).
 ###<a name="AddAlarm">AddAlarm</a> ( si )
 
 
-**Description:** Schedules an alarm for a given dbus service name.  The alarm will be triggered by calling the service's  <a href="specs/org.freesmartphone.Notification/#Alarm">Alarm</a> method on the root (/) object. 
+**Description:** Schedules an alarm for a given dbus service name.  The alarm will be triggered by calling the service's  [Alarm](specs/org.freesmartphone.Notification.Alarm)</a> method on the root (/) object. 
 
 ***Implementation Note***
 

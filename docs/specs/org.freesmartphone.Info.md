@@ -15,7 +15,7 @@ The org.freesmartphone.Info interface provides access to generic textual descrip
 
 ##Methods
 
-* [GetInfo](GetInfo)
+* [GetInfo](#GetInfo)
 
 
 ##Signals

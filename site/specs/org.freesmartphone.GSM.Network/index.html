@@ -474,24 +474,24 @@
 <p><code>org.freesmartphone.GSM.Network</code></p>
 <h2 id="methods">Methods</h2>
 <ul>
-<li><a href="../../Register">Register</a></li>
-<li><a href="../../Unregister">Unregister</a></li>
-<li><a href="../../GetStatus">GetStatus</a></li>
-<li><a href="../../GetSignalStrength">GetSignalStrength</a></li>
-<li><a href="../../GetTimeReport">GetTimeReport</a></li>
-<li><a href="../../ListProviders">ListProviders</a></li>
-<li><a href="../../RegisterWithProvider">RegisterWithProvider</a></li>
-<li><a href="../../SetCallingIdentification">SetCallingIdentification</a></li>
-<li><a href="../../GetCallingIdentification">GetCallingIdentification</a></li>
-<li><a href="../../SendUssdRequest">SendUssdRequest</a></li>
+<li><a href="#Register">Register</a></li>
+<li><a href="#Unregister">Unregister</a></li>
+<li><a href="#GetStatus">GetStatus</a></li>
+<li><a href="#GetSignalStrength">GetSignalStrength</a></li>
+<li><a href="#GetTimeReport">GetTimeReport</a></li>
+<li><a href="#ListProviders">ListProviders</a></li>
+<li><a href="#RegisterWithProvider">RegisterWithProvider</a></li>
+<li><a href="#SetCallingIdentification">SetCallingIdentification</a></li>
+<li><a href="#GetCallingIdentification">GetCallingIdentification</a></li>
+<li><a href="#SendUssdRequest">SendUssdRequest</a></li>
 </ul>
 <h2 id="signals">Signals</h2>
 <ul>
-<li><a href="../../Status">Status</a></li>
-<li><a href="../../SignalStrength">SignalStrength</a></li>
-<li><a href="../../TimeReport">TimeReport</a></li>
-<li><a href="../../IncomingUssd">IncomingUssd</a></li>
-<li><a href="../../CipherStatus">CipherStatus</a></li>
+<li><a href="#Status">Status</a></li>
+<li><a href="#SignalStrength">SignalStrength</a></li>
+<li><a href="#TimeReport">TimeReport</a></li>
+<li><a href="#IncomingUssd">IncomingUssd</a></li>
+<li><a href="#CipherStatus">CipherStatus</a></li>
 </ul>
 <h2 id="properties">Properties</h2>
 <p><em>None</em></p>
@@ -546,7 +546,7 @@ One of the following values:  <ul>  <li>&#8220;on&#8221;, if your subscriber num
 <p><i>s: status</i>
 One of the following values:  <ul>  <li>&#8220;on&#8221;, if your subscriber number is always visible to other parties.</li>  <li>&#8220;off&#8221;, if your subscriber number is never visible to other parties.</li>  <li>&#8220;network&#8221;, if visibility depends on the network settings.</li>  </ul> </p>
 <h3 id="sendussdrequest-s"><a name="SendUssdRequest">SendUssdRequest</a> ( s )</h3>
-<p><strong>Description:</strong> Send an Unstructured Supplementary Service Data (USSD) request to the network.  Responses will be delivered via the signal <a href="../../specs/org.freesmartphone.GSM.Network/#IncomingUssd">IncomingUssd</a> </p>
+<p><strong>Description:</strong> Send an Unstructured Supplementary Service Data (USSD) request to the network.  Responses will be delivered via the signal <a href="../../specs/org.freesmartphone.GSM.Network.IncomingUssd">IncomingUssd</a></a> </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>This can map to the GSM 07.07 command +CUSD=1,&#8221;(request)&#8221;,(code), see 3GPP TS 07.07 Chapter 7.14. </p>
 <p><strong><em>Parameters:</em></strong>*</p>
@@ -558,7 +558,7 @@ The request to be sent to the network. </p>
 <p><strong>Description:</strong> Sent, when the network registration status changes. </p>
 <p><strong><em>Parameters:</em></strong></p>
 <p><i>a{sv}: status</i>
-The registration status. See <a href="../../specs/org.freesmartphone.GSM.Network/#GetStatus">GetStatus</a> for expected values. </p>
+The registration status. See <a href="../../specs/org.freesmartphone.GSM.Network.GetStatus">GetStatus</a></a> for expected values. </p>
 <h3></h3>
 <h3 id="signalstrength-i"><a name="SignalStrength">SignalStrength</a> ( i )</h3>
 <p><strong>Description:</strong> (OPTIONAL) Sent, when registered with a service provider and the network signal strength changes. </p>
@@ -575,7 +575,7 @@ The current time in seconds since UNIX epoch.  0, if no time has been received. 
 The time zone offset in minutes based on UTC.  This value is only valid, if within the interval ( -1440, 1440 ). </p>
 <h3></h3>
 <h3 id="incomingussd-ss"><a name="IncomingUssd">IncomingUssd</a> ( ss )</h3>
-<p><strong>Description:</strong> Sent, when an USSD result or a network initiated request arrives. This signal is usually  sent in response to the method <a href="../../specs/org.freesmartphone.GSM.Network/#SendUssdRequest">SendUssdRequest</a> </p>
+<p><strong>Description:</strong> Sent, when an USSD result or a network initiated request arrives. This signal is usually  sent in response to the method <a href="../../specs/org.freesmartphone.GSM.Network.SendUssdRequest">SendUssdRequest</a></a> </p>
 <p><strong><em>Parameters:</em></strong></p>
 <p><i>s: mode</i>
 The message mode. Valid values are:  <ul>  <li>&#8220;completed&#8221;, if the last user-initiated request has been successfully completed,</li>  <li>&#8220;useraction&#8221;, if this is a network-initiated request and further user action is necessary,</li>  <li>&#8220;terminated&#8221;, if the network terminated the request,</li>  <li>&#8220;localclient&#8221;, if another local client on the network has responded,</li>  <li>&#8220;unsupported&#8221;, if the last user-inititated request is unsupported,</li>  <li>&#8220;timeout&#8221;, if the network has not answered in time.</li>  </ul> </p>

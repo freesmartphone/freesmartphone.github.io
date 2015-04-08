@@ -15,9 +15,9 @@ The Network interface provides access to high level networking functions.  Pleas
 
 ##Methods
 
-* [StartConnectionSharingWithInterface](StartConnectionSharingWithInterface)
-* [StopConnectionSharingWithInterface](StopConnectionSharingWithInterface)
-* [OfferDefaultRoute](OfferDefaultRoute)
+* [StartConnectionSharingWithInterface](#StartConnectionSharingWithInterface)
+* [StopConnectionSharingWithInterface](#StopConnectionSharingWithInterface)
+* [OfferDefaultRoute](#OfferDefaultRoute)
 
 
 ##Signals

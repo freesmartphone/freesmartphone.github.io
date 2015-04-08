@@ -15,11 +15,11 @@ This interface provides access to field types in domains.
 
 ##Methods
 
-* [AddField](AddField)
-* [DeleteField](DeleteField)
-* [GetType](GetType)
-* [ListFields](ListFields)
-* [ListFieldsWithType](ListFieldsWithType)
+* [AddField](#AddField)
+* [DeleteField](#DeleteField)
+* [GetType](#GetType)
+* [ListFields](#ListFields)
+* [ListFieldsWithType](#ListFieldsWithType)
 
 
 ##Signals

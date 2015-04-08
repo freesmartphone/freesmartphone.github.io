@@ -15,14 +15,14 @@ The Input Interface provides information about the device's buttons, switches, a
 
 ##Methods
 
-* [GetId](GetId)
-* [GetCapabilities](GetCapabilities)
+* [GetId](#GetId)
+* [GetCapabilities](#GetCapabilities)
 
 
 ##Signals
 
-* [Event](Event)
-* [DirectionalEvent](DirectionalEvent)
+* [Event](#Event)
+* [DirectionalEvent](#DirectionalEvent)
 
 
 ##Properties

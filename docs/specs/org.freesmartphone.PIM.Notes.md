@@ -15,17 +15,17 @@ This interface provides access to the collection of PIM notes.
 
 ##Methods
 
-* [Add](Add)
-* [GetUsedTags](GetUsedTags)
-* [GetSingleEntrySingleField](GetSingleEntrySingleField)
-* [Query](Query)
+* [Add](#Add)
+* [GetUsedTags](#GetUsedTags)
+* [GetSingleEntrySingleField](#GetSingleEntrySingleField)
+* [Query](#Query)
 
 
 ##Signals
 
-* [NewNote](NewNote)
-* [NewTag](NewTag)
-* [TagRemoved](TagRemoved)
+* [NewNote](#NewNote)
+* [NewTag](#NewTag)
+* [TagRemoved](#TagRemoved)
 
 
 ##Properties

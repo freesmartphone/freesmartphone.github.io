@@ -15,20 +15,20 @@ The Call Interface is used to represent a communication channel.
 
 ##Methods
 
-* [GetPeer](GetPeer)
-* [Initiate](Initiate)
-* [Activate](Activate)
-* [Release](Release)
-* [GetStatus](GetStatus)
-* [Remove](Remove)
+* [GetPeer](#GetPeer)
+* [Initiate](#Initiate)
+* [Activate](#Activate)
+* [Release](#Release)
+* [GetStatus](#GetStatus)
+* [Remove](#Remove)
 
 
 ##Signals
 
-* [Incoming](Incoming)
-* [Outgoing](Outgoing)
-* [Released](Released)
-* [Activated](Activated)
+* [Incoming](#Incoming)
+* [Outgoing](#Outgoing)
+* [Released](#Released)
+* [Activated](#Activated)
 
 
 ##Properties
@@ -36,7 +36,7 @@ The Call Interface is used to represent a communication channel.
 
 ##Errors
 
-* [Unauthorized](Unauthorized)
+* [Unauthorized](#Unauthorized)
 
 
 #Methods

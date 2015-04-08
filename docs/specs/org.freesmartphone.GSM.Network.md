@@ -15,25 +15,25 @@ The Network interface is used to give information about the GSM  service provide
 
 ##Methods
 
-* [Register](Register)
-* [Unregister](Unregister)
-* [GetStatus](GetStatus)
-* [GetSignalStrength](GetSignalStrength)
-* [GetTimeReport](GetTimeReport)
-* [ListProviders](ListProviders)
-* [RegisterWithProvider](RegisterWithProvider)
-* [SetCallingIdentification](SetCallingIdentification)
-* [GetCallingIdentification](GetCallingIdentification)
-* [SendUssdRequest](SendUssdRequest)
+* [Register](#Register)
+* [Unregister](#Unregister)
+* [GetStatus](#GetStatus)
+* [GetSignalStrength](#GetSignalStrength)
+* [GetTimeReport](#GetTimeReport)
+* [ListProviders](#ListProviders)
+* [RegisterWithProvider](#RegisterWithProvider)
+* [SetCallingIdentification](#SetCallingIdentification)
+* [GetCallingIdentification](#GetCallingIdentification)
+* [SendUssdRequest](#SendUssdRequest)
 
 
 ##Signals
 
-* [Status](Status)
-* [SignalStrength](SignalStrength)
-* [TimeReport](TimeReport)
-* [IncomingUssd](IncomingUssd)
-* [CipherStatus](CipherStatus)
+* [Status](#Status)
+* [SignalStrength](#SignalStrength)
+* [TimeReport](#TimeReport)
+* [IncomingUssd](#IncomingUssd)
+* [CipherStatus](#CipherStatus)
 
 
 ##Properties
@@ -156,7 +156,7 @@ One of the following values:  <ul>  <li>"on", if your subscriber number is alway
 ###<a name="SendUssdRequest">SendUssdRequest</a> ( s )
 
 
-**Description:** Send an Unstructured Supplementary Service Data (USSD) request to the network.  Responses will be delivered via the signal <a href="specs/org.freesmartphone.GSM.Network/#IncomingUssd">IncomingUssd</a> 
+**Description:** Send an Unstructured Supplementary Service Data (USSD) request to the network.  Responses will be delivered via the signal [IncomingUssd](specs/org.freesmartphone.GSM.Network.IncomingUssd)</a> 
 
 ***Implementation Note***
 
@@ -181,7 +181,7 @@ The request to be sent to the network.
 ***Parameters:***
 
 <i>a{sv}: status</i>
-The registration status. See <a href="specs/org.freesmartphone.GSM.Network/#GetStatus">GetStatus</a> for expected values. 
+The registration status. See [GetStatus](specs/org.freesmartphone.GSM.Network.GetStatus)</a> for expected values. 
 
 
 
@@ -218,7 +218,7 @@ The time zone offset in minutes based on UTC.  This value is only valid, if with
 ###
 ###<a name="IncomingUssd">IncomingUssd</a> ( ss )
 
-**Description:** Sent, when an USSD result or a network initiated request arrives. This signal is usually  sent in response to the method <a href="specs/org.freesmartphone.GSM.Network/#SendUssdRequest">SendUssdRequest</a> 
+**Description:** Sent, when an USSD result or a network initiated request arrives. This signal is usually  sent in response to the method [SendUssdRequest](specs/org.freesmartphone.GSM.Network.SendUssdRequest)</a> 
 
 ***Parameters:***
 

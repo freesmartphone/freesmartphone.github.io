@@ -15,17 +15,17 @@ This interface provides access to the collection of PIM calls.
 
 ##Methods
 
-* [Add](Add)
-* [GetSingleEntrySingleField](GetSingleEntrySingleField)
-* [Query](Query)
-* [GetNewMissedCalls](GetNewMissedCalls)
+* [Add](#Add)
+* [GetSingleEntrySingleField](#GetSingleEntrySingleField)
+* [Query](#Query)
+* [GetNewMissedCalls](#GetNewMissedCalls)
 
 
 ##Signals
 
-* [NewCall](NewCall)
-* [IncomingCall](IncomingCall)
-* [NewMissedCalls](NewMissedCalls)
+* [NewCall](#NewCall)
+* [IncomingCall](#IncomingCall)
+* [NewMissedCalls](#NewMissedCalls)
 
 
 ##Properties

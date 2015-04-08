@@ -15,18 +15,18 @@ This interface gives access to a call query.
 
 ##Methods
 
-* [GetResultCount](GetResultCount)
-* [Rewind](Rewind)
-* [Skip](Skip)
-* [GetCallPath](GetCallPath)
-* [GetResult](GetResult)
-* [GetMultipleResults](GetMultipleResults)
-* [Dispose](Dispose)
+* [GetResultCount](#GetResultCount)
+* [Rewind](#Rewind)
+* [Skip](#Skip)
+* [GetCallPath](#GetCallPath)
+* [GetResult](#GetResult)
+* [GetMultipleResults](#GetMultipleResults)
+* [Dispose](#Dispose)
 
 
 ##Signals
 
-* [CallAdded](CallAdded)
+* [CallAdded](#CallAdded)
 
 
 ##Properties

@@ -15,18 +15,18 @@ This interface gives access to a date query.
 
 ##Methods
 
-* [GetResultCount](GetResultCount)
-* [Rewind](Rewind)
-* [Skip](Skip)
-* [GetDatePath](GetDatePath)
-* [GetResult](GetResult)
-* [GetMultipleResults](GetMultipleResults)
-* [Dispose](Dispose)
+* [GetResultCount](#GetResultCount)
+* [Rewind](#Rewind)
+* [Skip](#Skip)
+* [GetDatePath](#GetDatePath)
+* [GetResult](#GetResult)
+* [GetMultipleResults](#GetMultipleResults)
+* [Dispose](#Dispose)
 
 
 ##Signals
 
-* [DateAdded](DateAdded)
+* [DateAdded](#DateAdded)
 
 
 ##Properties

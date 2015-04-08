@@ -15,18 +15,18 @@ Represent the result of a Query
 
 ##Methods
 
-* [GetResultCount](GetResultCount)
-* [Rewind](Rewind)
-* [Skip](Skip)
-* [GetMessagePath](GetMessagePath)
-* [GetResult](GetResult)
-* [GetMultipleResults](GetMultipleResults)
-* [Dispose](Dispose)
+* [GetResultCount](#GetResultCount)
+* [Rewind](#Rewind)
+* [Skip](#Skip)
+* [GetMessagePath](#GetMessagePath)
+* [GetResult](#GetResult)
+* [GetMultipleResults](#GetMultipleResults)
+* [Dispose](#Dispose)
 
 
 ##Signals
 
-* [MessageAdded](MessageAdded)
+* [MessageAdded](#MessageAdded)
 
 
 ##Properties

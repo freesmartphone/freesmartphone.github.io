@@ -13,6 +13,10 @@ This describes the Vala/C reference implementation of the freesmartphone.org API
 
 We describe only the big picture here – see the documentation for the individual projects for details.
 
+## Source code
+
+Note for packagers: The canonical source code location for all our software is at [http://sourceforge.net/projects/freesmartphone/files/sources/](http://sourceforge.net/projects/freesmartphone/files/sources/). For release tarballs, you don't need to have Vala installed on the build host.
+
 ## Tools
 
 To support our middleware framework, we have created a number of tools, many of those which are not freesmartphone-specific. Feel free to adopt them for your project.
