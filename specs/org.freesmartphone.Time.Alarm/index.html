@@ -471,10 +471,10 @@
 <p><code>org.freesmartphone.Time.Alarm</code></p>
 <h2 id="methods">Methods</h2>
 <ul>
-<li><a href="../../ClearAlarms">ClearAlarms</a></li>
-<li><a href="../../ListAlarms">ListAlarms</a></li>
-<li><a href="../../RemoveAlarm">RemoveAlarm</a></li>
-<li><a href="../../AddAlarm">AddAlarm</a></li>
+<li><a href="#ClearAlarms">ClearAlarms</a></li>
+<li><a href="#ListAlarms">ListAlarms</a></li>
+<li><a href="#RemoveAlarm">RemoveAlarm</a></li>
+<li><a href="#AddAlarm">AddAlarm</a></li>
 </ul>
 <h2 id="signals">Signals</h2>
 <p><em>None</em></p>
@@ -501,7 +501,7 @@ The dbus service bus name to clear the alarm for. </p>
 <p><i>i: timestamp</i>
 When to call in seconds since 1970 (epoch). </p>
 <h3 id="addalarm-si"><a name="AddAlarm">AddAlarm</a> ( si )</h3>
-<p><strong>Description:</strong> Schedules an alarm for a given dbus service name.  The alarm will be triggered by calling the service&#8217;s  <a href="../../specs/org.freesmartphone.Notification/#Alarm">Alarm</a> method on the root (/) object. </p>
+<p><strong>Description:</strong> Schedules an alarm for a given dbus service name.  The alarm will be triggered by calling the service&#8217;s  <a href="../../specs/org.freesmartphone.Notification.Alarm">Alarm</a></a> method on the root (/) object. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>Make sure to specify a dbus system service configuration file for  the services that use this interface. This way, you can  receive alarm notifications even when your service is not  running at the time the alarm fires. </p>
 <p><strong><em>Parameters:</em></strong>*</p>

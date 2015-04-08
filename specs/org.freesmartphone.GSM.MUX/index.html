@@ -474,15 +474,15 @@
 <p><code>org.freesmartphone.GSM.MUX</code></p>
 <h2 id="methods">Methods</h2>
 <ul>
-<li><a href="../../OpenSession">OpenSession</a></li>
-<li><a href="../../CloseSession">CloseSession</a></li>
-<li><a href="../../AllocChannel">AllocChannel</a></li>
-<li><a href="../../ReleaseChannel">ReleaseChannel</a></li>
-<li><a href="../../SetStatus">SetStatus</a></li>
+<li><a href="#OpenSession">OpenSession</a></li>
+<li><a href="#CloseSession">CloseSession</a></li>
+<li><a href="#AllocChannel">AllocChannel</a></li>
+<li><a href="#ReleaseChannel">ReleaseChannel</a></li>
+<li><a href="#SetStatus">SetStatus</a></li>
 </ul>
 <h2 id="signals">Signals</h2>
 <ul>
-<li><a href="../../Status">Status</a></li>
+<li><a href="#Status">Status</a></li>
 </ul>
 <h2 id="properties">Properties</h2>
 <p><em>None</em></p>
@@ -507,7 +507,7 @@ The port speed to use. </p>
 <p><strong><em>Implementation Note</em></strong></p>
 <p>The device will be left in AT command mode. </p>
 <h3 id="allocchannel-si-si"><a name="AllocChannel">AllocChannel</a> ( si ) &rarr; si</h3>
-<p><strong>Description:</strong> Allocate a new virtual channel. Raises <a href="../../specs/org.freesmartphone.GSM.MUX/#NoChannel">NoChannel</a>  if the requested channel can not be allocated. Raises <a href="../../specs/org.freesmartphone.GSM.MUX/#ChannelTaken">ChannelTaken</a>  if the requested channel is already allocated. </p>
+<p><strong>Description:</strong> Allocate a new virtual channel. Raises <a href="../../specs/org.freesmartphone.GSM.MUX.NoChannel">NoChannel</a></a>  if the requested channel can not be allocated. Raises <a href="../../specs/org.freesmartphone.GSM.MUX.ChannelTaken">ChannelTaken</a></a>  if the requested channel is already allocated. </p>
 <p><strong><em>Parameters:</em></strong>*</p>
 <p><i>s: origin</i>
 A handle for channel user identification. </p>
@@ -529,7 +529,7 @@ A handle for channel user identification. </p>
 <p><i>i: channel</i>
 The virtual channel you want to change the outgoing status for. </p>
 <p><i>s: status</i>
-The new v.24 status. See <a href="../../specs/org.freesmartphone.GSM.MUX/#Status">Status</a> for the format. </p>
+The new v.24 status. See <a href="../../specs/org.freesmartphone.GSM.MUX.Status">Status</a></a> for the format. </p>
 <h1 id="signals_1">Signals</h1>
 <h3></h3>
 <h3 id="status-s"><a name="Status">Status</a> ( s )</h3>

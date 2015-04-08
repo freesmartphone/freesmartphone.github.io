@@ -477,37 +477,37 @@
 <p><code>org.freesmartphone.Usage</code></p>
 <h2 id="methods">Methods</h2>
 <ul>
-<li><a href="../../RegisterResource">RegisterResource</a></li>
-<li><a href="../../UnregisterResource">UnregisterResource</a></li>
-<li><a href="../../ListResources">ListResources</a></li>
-<li><a href="../../GetResourcePolicy">GetResourcePolicy</a></li>
-<li><a href="../../SetResourcePolicy">SetResourcePolicy</a></li>
-<li><a href="../../GetResourceState">GetResourceState</a></li>
-<li><a href="../../GetResourceUsers">GetResourceUsers</a></li>
-<li><a href="../../RequestResource">RequestResource</a></li>
-<li><a href="../../ReleaseResource">ReleaseResource</a></li>
-<li><a href="../../Suspend">Suspend</a></li>
-<li><a href="../../Resume">Resume</a></li>
-<li><a href="../../Shutdown">Shutdown</a></li>
-<li><a href="../../Reboot">Reboot</a></li>
+<li><a href="#RegisterResource">RegisterResource</a></li>
+<li><a href="#UnregisterResource">UnregisterResource</a></li>
+<li><a href="#ListResources">ListResources</a></li>
+<li><a href="#GetResourcePolicy">GetResourcePolicy</a></li>
+<li><a href="#SetResourcePolicy">SetResourcePolicy</a></li>
+<li><a href="#GetResourceState">GetResourceState</a></li>
+<li><a href="#GetResourceUsers">GetResourceUsers</a></li>
+<li><a href="#RequestResource">RequestResource</a></li>
+<li><a href="#ReleaseResource">ReleaseResource</a></li>
+<li><a href="#Suspend">Suspend</a></li>
+<li><a href="#Resume">Resume</a></li>
+<li><a href="#Shutdown">Shutdown</a></li>
+<li><a href="#Reboot">Reboot</a></li>
 </ul>
 <h2 id="signals">Signals</h2>
 <ul>
-<li><a href="../../ResourceAvailable">ResourceAvailable</a></li>
-<li><a href="../../ResourceChanged">ResourceChanged</a></li>
-<li><a href="../../SystemAction">SystemAction</a></li>
+<li><a href="#ResourceAvailable">ResourceAvailable</a></li>
+<li><a href="#ResourceChanged">ResourceChanged</a></li>
+<li><a href="#SystemAction">SystemAction</a></li>
 </ul>
 <h2 id="properties">Properties</h2>
 <p><em>None</em></p>
 <h2 id="errors">Errors</h2>
 <ul>
-<li><a href="../../PolicyUnknown">PolicyUnknown</a></li>
-<li><a href="../../PolicyDisabled">PolicyDisabled</a></li>
-<li><a href="../../ResourceUnknown">ResourceUnknown</a></li>
-<li><a href="../../ResourceExists">ResourceExists</a></li>
-<li><a href="../../ResourceInUse">ResourceInUse</a></li>
-<li><a href="../../UserExists">UserExists</a></li>
-<li><a href="../../UserUnknown">UserUnknown</a></li>
+<li><a href="#PolicyUnknown">PolicyUnknown</a></li>
+<li><a href="#PolicyDisabled">PolicyDisabled</a></li>
+<li><a href="#ResourceUnknown">ResourceUnknown</a></li>
+<li><a href="#ResourceExists">ResourceExists</a></li>
+<li><a href="#ResourceInUse">ResourceInUse</a></li>
+<li><a href="#UserExists">UserExists</a></li>
+<li><a href="#UserUnknown">UserUnknown</a></li>
 </ul>
 <h1 id="methods_1">Methods</h1>
 <h3 id="registerresource-so"><a name="RegisterResource">RegisterResource</a> ( so )</h3>
@@ -545,7 +545,7 @@ The resource policy. Expected values are:  <ul>  <li>&#8220;disabled&#8221; - us
 <p><i>s: name</i>
 The resource name. </p>
 <p><i>s: policy</i>
-The new resource policy. See <a href="../../specs/org.freesmartphone.Usage/#GetResourcePolicy">GetResourcePolicy</a> for a list of valid values. </p>
+The new resource policy. See <a href="../../specs/org.freesmartphone.Usage.GetResourcePolicy">GetResourcePolicy</a></a> for a list of valid values. </p>
 <h3 id="getresourcestate-s-b"><a name="GetResourceState">GetResourceState</a> ( s ) &rarr; b</h3>
 <p><strong>Description:</strong> Get the current state for a given resource. </p>
 <p><strong><em>Parameters:</em></strong>*</p>
@@ -575,7 +575,7 @@ The resource name. </p>
 <p><i>s: name</i>
 The resource name. </p>
 <h3 id="suspend"><a name="Suspend">Suspend</a> ( )</h3>
-<p><strong>Description:</strong> Triggers a suspend on all managed resources and puts the device into suspend mode.  When the device comes back from suspend, all resources are resumed.  All Resources need to implement <a href="../../specs/org.freesmartphone.Resource/#Suspend">Suspend</a> and  <a href="../../specs/org.freesmartphone.Resource/#Resume">Resume</a> if they have anything to prepare / recover  on suspend and resume. </p>
+<p><strong>Description:</strong> Triggers a suspend on all managed resources and puts the device into suspend mode.  When the device comes back from suspend, all resources are resumed.  All Resources need to implement <a href="../../specs/org.freesmartphone.Resource.Suspend">Suspend</a></a> and  <a href="../../specs/org.freesmartphone.Resource.Resume">Resume</a></a> if they have anything to prepare / recover  on suspend and resume. </p>
 <h3 id="resume-ss"><a name="Resume">Resume</a> ( ss )</h3>
 <p><strong>Description:</strong> Triggers a resume on all managed resources and puts the device into normal mode. </p>
 <p><strong><em>Implementation Note</em></strong></p>

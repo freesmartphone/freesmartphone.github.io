@@ -474,14 +474,14 @@
 <p><code>org.freesmartphone.GSM.SMS</code></p>
 <h2 id="methods">Methods</h2>
 <ul>
-<li><a href="../../RetrieveTextMessages">RetrieveTextMessages</a></li>
-<li><a href="../../GetSizeForTextMessage">GetSizeForTextMessage</a></li>
-<li><a href="../../SendTextMessage">SendTextMessage</a></li>
+<li><a href="#RetrieveTextMessages">RetrieveTextMessages</a></li>
+<li><a href="#GetSizeForTextMessage">GetSizeForTextMessage</a></li>
+<li><a href="#SendTextMessage">SendTextMessage</a></li>
 </ul>
 <h2 id="signals">Signals</h2>
 <ul>
-<li><a href="../../IncomingTextMessage">IncomingTextMessage</a></li>
-<li><a href="../../IncomingMessageReport">IncomingMessageReport</a></li>
+<li><a href="#IncomingTextMessage">IncomingTextMessage</a></li>
+<li><a href="#IncomingMessageReport">IncomingMessageReport</a></li>
 </ul>
 <h2 id="properties">Properties</h2>
 <p><em>None</em></p>
@@ -511,7 +511,7 @@ The number of the recipient. </p>
 <p><i>s: contents</i>
 The contents of the message. </p>
 <p><i>b: report</i>
-If true, status reports (message receipts) will be sent by the  SMS Center, delivered via the <a href="../../specs/org.freesmartphone.GSM.SMS/#IncomingMessageReceipt">IncomingMessageReceipt</a> signal. </p>
+If true, status reports (message receipts) will be sent by the  SMS Center, delivered via the <a href="../../specs/org.freesmartphone.GSM.SMS.IncomingMessageReceipt">IncomingMessageReceipt</a></a> signal. </p>
 <p><strong><em>Returns:</em></strong></p>
 <p><i>i: reference</i>
 This is the message-reference number of this message.  This can be used to identify status reports. </p>
@@ -533,7 +533,7 @@ The contents of the message. </p>
 <p><strong>Description:</strong> Sent when a status report for a message has been received. </p>
 <p><strong><em>Parameters:</em></strong></p>
 <p><i>i: reference</i>
-The message-reference number as returned by <a href="../../specs/org.freesmartphone.GSM.SMS/#SendTextMessage">SendTextMessage</a> </p>
+The message-reference number as returned by <a href="../../specs/org.freesmartphone.GSM.SMS.SendTextMessage">SendTextMessage</a></a> </p>
 <p><i>s: status</i>
 The status. Expected values are:  <ul>  <li>COMPLETED_RECEIVED</li>  <li>COMPLETED_UNABLE_TO_CONFIRM</li>  <li>COMPLETED_REPLACED</li>  <li>COMPLETED_LAST</li>  <li>TEMPORARY_CONGESTION</li>  <li>TEMPORARY_SME_BUSY</li>  <li>TEMPORARY_NO_RESPONSE</li>  <li>TEMPORARY_SERVICE_REJECTED</li>  <li>TEMPORARY_QOS_UNAVAILABLE</li>  <li>TEMPORARY_SME_ERROR</li>  <li>TEMPORARY_LAST</li>  <li>PERMANENT_RP_ERROR</li>  <li>PERMANENT_INVALID_DESTINATION</li>  <li>PERMANENT_CONNECTION_REJECTED</li>  <li>PERMANENT_NOT_OBTAINABLE</li>  <li>PERMANENT_QOS_UNAVAILABLE</li>  <li>PERMANENT_INTERWORKING_UNAVAILABLE</li>  <li>PERMANENT_VALIDITY_PERIOD_EXPIRED</li>  <li>PERMANENT_DELETED</li>  <li>PERMANENT_SC_ADMIN_DELETED</li>  <li>PERMANENT_SM_DOES_NOT_EXIST</li>  <li>PERMANENT_LAST</li>  <li>TEMPFINAL_CONGESTION</li>  <li>TEMPFINAL_SME_BUSY</li>  <li>TEMPFINAL_NO_RESPONSE</li>  <li>TEMPFINAL_SERVICE_REJECTED</li>  <li>TEMPFINAL_QOS_UNAVAILABLE</li>  <li>TEMPFINAL_SME_ERROR</li>  <li>TEMPFINAL_LAST  </ul> </p>
 <p><i>s: sender_number</i>
